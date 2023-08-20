@@ -5,8 +5,7 @@
 
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $presentation-heading-color: #7090A5;
-$presentation-title-slide-text-align: "left";
-$presentation-font-size-root: 33px;
+$presentation-font-size-root: 30px;
 $code-block-font-size: 0.6em;
 $link-color: #7090A5;
 $custom-col: #E67E3A;
@@ -44,6 +43,14 @@ details>summary {
 
 .largest {
   font-size: 3em;
+}
+
+.reveal section {
+  
+}
+
+.reveal section h1 {
+  text-align: center; 
 }
 
 .reveal .slide .question {
@@ -92,8 +99,7 @@ details>summary {
   background: #E8E8E8;
   font-family: $font-family-monospace;
   font-size: 0.6em;
-}
-
+} 
 
 .reveal .slide .goal {
   margin-top: 0.5em;
@@ -130,3 +136,5 @@ details>summary {
   align-items: center;
   height: 90%;
 }
+
+
