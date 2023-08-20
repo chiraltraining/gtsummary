@@ -8,7 +8,7 @@ editor: source
 
 ------------------------------------------------------------------------
 
-🗓️ August 23, 2022 \| 11:00am - 2:00pm EDT
+🗓️Friday, August 25, 2023\ |9:00am-12:00pm
 
 🏨 Virtual
 
@@ -18,7 +18,7 @@ editor: source
 
 ------------------------------------------------------------------------
 
-# Overview
+# Workshop Overview
 Join us for an engaging and informative workshop on "Public Health Insights: Clinical Reporting Using {gtsummary}." This workshop is designed to equip public health professionals, researchers, and analysts with the skills and knowledge to effectively utilize the `{gtsummary}` package for creating comprehensive clinical reports. `{gtsummary}` is a powerful tool that streamlines the process of summarizing data, making it an invaluable asset for deriving meaningful insights and driving evidence-based decisions in public health contexts.
 
 Through hands-on demonstrations and interactive sessions, participants will learn how to leverage `{gtsummary}` to generate visually appealing and interpretable clinical reports. The workshop will cover essential concepts, best practices, and practical examples that demonstrate the application of `{gtsummary}` in real-world public health scenarios. Whether you're a seasoned data analyst or new to the world of data reporting, this workshop will provide you with the tools and techniques needed to elevate your clinical reporting capabilities.
@@ -33,6 +33,11 @@ A critical part of the work of statisticians, data scientists, and analysts is s
 The [**gtsummary**](https://www.danieldsjoberg.com/gtsummary/) package was created to streamline these everyday analysis tasks by allowing users to easily create reproducible summaries of data sets, regression models, survey data, and survival data with a simple interface and very little code.
 
 The package follows a tidy framework, making it easy to integrate with standard data workflows, and offers many table customization features through function arguments, helper functions, and custom themes.
+
+
+```{r, echo=FALSE}
+knitr::include_graphics("images/gtsummary.gif")
+```
 
 ## Learning objectives
 
@@ -51,6 +56,7 @@ If your answer to any of the following questions is "yes", then this is the righ
 The workshop is designed for those with some experience in R. 
 It will be expected that you can perform basic data manipulation.
 Experience with the {tidyverse} and the `%>%` operator is a plus, but not required.
+
 
 ## Prework
 
