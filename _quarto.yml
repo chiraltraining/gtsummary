@@ -19,21 +19,30 @@ website:
   open-graph: true
   twitter-card:
     creator: "@statistishdan"
-    image: "/images/two-hex-logo.png"
+    image: "/images/banner.png"
 
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/). Inspired by [@minebocek](https://twitter.com/minebocek)"
     right: "&copy; Copyright 2023, Md. Jubayer Hossain"
-    background: "#708090"
+    background: "#758283"
   sidebar:
-    background: "#708090"
+    background: "#758283"
     logo: "images/trans - gt.png"
     pinned: true
     align: center
     tools:
       - icon: github
-        href: https://github.com/chiraltraining/gtsummary4publichealth
+        href: https://github.com/chiraltraining/
         text: GitHub
+      - icon: facebook
+        href: https://www.facebook.com/chiralbd.org
+        text: Facebook
+      - icon: twitter
+        href: https://twitter.com/chiralbd
+        text: Twitter
+      - icon: linkedin
+        href: https://www.linkedin.com/company/chiral-bangladesh/mycompany/?viewAsMember=true
+        text: LinkedIn
     style: docked
     contents:
      - href: index.qmd
