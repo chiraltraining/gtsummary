@@ -1,0 +1,123 @@
+# Introduction
+
+```{r}
+#| echo: false
+#| cache: false
+library(gtsummary)
+library(tidyverse)
+library(countdown)
+
+knit_print.gtsummary <- function(x, ...) {
+  gtsummary::as_gt(x) |> gt::as_raw_html()
+}
+
+knit_print.gt_tbl <- function(x, ...) {
+  gt::as_raw_html(x)
+}
+
+registerS3method("knit_print", "gtsummary", knit_print.gtsummary)
+registerS3method("knit_print", "gt_tbl", knit_print.gt_tbl)
+
+# fill for font awesome icons
+fa_fill <- "#606060"
+```
+
+## Acknowledgements
+
+::: {.columns .v-center-container}
+::: {.column width="60%"}
+<img src="images/r-med-logo-pride.png" alt="drawing" width="70%"/>
+:::
+
+::: {.column width="40%"}
+This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA4.0).
+:::
+:::
+
+## Daniel D. Sjoberg
+
+::: {.columns .v-center-container}
+::: {.column width="60%"}
+`r fontawesome::fa("link", fill = fa_fill)` [danieldsjoberg.com](https://www.danieldsjoberg.com/)
+
+`r fontawesome::fa("twitter", fill = fa_fill)` [\@statistishdan](https://twitter.com/statistishdan)
+
+`r fontawesome::fa("linkedin", fill = fa_fill)` [linkedin.com/in/ddsjoberg](https://www.linkedin.com/in/ddsjoberg/)
+
+`r fontawesome::fa("github", fill = fa_fill)` [github.com/ddsjoberg](https://github.com/ddsjoberg/)
+:::
+
+::: {.column width="40%"}
+![](images/dan-fire-island-circle.png)
+:::
+:::
+
+##
+
+::: {.columns .v-center-container}
+::: {.column width="50%"}
+Shannon Pileggi
+
+![](images/shannon-pileggi-circle.png){width=70%}
+
+`r fontawesome::fa("link", fill = fa_fill)` [pipinghotdata.com](https://www.pipinghotdata.com/)
+
+`r fontawesome::fa("twitter", fill = fa_fill)` [\@pipinghotdata](https://twitter.com/pipinghotdata)
+
+`r fontawesome::fa("linkedin", fill = fa_fill)` [linkedin.com/in/shannon-m-pileggi](https://www.linkedin.com/in/shannon-m-pileggi/)
+
+`r fontawesome::fa("github", fill = fa_fill)` [github.com/shannonpileggi](https://github.com/shannonpileggi/)
+:::
+
+:::{.column width="50%"}
+Karissa Whiting
+
+![](images/karissa-whiting-circle.png){width=70%}
+
+`r fontawesome::fa("link", fill = fa_fill)` [karissawhiting.com](https://www.karissawhiting.com/)
+
+`r fontawesome::fa("twitter", fill = fa_fill)` [\@karissawhiting](https://twitter.com/karissawhiting)
+
+`r fontawesome::fa("linkedin", fill = fa_fill)` [linkedin.com/in/karissa-whiting-48877a52](https://www.linkedin.com/in/karissa-whiting-48877a52/)
+
+`r fontawesome::fa("github", fill = fa_fill)` [github.com/karissawhiting](https://github.com/karissawhiting/)
+:::
+
+:::
+
+## Checklist
+
+<br>
+
+`r fontawesome::fa("check", fill = fa_fill)` Install recent R release
+
+    Current version `r stringr::word(R.version.string, 3, 3)`
+
+`r fontawesome::fa("check", fill = fa_fill)` Install RStudio
+
+    I am on version 2022.07.1+554 
+
+`r fontawesome::fa("check", fill = fa_fill)` Install packages
+
+``` r
+install.packages(c("gtsummary", "tidyverse", "labelled", "usethis", "causaldata", "fs", "skimr", "car", "emmeans"))
+```
+
+`r fontawesome::fa("check", fill = fa_fill)` Ensure you can knit Rmarkdown files
+
+## Questions
+
+::: {.columns .v-center-container}
+::: {.column width="50%"}
+- Please add any questions to the public Zoom chat.
+
+- Shannon and Karissa will monitor the chat
+
+- We'll also have time for questions at the break and at the end
+
+:::
+::: {.column width="50%"}
+![](images/questions.jpg){width=100%}
+:::
+:::
+

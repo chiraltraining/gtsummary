@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: docs 
+  render:
+    - "*.qmd"
+    - "!exercises/exercises.Rmd"
+    - "!slides/[0-9]*.qmd"
+    
+website:
+  page-navigation: true
+  title: "Public Health Insights: Clinical Reporting Using {gtsummary}"
+  description: "Homepage for workshop on Public Health Insights: Clinical Reporting Using {gtsummary} Workshop"
+  site-url: "https://chiraltraining.github.io/gtsummary4publichealth/"
+  favicon: "images/trans - gt.png"
+  
+  repo-url: https://github.com/chiraltraining/gtsummary4publichealth
+  repo-actions: [edit, issue]
+
+  open-graph: true
+  twitter-card:
+    creator: "@statistishdan"
+    image: "/images/two-hex-logo.png"
+
+  page-footer:
+    left: "This page is built with ❤️ and [Quarto](https://quarto.org/). Inspired by [@minebocek](https://twitter.com/minebocek)"
+    right: "&copy; Copyright 2023, Md. Jubayer Hossain"
+    background: "#708090"
+  sidebar:
+    background: "#708090"
+    logo: "images/trans - gt.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/chiraltraining/gtsummary4publichealth
+        text: GitHub
+    style: docked
+    contents:
+     - href: index.qmd
+       text: Home
+     - href: material.qmd
+     - href: q-and-a.qmd
+       text: Workshop Q & A
+     - href: license.qmd
+
+format:
+  html:
+    theme: [yeti, theme.scss]
+    toc: true
+    code-copy: true
+    code-overflow: scroll
+    mainfont: "Atkinson Hyperlegible"
+    highlight-style: a11y
+
+editor: source
+

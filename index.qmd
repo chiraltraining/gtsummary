@@ -1,0 +1,103 @@
+---
+title: "Public Health Insights: Clinical Reporting Using {gtsummary}"
+subtitle: "R for Public Health Workshop"
+editor: source
+---
+
+<!-- https://github.com/rstudio-conf-2022/teach-ds -->
+
+------------------------------------------------------------------------
+
+🗓️ August 23, 2022 \| 11:00am - 2:00pm EDT
+
+🏨 Virtual
+
+💥 **Register** with [Google Form]()
+
+📝 📝 📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.
+
+------------------------------------------------------------------------
+
+# Overview
+Join us for an engaging and informative workshop on "Public Health Insights: Clinical Reporting Using {gtsummary}." This workshop is designed to equip public health professionals, researchers, and analysts with the skills and knowledge to effectively utilize the `{gtsummary}` package for creating comprehensive clinical reports. `{gtsummary}` is a powerful tool that streamlines the process of summarizing data, making it an invaluable asset for deriving meaningful insights and driving evidence-based decisions in public health contexts.
+
+Through hands-on demonstrations and interactive sessions, participants will learn how to leverage `{gtsummary}` to generate visually appealing and interpretable clinical reports. The workshop will cover essential concepts, best practices, and practical examples that demonstrate the application of `{gtsummary}` in real-world public health scenarios. Whether you're a seasoned data analyst or new to the world of data reporting, this workshop will provide you with the tools and techniques needed to elevate your clinical reporting capabilities.
+
+
+## What is gtsummary? 
+
+The [**gtsummary**](https://www.danieldsjoberg.com/gtsummary/) package provides an elegant and flexible way to create publication-ready summary tables in **R**. 
+
+A critical part of the work of statisticians, data scientists, and analysts is summarizing data sets and regression models in R and publishing or sharing polished summary tables.
+
+The [**gtsummary**](https://www.danieldsjoberg.com/gtsummary/) package was created to streamline these everyday analysis tasks by allowing users to easily create reproducible summaries of data sets, regression models, survey data, and survival data with a simple interface and very little code.
+
+The package follows a tidy framework, making it easy to integrate with standard data workflows, and offers many table customization features through function arguments, helper functions, and custom themes.
+
+## Learning objectives
+
+Build, customize, and report tables often found in medical journals and other research-related publications.
+
+## Is this course for me?
+
+If your answer to any of the following questions is "yes", then this is the right workshop for you.
+
+-   Do you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?
+
+-   Do you want your workflow to be reproducible?
+
+-   Are you often frustrated with the immense amount of code required to create great-looking tables in R?
+
+The workshop is designed for those with some experience in R. 
+It will be expected that you can perform basic data manipulation.
+Experience with the {tidyverse} and the `%>%` operator is a plus, but not required.
+
+## Prework
+
+Before attending the workshop please have the following installed and configured on your machine.
+
+-   Recent version of **R** 
+
+-   Recent version of **RStudio**
+
+-   Most recent release of the [**gtsummary**](https://www.danieldsjoberg.com/gtsummary/) and other packages used in workshop.
+
+    ```r
+    instll_pkgs <- 
+      c("gtsummary", "tidyverse", "labelled", "usethis", 
+        "causaldata", "fs", "skimr", "car", "emmeans")
+    install.packages(instll_pkgs)
+    ```
+-   Ensure you can knit R markdown documents
+    - Open RStudio and create a new Rmarkdown document
+    - Save the document and check you are able to knit it.
+
+ 
+
+::: callout-tip
+## Who We Are: CHIRAL Bangladesh
+
+[Center for Health Innovation, Research, Action and Learning - Bangladesh (CHIRAL Bangladesh)](https://chiralbd.org/) is a voluntary non-profit research organization, resolving to promote interdisciplinary research in the field of health data science, computational biology and genomics.
+:::
+
+
+## Instructor 
+### Bio
+![](images/JHossain.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Jubayer" width="200"} 
+
+Hi, I am [Jubayer](https://hossainlab.github.io/), a highly motivated biomedical research enthusiasts with a Master of Science in Microbiology focus on public health and health data science. Research experience designing and implementing projects for biomedical data analysis (including next‑generation sequencing, RNA‑seq , and ssRNA‑seq ). I am interested in applying machine learning/deep learning tools and techniques in the context of disease diagnosis and large data analytics for public health while focusing on bridging the gap between computational and experimental laboratories through highly engaging and fruitful collaborations
+
+Python is my primary language for data analysis and machine learning. I also have a basic understanding of R, Julia, SPSS, QGIS, and SQL.
+
+This [page](https://hossainlab.github.io/) highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.
+
+### Skills 
+**Programming Languages:** Python, R, SQL, Julia, JavaScript; **Data Science:** scikit-learn, PyCaret, Dask, PySpark; **GIS & Remote Sensing:** ArcGIS, Geopandas, Xarray, Giovani; **Analytics Softwares:** SPSS, PowerBI, Microsoft Excel; **Survey Tools:** RedCap, KoboToolBox, EpiCollect, Google Forms; **Academic Writing Tools:** Microsoft Word, LaTeX, Mendeley; **Bioinformatics:** BioPython, Bioconductor, BioPandas, Galaxy, NGS, RNASeq, ssRNASeq; **Miscellaneous Skills:** UNIX, Version Control(Git), Web Scraping, APIs.
+
+
+### Selected Publications 
+1. **Hossain, M.J.**, Islam, M.W., Munni, U.R. et al. Health-related quality of life among thalassemia patients in Bangladesh using the SF-36 questionnaire. Scientific Reports 13, 7734 (2023). <https://doi.org/10.1038/s41598-023-34205-9>
+2. Towhid, S. T., **Hossain, M. J.**, Sammo, M. A. S., & Akter, S. (2022). Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh. European Journal of Biology and Biotechnology, 3(3), 14–19. <https://doi.org/10.24018/ejbio.2022.3.3.341>
+3. **Hossain, M.J.**, Towhid ST, Sultana S, Mukta SA, Gulshan R, Miah MS (2022). *Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh*. Microbial Bioactives, 5(2), <https://doi.org/10.25163/microbbioacts.526325>.
+
+
