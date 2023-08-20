@@ -473,7 +473,7 @@
     "href": "slides/index.html#gtsummary-print-engines-2",
     "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "{gtsummary} print engines",
-    "text": "{gtsummary} print engines\nUse any print engine to customize table\n\n\nlibrary(gt)\ntrial |&gt;\n  select(age, grade) |&gt;\n  tbl_summary() |&gt;\n  as_gt() |&gt;\n  cols_width(label ~ px(300)) |&gt;\n  cols_align(columns = stat_0, \n             align = \"left\")\n\n\n\n\n\n\n\n\n\n\nCharacteristic\n\n\nN = 2001\n\n\n\n\n\n\nAge\n\n\n47 (38, 57)\n\n\n\n\nUnknown\n\n\n11\n\n\n\n\nGrade\n\n\n\n\n\n\nI\n\n\n68 (34%)\n\n\n\n\nII\n\n\n68 (34%)\n\n\n\n\nIII\n\n\n64 (32%)\n\n\n\n\n\n\n1 Median (IQR); n (%)"
+    "text": "{gtsummary} print engines\nUse any print engine to customize table\n\n\nlibrary(gt)\ntrial |&gt;\n  select(age, grade) |&gt;\n  tbl_summary() |&gt;\n  as_gt() |&gt;\n  cols_width(label ~ px(300)) |&gt;\n  cols_align(columns = stat_0, \n             align = \"left\")\n\n\n\n\n\n\n\n\n\n\nCharacteristic\n\n\nN = 2001\n\n\n\n\n\n\nAge\n\n\n47 (38, 57)\n\n\n\n\nUnknown\n\n\n11\n\n\n\n\nGrade\n\n\n\n\n\n\nI\n\n\n68 (34%)\n\n\n\n\nII\n\n\n68 (34%)\n\n\n\n\nIII\n\n\n64 (32%)\n\n\n\n\n\n\n1 Median (IQR); n (%)\n\n\n\n\n\n\n\n\n\n\nR for Bioinformatics | © 2023 Md. Jubayer Hossain"
   },
   {
     "objectID": "slides/index.html#gtsummary-website",

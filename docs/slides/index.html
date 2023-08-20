@@ -429,51 +429,14 @@
 <li><a href="#/tbl_mergetbl_stack" id="/toc-tbl_mergetbl_stack">tbl_merge()/tbl_stack()</a></li>
 <li><a href="#/gtsummary-themes" id="/toc-gtsummary-themes">{gtsummary} themes</a></li>
 <li><a href="#/gtsummary-print-engines" id="/toc-gtsummary-print-engines">{gtsummary} print engines</a></li>
-<li><a href="#/in-closing" id="/toc-in-closing">In Closing</a></li>
 </ul>
 </nav>
 </section>
-<section>
 <section id="introduction" class="title-slide slide level1 center">
 <h1>Introduction</h1>
 
 </section>
-<section id="acknowledgements" class="slide level2">
-<h2>Acknowledgements</h2>
-<div class="columns v-center-container">
-<div class="column" style="width:60%;">
-<p><img src="images/r-med-logo-pride.png" alt="drawing" width="70%"></p>
-</div><div class="column" style="width:40%;">
-<p>This work is licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a> (CC BY-SA4.0).</p>
-</div>
-</div>
-<p>:::</p>
-</section>
-<section id="checklist" class="slide level2">
-<h2>Checklist</h2>
-<p><br></p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg> Install recent R release</p>
-<pre><code>Current version 4.2.3</code></pre>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg> Install RStudio</p>
-<pre><code>I am on version 2022.07.1+554 </code></pre>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg> Install packages</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"gtsummary"</span>, <span class="st">"tidyverse"</span>, <span class="st">"labelled"</span>, <span class="st">"usethis"</span>, <span class="st">"causaldata"</span>, <span class="st">"fs"</span>, <span class="st">"skimr"</span>, <span class="st">"car"</span>, <span class="st">"emmeans"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg> Ensure you can knit Rmarkdown files</p>
-</section>
-<section id="questions" class="slide level2">
-<h2>Questions</h2>
-<div class="columns v-center-container">
-<div class="column" style="width:50%;">
-<ul>
-<li><p>Please add any questions to the public Zoom chat.</p></li>
-<li><p>Shannon and Karissa will monitor the chat</p></li>
-<li><p>We’ll also have time for questions at the break and at the end</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/questions.jpg" style="width:100.0%"></p>
-</div>
-</div>
-</section></section>
+
 <section>
 <section id="motivation" class="title-slide slide level1 center">
 <h1>Motivation</h1>
@@ -534,9 +497,9 @@
 </ul>
 </div><div class="column" style="width:60%;">
 <div class="cell" data-hash="index_cache/revealjs/describe-trial_1f4386db8199f464bcec6171e71b9514">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(gtsummary)</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">head</span>(trial) <span class="sc">|&gt;</span> gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="fu">head</span>(trial) <span class="sc">|&gt;</span> gt<span class="sc">::</span><span class="fu">gt</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -737,9 +700,9 @@ I
 <div class="column" style="width:60%;">
 <p>This presentation will use a subset of the variables.</p>
 <div class="cell" data-hash="index_cache/revealjs/create-small-trial_4eb9c53fc6e3180bf8f55d59ce3f9310">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>sm_trial <span class="ot">&lt;-</span></span>
-<span id="cb5-2"><a href="#cb5-2"></a>  trial <span class="sc">|&gt;</span> </span>
-<span id="cb5-3"><a href="#cb5-3"></a>  <span class="fu">select</span>(trt, age, grade, response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>sm_trial <span class="ot">&lt;-</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a>  trial <span class="sc">|&gt;</span> </span>
+<span id="cb2-3"><a href="#cb2-3"></a>  <span class="fu">select</span>(trt, age, grade, response)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:40%;">
 <div class="cell" data-hash="index_cache/revealjs/describe-small-trial_def9d00a20a1ed2c54c9f0aa1c8c54d5">
@@ -804,7 +767,7 @@ Tumor Response
 <li><p>Add variable labels to the data frame using <code>labelled::set_variable_labels()</code>.</p></li>
 </ol>
 <div class="cell-output-display">
-<div class="countdown" id="timer_eba05ee6" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
+<div class="countdown" id="timer_708235bf" data-update-every="1" tabindex="0" style="right:0;bottom:0;font-size:1.5em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">08</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -820,9 +783,9 @@ Tumor Response
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="cell" data-hash="index_cache/revealjs/simple-summary_45324e757b49517fedd29d5266f8cb99">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>sm_trial <span class="sc">|&gt;</span> </span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">select</span>(<span class="sc">-</span>trt) <span class="sc">|&gt;</span>  </span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">tbl_summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>sm_trial <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2"></a>  <span class="fu">select</span>(<span class="sc">-</span>trt) <span class="sc">|&gt;</span>  </span>
+<span id="cb3-3"><a href="#cb3-3"></a>  <span class="fu">tbl_summary</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -925,10 +888,10 @@ Unknown
 <h2 data-id="quarto-animate-title">Customize tbl_summary() output</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/customize-summary1_8f25f5776c8a87adefe3cea6b4e76df9">
 <div class="column">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">tbl_summary</span>(</span>
-<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>  sm_trial,</span>
-<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>  <span class="at">by =</span> trt,</span>
-<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href="#cb4-1"></a><span class="fu">tbl_summary</span>(</span>
+<span id="cb4-2" class="hljs-ln-code"><a href="#cb4-2"></a>  sm_trial,</span>
+<span id="cb4-3" class="hljs-ln-code"><a href="#cb4-3"></a>  <span class="at">by =</span> trt,</span>
+<span id="cb4-4" class="hljs-ln-code"><a href="#cb4-4"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -1060,11 +1023,11 @@ Unknown
 <h2 data-id="quarto-animate-title">Customize tbl_summary() output</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/customize-summary2_7d66af5e9b6b20136c8518f85f0774af">
 <div class="column">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">tbl_summary</span>(</span>
-<span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>  sm_trial,</span>
-<span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>  <span class="at">by =</span> trt,</span>
-<span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
-<span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href="#cb5-1"></a><span class="fu">tbl_summary</span>(</span>
+<span id="cb5-2" class="hljs-ln-code"><a href="#cb5-2"></a>  sm_trial,</span>
+<span id="cb5-3" class="hljs-ln-code"><a href="#cb5-3"></a>  <span class="at">by =</span> trt,</span>
+<span id="cb5-4" class="hljs-ln-code"><a href="#cb5-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
+<span id="cb5-5" class="hljs-ln-code"><a href="#cb5-5"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -1206,17 +1169,17 @@ Unknown
 <h2 data-id="quarto-animate-title">Customize tbl_summary() output</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/customize-summary3_4e7318059a65f62ad3b2edcd1de7d693">
 <div class="column">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb9-1" class="hljs-ln-code"><a href="#cb9-1"></a><span class="fu">tbl_summary</span>(</span>
-<span id="cb9-2" class="hljs-ln-code"><a href="#cb9-2"></a>  sm_trial,</span>
-<span id="cb9-3" class="hljs-ln-code"><a href="#cb9-3"></a>  <span class="at">by =</span> trt,</span>
-<span id="cb9-4" class="hljs-ln-code"><a href="#cb9-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
-<span id="cb9-5" class="hljs-ln-code"><a href="#cb9-5"></a>  <span class="at">statistic =</span> </span>
-<span id="cb9-6" class="hljs-ln-code"><a href="#cb9-6"></a>    <span class="fu">list</span>(</span>
-<span id="cb9-7" class="hljs-ln-code"><a href="#cb9-7"></a>      age <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, </span>
-<span id="cb9-8" class="hljs-ln-code"><a href="#cb9-8"></a>              <span class="st">"{min}, {max}"</span>), </span>
-<span id="cb9-9" class="hljs-ln-code"><a href="#cb9-9"></a>      response <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
-<span id="cb9-10" class="hljs-ln-code"><a href="#cb9-10"></a>    ),</span>
-<span id="cb9-11" class="hljs-ln-code"><a href="#cb9-11"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href="#cb6-1"></a><span class="fu">tbl_summary</span>(</span>
+<span id="cb6-2" class="hljs-ln-code"><a href="#cb6-2"></a>  sm_trial,</span>
+<span id="cb6-3" class="hljs-ln-code"><a href="#cb6-3"></a>  <span class="at">by =</span> trt,</span>
+<span id="cb6-4" class="hljs-ln-code"><a href="#cb6-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
+<span id="cb6-5" class="hljs-ln-code"><a href="#cb6-5"></a>  <span class="at">statistic =</span> </span>
+<span id="cb6-6" class="hljs-ln-code"><a href="#cb6-6"></a>    <span class="fu">list</span>(</span>
+<span id="cb6-7" class="hljs-ln-code"><a href="#cb6-7"></a>      age <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, </span>
+<span id="cb6-8" class="hljs-ln-code"><a href="#cb6-8"></a>              <span class="st">"{min}, {max}"</span>), </span>
+<span id="cb6-9" class="hljs-ln-code"><a href="#cb6-9"></a>      response <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
+<span id="cb6-10" class="hljs-ln-code"><a href="#cb6-10"></a>    ),</span>
+<span id="cb6-11" class="hljs-ln-code"><a href="#cb6-11"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -1370,19 +1333,19 @@ Unknown
 <h2 data-id="quarto-animate-title">Customize tbl_summary() output</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/customize-summary4_61d362a2505ed8e44c4da48496358ab0">
 <div class="column">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a><span class="fu">tbl_summary</span>(</span>
-<span id="cb10-2" class="hljs-ln-code"><a href="#cb10-2"></a>  sm_trial,</span>
-<span id="cb10-3" class="hljs-ln-code"><a href="#cb10-3"></a>  <span class="at">by =</span> trt,</span>
-<span id="cb10-4" class="hljs-ln-code"><a href="#cb10-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
-<span id="cb10-5" class="hljs-ln-code"><a href="#cb10-5"></a>  <span class="at">statistic =</span> </span>
-<span id="cb10-6" class="hljs-ln-code"><a href="#cb10-6"></a>    <span class="fu">list</span>(</span>
-<span id="cb10-7" class="hljs-ln-code"><a href="#cb10-7"></a>      age <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, </span>
-<span id="cb10-8" class="hljs-ln-code"><a href="#cb10-8"></a>              <span class="st">"{min}, {max}"</span>), </span>
-<span id="cb10-9" class="hljs-ln-code"><a href="#cb10-9"></a>      response <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
-<span id="cb10-10" class="hljs-ln-code"><a href="#cb10-10"></a>    ),</span>
-<span id="cb10-11" class="hljs-ln-code"><a href="#cb10-11"></a>  <span class="at">label =</span> </span>
-<span id="cb10-12" class="hljs-ln-code"><a href="#cb10-12"></a>    grade <span class="sc">~</span> <span class="st">"Pathologic tumor grade"</span>,</span>
-<span id="cb10-13" class="hljs-ln-code"><a href="#cb10-13"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb7-1" class="hljs-ln-code"><a href="#cb7-1"></a><span class="fu">tbl_summary</span>(</span>
+<span id="cb7-2" class="hljs-ln-code"><a href="#cb7-2"></a>  sm_trial,</span>
+<span id="cb7-3" class="hljs-ln-code"><a href="#cb7-3"></a>  <span class="at">by =</span> trt,</span>
+<span id="cb7-4" class="hljs-ln-code"><a href="#cb7-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
+<span id="cb7-5" class="hljs-ln-code"><a href="#cb7-5"></a>  <span class="at">statistic =</span> </span>
+<span id="cb7-6" class="hljs-ln-code"><a href="#cb7-6"></a>    <span class="fu">list</span>(</span>
+<span id="cb7-7" class="hljs-ln-code"><a href="#cb7-7"></a>      age <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, </span>
+<span id="cb7-8" class="hljs-ln-code"><a href="#cb7-8"></a>              <span class="st">"{min}, {max}"</span>), </span>
+<span id="cb7-9" class="hljs-ln-code"><a href="#cb7-9"></a>      response <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
+<span id="cb7-10" class="hljs-ln-code"><a href="#cb7-10"></a>    ),</span>
+<span id="cb7-11" class="hljs-ln-code"><a href="#cb7-11"></a>  <span class="at">label =</span> </span>
+<span id="cb7-12" class="hljs-ln-code"><a href="#cb7-12"></a>    grade <span class="sc">~</span> <span class="st">"Pathologic tumor grade"</span>,</span>
+<span id="cb7-13" class="hljs-ln-code"><a href="#cb7-13"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -1538,20 +1501,20 @@ Unknown
 <h2 data-id="quarto-animate-title">Customize tbl_summary() output</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/customize-summary5_baa7406b38d5985079ab9d2d6ac9a28c">
 <div class="column">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a><span class="fu">tbl_summary</span>(</span>
-<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a>  sm_trial,</span>
-<span id="cb11-3" class="hljs-ln-code"><a href="#cb11-3"></a>  <span class="at">by =</span> trt,</span>
-<span id="cb11-4" class="hljs-ln-code"><a href="#cb11-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
-<span id="cb11-5" class="hljs-ln-code"><a href="#cb11-5"></a>  <span class="at">statistic =</span> </span>
-<span id="cb11-6" class="hljs-ln-code"><a href="#cb11-6"></a>    <span class="fu">list</span>(</span>
-<span id="cb11-7" class="hljs-ln-code"><a href="#cb11-7"></a>      age <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, </span>
-<span id="cb11-8" class="hljs-ln-code"><a href="#cb11-8"></a>              <span class="st">"{min}, {max}"</span>), </span>
-<span id="cb11-9" class="hljs-ln-code"><a href="#cb11-9"></a>      response <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
-<span id="cb11-10" class="hljs-ln-code"><a href="#cb11-10"></a>    ),</span>
-<span id="cb11-11" class="hljs-ln-code"><a href="#cb11-11"></a>  <span class="at">label =</span> </span>
-<span id="cb11-12" class="hljs-ln-code"><a href="#cb11-12"></a>    grade <span class="sc">~</span> <span class="st">"Pathologic tumor grade"</span>,</span>
-<span id="cb11-13" class="hljs-ln-code"><a href="#cb11-13"></a>  <span class="at">digits =</span> age <span class="sc">~</span> <span class="dv">1</span></span>
-<span id="cb11-14" class="hljs-ln-code"><a href="#cb11-14"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb8-1" class="hljs-ln-code"><a href="#cb8-1"></a><span class="fu">tbl_summary</span>(</span>
+<span id="cb8-2" class="hljs-ln-code"><a href="#cb8-2"></a>  sm_trial,</span>
+<span id="cb8-3" class="hljs-ln-code"><a href="#cb8-3"></a>  <span class="at">by =</span> trt,</span>
+<span id="cb8-4" class="hljs-ln-code"><a href="#cb8-4"></a>  <span class="at">type =</span> age <span class="sc">~</span> <span class="st">"continuous2"</span>,</span>
+<span id="cb8-5" class="hljs-ln-code"><a href="#cb8-5"></a>  <span class="at">statistic =</span> </span>
+<span id="cb8-6" class="hljs-ln-code"><a href="#cb8-6"></a>    <span class="fu">list</span>(</span>
+<span id="cb8-7" class="hljs-ln-code"><a href="#cb8-7"></a>      age <span class="sc">~</span> <span class="fu">c</span>(<span class="st">"{mean} ({sd})"</span>, </span>
+<span id="cb8-8" class="hljs-ln-code"><a href="#cb8-8"></a>              <span class="st">"{min}, {max}"</span>), </span>
+<span id="cb8-9" class="hljs-ln-code"><a href="#cb8-9"></a>      response <span class="sc">~</span> <span class="st">"{n} / {N} ({p}%)"</span></span>
+<span id="cb8-10" class="hljs-ln-code"><a href="#cb8-10"></a>    ),</span>
+<span id="cb8-11" class="hljs-ln-code"><a href="#cb8-11"></a>  <span class="at">label =</span> </span>
+<span id="cb8-12" class="hljs-ln-code"><a href="#cb8-12"></a>    grade <span class="sc">~</span> <span class="st">"Pathologic tumor grade"</span>,</span>
+<span id="cb8-13" class="hljs-ln-code"><a href="#cb8-13"></a>  <span class="at">digits =</span> age <span class="sc">~</span> <span class="dv">1</span></span>
+<span id="cb8-14" class="hljs-ln-code"><a href="#cb8-14"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -1724,12 +1687,12 @@ Unknown
 <h2>Update tbl_summary() with add_*()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/summary-with-p_6d6c5f87e9e550919cffa1dac10cb1d8">
 <div class="column">
-<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="5,6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb12-2"><a href="#cb12-2"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb12-3"><a href="#cb12-3"></a>    <span class="at">by =</span> trt</span>
-<span id="cb12-4"><a href="#cb12-4"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb12-5"><a href="#cb12-5"></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb12-6"><a href="#cb12-6"></a>  <span class="fu">add_q</span>(<span class="at">method =</span> <span class="st">"fdr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9" data-code-line-numbers="5,6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb9-3"><a href="#cb9-3"></a>    <span class="at">by =</span> trt</span>
+<span id="cb9-4"><a href="#cb9-4"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb9-6"><a href="#cb9-6"></a>  <span class="fu">add_q</span>(<span class="at">method =</span> <span class="st">"fdr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -1908,12 +1871,12 @@ Unknown
 <h2 data-id="quarto-animate-title">Update tbl_summary() with add_*()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/summary-with-overall1_203109ad044e58c7cc618f4e63658171">
 <div class="column">
-<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb13-1" class="hljs-ln-code"><a href="#cb13-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb13-2" class="hljs-ln-code"><a href="#cb13-2"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb13-3" class="hljs-ln-code"><a href="#cb13-3"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb13-4" class="hljs-ln-code"><a href="#cb13-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb13-5" class="hljs-ln-code"><a href="#cb13-5"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb13-6" class="hljs-ln-code"><a href="#cb13-6"></a>  <span class="fu">add_overall</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb10-1" class="hljs-ln-code"><a href="#cb10-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb10-2" class="hljs-ln-code"><a href="#cb10-2"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb10-3" class="hljs-ln-code"><a href="#cb10-3"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb10-4" class="hljs-ln-code"><a href="#cb10-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb10-5" class="hljs-ln-code"><a href="#cb10-5"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb10-6" class="hljs-ln-code"><a href="#cb10-6"></a>  <span class="fu">add_overall</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2035,13 +1998,13 @@ Tumor Response
 <h2 data-id="quarto-animate-title">Update tbl_summary() with add_*()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/summary-with-overall2_b314855a69b277b1b209e85915dec273">
 <div class="column">
-<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb14-1" class="hljs-ln-code"><a href="#cb14-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb14-2" class="hljs-ln-code"><a href="#cb14-2"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb14-3" class="hljs-ln-code"><a href="#cb14-3"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb14-4" class="hljs-ln-code"><a href="#cb14-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb14-5" class="hljs-ln-code"><a href="#cb14-5"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb14-6" class="hljs-ln-code"><a href="#cb14-6"></a>  <span class="fu">add_overall</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb14-7" class="hljs-ln-code"><a href="#cb14-7"></a>  <span class="fu">add_n</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11" data-code-line-numbers="7"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb11-1" class="hljs-ln-code"><a href="#cb11-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb11-2" class="hljs-ln-code"><a href="#cb11-2"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb11-3" class="hljs-ln-code"><a href="#cb11-3"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb11-4" class="hljs-ln-code"><a href="#cb11-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb11-5" class="hljs-ln-code"><a href="#cb11-5"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb11-6" class="hljs-ln-code"><a href="#cb11-6"></a>  <span class="fu">add_overall</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb11-7" class="hljs-ln-code"><a href="#cb11-7"></a>  <span class="fu">add_n</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2182,16 +2145,16 @@ Tumor Response
 <h2 data-id="quarto-animate-title">Update tbl_summary() with add_*()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/summary-with-overall3_198b933f909db9426e8569c0c6eaf066">
 <div class="column">
-<div class="sourceCode cell-code" id="cb15" data-code-line-numbers="8,9,10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb15-1" class="hljs-ln-code"><a href="#cb15-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb15-2" class="hljs-ln-code"><a href="#cb15-2"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb15-3" class="hljs-ln-code"><a href="#cb15-3"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb15-4" class="hljs-ln-code"><a href="#cb15-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb15-5" class="hljs-ln-code"><a href="#cb15-5"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb15-6" class="hljs-ln-code"><a href="#cb15-6"></a>  <span class="fu">add_overall</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb15-7" class="hljs-ln-code"><a href="#cb15-7"></a>  <span class="fu">add_n</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb15-8" class="hljs-ln-code"><a href="#cb15-8"></a>  <span class="fu">add_stat_label</span>(</span>
-<span id="cb15-9" class="hljs-ln-code"><a href="#cb15-9"></a>    <span class="at">label =</span> <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"No. (%)"</span></span>
-<span id="cb15-10" class="hljs-ln-code"><a href="#cb15-10"></a>  ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12" data-code-line-numbers="8,9,10"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb12-1" class="hljs-ln-code"><a href="#cb12-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb12-2" class="hljs-ln-code"><a href="#cb12-2"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb12-3" class="hljs-ln-code"><a href="#cb12-3"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb12-4" class="hljs-ln-code"><a href="#cb12-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb12-5" class="hljs-ln-code"><a href="#cb12-5"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb12-6" class="hljs-ln-code"><a href="#cb12-6"></a>  <span class="fu">add_overall</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb12-7" class="hljs-ln-code"><a href="#cb12-7"></a>  <span class="fu">add_n</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb12-8" class="hljs-ln-code"><a href="#cb12-8"></a>  <span class="fu">add_stat_label</span>(</span>
+<span id="cb12-9" class="hljs-ln-code"><a href="#cb12-9"></a>    <span class="at">label =</span> <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"No. (%)"</span></span>
+<span id="cb12-10" class="hljs-ln-code"><a href="#cb12-10"></a>  ) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2326,14 +2289,14 @@ Tumor Response, No.&nbsp;(%)
 <h2>Update with bold_*()/italicize_*()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/summary-bold_ee9cc4d0264a2a7ec4196db62e4bbb29">
 <div class="column">
-<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="6,7,8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb16-3"><a href="#cb16-3"></a>    <span class="at">by =</span> trt</span>
-<span id="cb16-4"><a href="#cb16-4"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb16-5"><a href="#cb16-5"></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb16-6"><a href="#cb16-6"></a>  <span class="fu">bold_labels</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb16-7"><a href="#cb16-7"></a>  <span class="fu">italicize_levels</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb16-8"><a href="#cb16-8"></a>  <span class="fu">bold_p</span>(<span class="at">t =</span> <span class="fl">0.8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13" data-code-line-numbers="6,7,8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb13-3"><a href="#cb13-3"></a>    <span class="at">by =</span> trt</span>
+<span id="cb13-4"><a href="#cb13-4"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb13-5"><a href="#cb13-5"></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb13-6"><a href="#cb13-6"></a>  <span class="fu">bold_labels</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb13-7"><a href="#cb13-7"></a>  <span class="fu">italicize_levels</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb13-8"><a href="#cb13-8"></a>  <span class="fu">bold_p</span>(<span class="at">t =</span> <span class="fl">0.8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2486,22 +2449,22 @@ Unknown
 <h2>Update tbl_summary() with modify_*()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/summary-modified_9f27e363549580f1ca10d2ab20fd95d0">
 <div class="column">
-<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="4,5,6,7,8,9,10,11,12,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>tbl <span class="ot">&lt;-</span></span>
-<span id="cb17-2"><a href="#cb17-2"></a>  sm_trial <span class="sc">|&gt;</span> </span>
-<span id="cb17-3"><a href="#cb17-3"></a>  <span class="fu">tbl_summary</span>(<span class="at">by =</span> trt, </span>
-<span id="cb17-4"><a href="#cb17-4"></a>              <span class="at">missing =</span> <span class="st">"no"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-5"><a href="#cb17-5"></a>  <span class="fu">modify_header</span>(</span>
-<span id="cb17-6"><a href="#cb17-6"></a>      stat_1 <span class="sc">~</span> <span class="st">"**Group A**"</span>,</span>
-<span id="cb17-7"><a href="#cb17-7"></a>      stat_2 <span class="sc">~</span> <span class="st">"**Group B**"</span></span>
-<span id="cb17-8"><a href="#cb17-8"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb17-9"><a href="#cb17-9"></a>  <span class="fu">modify_spanning_header</span>(</span>
-<span id="cb17-10"><a href="#cb17-10"></a>    <span class="fu">all_stat_cols</span>() <span class="sc">~</span> <span class="st">"**Drug**"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb17-11"><a href="#cb17-11"></a>  <span class="fu">modify_footnote</span>(</span>
-<span id="cb17-12"><a href="#cb17-12"></a>    <span class="fu">all_stat_cols</span>() <span class="sc">~</span> </span>
-<span id="cb17-13"><a href="#cb17-13"></a>      <span class="fu">paste</span>(<span class="st">"median (IQR) for continuous;"</span>,</span>
-<span id="cb17-14"><a href="#cb17-14"></a>            <span class="st">"n (%) for categorical"</span>)</span>
-<span id="cb17-15"><a href="#cb17-15"></a>  )</span>
-<span id="cb17-16"><a href="#cb17-16"></a>tbl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14" data-code-line-numbers="4,5,6,7,8,9,10,11,12,13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a>tbl <span class="ot">&lt;-</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>  sm_trial <span class="sc">|&gt;</span> </span>
+<span id="cb14-3"><a href="#cb14-3"></a>  <span class="fu">tbl_summary</span>(<span class="at">by =</span> trt, </span>
+<span id="cb14-4"><a href="#cb14-4"></a>              <span class="at">missing =</span> <span class="st">"no"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-5"><a href="#cb14-5"></a>  <span class="fu">modify_header</span>(</span>
+<span id="cb14-6"><a href="#cb14-6"></a>      stat_1 <span class="sc">~</span> <span class="st">"**Group A**"</span>,</span>
+<span id="cb14-7"><a href="#cb14-7"></a>      stat_2 <span class="sc">~</span> <span class="st">"**Group B**"</span></span>
+<span id="cb14-8"><a href="#cb14-8"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb14-9"><a href="#cb14-9"></a>  <span class="fu">modify_spanning_header</span>(</span>
+<span id="cb14-10"><a href="#cb14-10"></a>    <span class="fu">all_stat_cols</span>() <span class="sc">~</span> <span class="st">"**Drug**"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb14-11"><a href="#cb14-11"></a>  <span class="fu">modify_footnote</span>(</span>
+<span id="cb14-12"><a href="#cb14-12"></a>    <span class="fu">all_stat_cols</span>() <span class="sc">~</span> </span>
+<span id="cb14-13"><a href="#cb14-13"></a>      <span class="fu">paste</span>(<span class="st">"median (IQR) for continuous;"</span>,</span>
+<span id="cb14-14"><a href="#cb14-14"></a>            <span class="st">"n (%) for categorical"</span>)</span>
+<span id="cb14-15"><a href="#cb14-15"></a>  )</span>
+<span id="cb14-16"><a href="#cb14-16"></a>tbl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2608,7 +2571,7 @@ Tumor Response
 <h2>Column names</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/column-names_f3ba223efc42fc872eca349d2458bf76">
 <div class="column">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">show_header_names</span>(tbl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">show_header_names</span>(tbl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 <table>
 <thead>
@@ -2650,7 +2613,7 @@ Tumor Response
 </ul></li>
 </ol>
 <div class="cell-output-display">
-<div class="countdown" id="timer_b3ec1bf7" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_d7b73951" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">08</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -2659,15 +2622,15 @@ Tumor Response
 <section id="update-tbl_summary-with-add_-4" class="slide level2">
 <h2>Update tbl_summary() with add_*()</h2>
 <div class="cell" data-hash="index_cache/revealjs/summary-with-difference_b48aec9993bb00ca68c068fe683780d4">
-<div class="sourceCode cell-code" id="cb19" data-code-line-numbers="12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>trial <span class="sc">|&gt;</span></span>
-<span id="cb19-2"><a href="#cb19-2"></a>  <span class="fu">select</span>(trt, marker, response) <span class="sc">|&gt;</span></span>
-<span id="cb19-3"><a href="#cb19-3"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb19-4"><a href="#cb19-4"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb19-5"><a href="#cb19-5"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(marker <span class="sc">~</span> <span class="st">"{mean} ({sd})"</span>,</span>
-<span id="cb19-6"><a href="#cb19-6"></a>                     response <span class="sc">~</span> <span class="st">"{p}%"</span>),</span>
-<span id="cb19-7"><a href="#cb19-7"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb19-8"><a href="#cb19-8"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb19-9"><a href="#cb19-9"></a>  <span class="fu">add_difference</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16" data-code-line-numbers="12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a>trial <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>  <span class="fu">select</span>(trt, marker, response) <span class="sc">|&gt;</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb16-4"><a href="#cb16-4"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb16-5"><a href="#cb16-5"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(marker <span class="sc">~</span> <span class="st">"{mean} ({sd})"</span>,</span>
+<span id="cb16-6"><a href="#cb16-6"></a>                     response <span class="sc">~</span> <span class="st">"{p}%"</span>),</span>
+<span id="cb16-7"><a href="#cb16-7"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb16-8"><a href="#cb16-8"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb16-9"><a href="#cb16-9"></a>  <span class="fu">add_difference</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -2763,12 +2726,12 @@ Tumor Response
 <div class="columns v-center-container">
 <div class="column" style="width:50%;">
 <div class="cell" data-hash="index_cache/revealjs/summary-with-custom-stat_8b84bef50f307d4cd93bbf0eee1ee3f5">
-<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb20-3"><a href="#cb20-3"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb20-4"><a href="#cb20-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb20-5"><a href="#cb20-5"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb20-6"><a href="#cb20-6"></a>  <span class="fu">add_stat</span>(...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17" data-code-line-numbers="6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb17-3"><a href="#cb17-3"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb17-4"><a href="#cb17-4"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb17-6"><a href="#cb17-6"></a>  <span class="fu">add_stat</span>(...)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:50%;">
 <ul>
@@ -2790,15 +2753,15 @@ Tumor Response
 <p><code>tbl_cross()</code> is a wrapper for <code>tbl_summary()</code> for <strong>n x m</strong> tables</p>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/tbl_cross_1486fa7b63de635f29076fee0e02bae1">
 <div class="column">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a>  <span class="fu">tbl_cross</span>(</span>
-<span id="cb21-3"><a href="#cb21-3"></a>    <span class="at">row =</span> trt, </span>
-<span id="cb21-4"><a href="#cb21-4"></a>    <span class="at">col =</span> grade,</span>
-<span id="cb21-5"><a href="#cb21-5"></a>    <span class="at">percent =</span> <span class="st">"row"</span>,</span>
-<span id="cb21-6"><a href="#cb21-6"></a>    <span class="at">margin =</span> <span class="st">"row"</span></span>
-<span id="cb21-7"><a href="#cb21-7"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb21-8"><a href="#cb21-8"></a>  <span class="fu">add_p</span>(<span class="at">source_note =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb21-9"><a href="#cb21-9"></a>  <span class="fu">bold_labels</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb18-2"><a href="#cb18-2"></a>  <span class="fu">tbl_cross</span>(</span>
+<span id="cb18-3"><a href="#cb18-3"></a>    <span class="at">row =</span> trt, </span>
+<span id="cb18-4"><a href="#cb18-4"></a>    <span class="at">col =</span> grade,</span>
+<span id="cb18-5"><a href="#cb18-5"></a>    <span class="at">percent =</span> <span class="st">"row"</span>,</span>
+<span id="cb18-6"><a href="#cb18-6"></a>    <span class="at">margin =</span> <span class="st">"row"</span></span>
+<span id="cb18-7"><a href="#cb18-7"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb18-8"><a href="#cb18-8"></a>  <span class="fu">add_p</span>(<span class="at">source_note =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb18-9"><a href="#cb18-9"></a>  <span class="fu">bold_labels</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2894,12 +2857,12 @@ Pearson’s Chi-squared test, p=0.9
 <p><code>tbl_continuous()</code> summarizes a continuous variable by 1, 2, or more categorical variables</p>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/tbl_continuous_8a57dcef6a1e692a24b59c9a87f4b786">
 <div class="column">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">tbl_continuous</span>(</span>
-<span id="cb22-3"><a href="#cb22-3"></a>    <span class="at">variable =</span> age,</span>
-<span id="cb22-4"><a href="#cb22-4"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb22-5"><a href="#cb22-5"></a>    <span class="at">include =</span> grade</span>
-<span id="cb22-6"><a href="#cb22-6"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb19-2"><a href="#cb19-2"></a>  <span class="fu">tbl_continuous</span>(</span>
+<span id="cb19-3"><a href="#cb19-3"></a>    <span class="at">variable =</span> age,</span>
+<span id="cb19-4"><a href="#cb19-4"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb19-5"><a href="#cb19-5"></a>    <span class="at">include =</span> grade</span>
+<span id="cb19-6"><a href="#cb19-6"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -2976,18 +2939,18 @@ III
 <h2>Survey data with tbl_svysummary()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/tbl_svysummary_78402f76e460235c48912be2b3ffbf98">
 <div class="column">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>survey<span class="sc">::</span><span class="fu">svydesign</span>(</span>
-<span id="cb23-2"><a href="#cb23-2"></a>  <span class="at">ids =</span> <span class="sc">~</span><span class="dv">1</span>, </span>
-<span id="cb23-3"><a href="#cb23-3"></a>  <span class="at">data =</span> <span class="fu">as.data.frame</span>(Titanic), </span>
-<span id="cb23-4"><a href="#cb23-4"></a>  <span class="at">weights =</span> <span class="sc">~</span>Freq</span>
-<span id="cb23-5"><a href="#cb23-5"></a>) <span class="sc">|&gt;</span></span>
-<span id="cb23-6"><a href="#cb23-6"></a>  <span class="fu">tbl_svysummary</span>(</span>
-<span id="cb23-7"><a href="#cb23-7"></a>    <span class="at">by =</span> Survived,</span>
-<span id="cb23-8"><a href="#cb23-8"></a>    <span class="at">include =</span> <span class="fu">c</span>(Class, Sex)</span>
-<span id="cb23-9"><a href="#cb23-9"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb23-10"><a href="#cb23-10"></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span></span>
-<span id="cb23-11"><a href="#cb23-11"></a>  <span class="fu">modify_spanning_header</span>(</span>
-<span id="cb23-12"><a href="#cb23-12"></a>    <span class="fu">all_stat_cols</span>() <span class="sc">~</span> <span class="st">"**Survived**"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>survey<span class="sc">::</span><span class="fu">svydesign</span>(</span>
+<span id="cb20-2"><a href="#cb20-2"></a>  <span class="at">ids =</span> <span class="sc">~</span><span class="dv">1</span>, </span>
+<span id="cb20-3"><a href="#cb20-3"></a>  <span class="at">data =</span> <span class="fu">as.data.frame</span>(Titanic), </span>
+<span id="cb20-4"><a href="#cb20-4"></a>  <span class="at">weights =</span> <span class="sc">~</span>Freq</span>
+<span id="cb20-5"><a href="#cb20-5"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb20-6"><a href="#cb20-6"></a>  <span class="fu">tbl_svysummary</span>(</span>
+<span id="cb20-7"><a href="#cb20-7"></a>    <span class="at">by =</span> Survived,</span>
+<span id="cb20-8"><a href="#cb20-8"></a>    <span class="at">include =</span> <span class="fu">c</span>(Class, Sex)</span>
+<span id="cb20-9"><a href="#cb20-9"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb20-10"><a href="#cb20-10"></a>  <span class="fu">add_p</span>() <span class="sc">|&gt;</span></span>
+<span id="cb20-11"><a href="#cb20-11"></a>  <span class="fu">modify_spanning_header</span>(</span>
+<span id="cb20-12"><a href="#cb20-12"></a>    <span class="fu">all_stat_cols</span>() <span class="sc">~</span> <span class="st">"**Survived**"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -3136,15 +3099,15 @@ Female
 <section id="survival-outcomes-with-tbl_survfit" class="slide level2">
 <h2>Survival outcomes with tbl_survfit()</h2>
 <div class="cell" data-hash="index_cache/revealjs/tbl_survfit_6bf15baa5b967ab8836fe98ae6e9e3d2">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">library</span>(survival)</span>
-<span id="cb24-2"><a href="#cb24-2"></a>fit <span class="ot">&lt;-</span> <span class="fu">survfit</span>(<span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> trt, trial)</span>
-<span id="cb24-3"><a href="#cb24-3"></a></span>
-<span id="cb24-4"><a href="#cb24-4"></a><span class="fu">tbl_survfit</span>(</span>
-<span id="cb24-5"><a href="#cb24-5"></a>  fit, </span>
-<span id="cb24-6"><a href="#cb24-6"></a>  <span class="at">times =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">24</span>),</span>
-<span id="cb24-7"><a href="#cb24-7"></a>  <span class="at">label_header =</span> <span class="st">"**{time} Month**"</span></span>
-<span id="cb24-8"><a href="#cb24-8"></a>) <span class="sc">|&gt;</span></span>
-<span id="cb24-9"><a href="#cb24-9"></a>  <span class="fu">add_p</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="fu">library</span>(survival)</span>
+<span id="cb21-2"><a href="#cb21-2"></a>fit <span class="ot">&lt;-</span> <span class="fu">survfit</span>(<span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> trt, trial)</span>
+<span id="cb21-3"><a href="#cb21-3"></a></span>
+<span id="cb21-4"><a href="#cb21-4"></a><span class="fu">tbl_survfit</span>(</span>
+<span id="cb21-5"><a href="#cb21-5"></a>  fit, </span>
+<span id="cb21-6"><a href="#cb21-6"></a>  <span class="at">times =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">24</span>),</span>
+<span id="cb21-7"><a href="#cb21-7"></a>  <span class="at">label_header =</span> <span class="st">"**{time} Month**"</span></span>
+<span id="cb21-8"><a href="#cb21-8"></a>) <span class="sc">|&gt;</span></span>
+<span id="cb21-9"><a href="#cb21-9"></a>  <span class="fu">add_p</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -3228,7 +3191,7 @@ Drug B
 </ul></li>
 </ol>
 <div class="cell-output-display">
-<div class="countdown" id="timer_e43ed122" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_975ec016" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">08</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3244,12 +3207,12 @@ Drug B
 <div class="columns">
 <div class="column" style="font-size:0.75em;font-family:monospace">
 <div class="cell" data-hash="index_cache/revealjs/raw-model-summary_e3b545e25ce5606de0a7cdc5a0ecbb18">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>m1 <span class="ot">&lt;-</span> </span>
-<span id="cb25-2"><a href="#cb25-2"></a>  <span class="fu">glm</span>(</span>
-<span id="cb25-3"><a href="#cb25-3"></a>    response <span class="sc">~</span> age <span class="sc">+</span> stage,</span>
-<span id="cb25-4"><a href="#cb25-4"></a>    <span class="at">data =</span> trial,</span>
-<span id="cb25-5"><a href="#cb25-5"></a>    <span class="at">family =</span> <span class="fu">binomial</span>(<span class="at">link =</span> <span class="st">"logit"</span>)</span>
-<span id="cb25-6"><a href="#cb25-6"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>m1 <span class="ot">&lt;-</span> </span>
+<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">glm</span>(</span>
+<span id="cb22-3"><a href="#cb22-3"></a>    response <span class="sc">~</span> age <span class="sc">+</span> stage,</span>
+<span id="cb22-4"><a href="#cb22-4"></a>    <span class="at">data =</span> trial,</span>
+<span id="cb22-5"><a href="#cb22-5"></a>    <span class="at">family =</span> <span class="fu">binomial</span>(<span class="at">link =</span> <span class="st">"logit"</span>)</span>
+<span id="cb22-6"><a href="#cb22-6"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="font-size:0.5em;">
 <p><img data-src="images/raw-output-logistic-regression.png"></p>
@@ -3261,7 +3224,7 @@ Drug B
 <h2>Basic tbl_regression()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-28_eab75c2faa43cd1d056edf0f6fabf80a">
 <div class="column">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a><span class="fu">tbl_regression</span>(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu">tbl_regression</span>(m1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -3384,17 +3347,17 @@ T4
 <h2>Customize tbl_regression() output</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-29_02284ea238d0f069fa7d669d3d670212">
 <div class="column">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">tbl_regression</span>(</span>
-<span id="cb27-2"><a href="#cb27-2"></a>  m1,</span>
-<span id="cb27-3"><a href="#cb27-3"></a>  <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb27-4"><a href="#cb27-4"></a>) <span class="sc">|&gt;</span> </span>
-<span id="cb27-5"><a href="#cb27-5"></a>  <span class="fu">add_global_p</span>() <span class="sc">|&gt;</span></span>
-<span id="cb27-6"><a href="#cb27-6"></a>  <span class="fu">add_glance_table</span>(</span>
-<span id="cb27-7"><a href="#cb27-7"></a>    <span class="at">include =</span> <span class="fu">c</span>(nobs,</span>
-<span id="cb27-8"><a href="#cb27-8"></a>                logLik,</span>
-<span id="cb27-9"><a href="#cb27-9"></a>                AIC,</span>
-<span id="cb27-10"><a href="#cb27-10"></a>                BIC)</span>
-<span id="cb27-11"><a href="#cb27-11"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">tbl_regression</span>(</span>
+<span id="cb24-2"><a href="#cb24-2"></a>  m1,</span>
+<span id="cb24-3"><a href="#cb24-3"></a>  <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb24-4"><a href="#cb24-4"></a>) <span class="sc">|&gt;</span> </span>
+<span id="cb24-5"><a href="#cb24-5"></a>  <span class="fu">add_global_p</span>() <span class="sc">|&gt;</span></span>
+<span id="cb24-6"><a href="#cb24-6"></a>  <span class="fu">add_glance_table</span>(</span>
+<span id="cb24-7"><a href="#cb24-7"></a>    <span class="at">include =</span> <span class="fu">c</span>(nobs,</span>
+<span id="cb24-8"><a href="#cb24-8"></a>                logLik,</span>
+<span id="cb24-9"><a href="#cb24-9"></a>                AIC,</span>
+<span id="cb24-10"><a href="#cb24-10"></a>                BIC)</span>
+<span id="cb24-11"><a href="#cb24-11"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -3630,7 +3593,7 @@ BIC
 </ul></li>
 </ol>
 <div class="cell-output-display">
-<div class="countdown" id="timer_ca7fd594" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_b1aefb16" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">08</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -3640,16 +3603,16 @@ BIC
 <h2>Univariate models with tbl_uvregression()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-35_50d8305ad241efd5a802f52b606df04c">
 <div class="column">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>tbl_uvreg <span class="ot">&lt;-</span> </span>
-<span id="cb28-2"><a href="#cb28-2"></a>  sm_trial <span class="sc">|&gt;</span> </span>
-<span id="cb28-3"><a href="#cb28-3"></a>  <span class="fu">tbl_uvregression</span>(</span>
-<span id="cb28-4"><a href="#cb28-4"></a>    <span class="at">method =</span> glm,</span>
-<span id="cb28-5"><a href="#cb28-5"></a>    <span class="at">y =</span> response,</span>
-<span id="cb28-6"><a href="#cb28-6"></a>    <span class="at">method.args =</span> </span>
-<span id="cb28-7"><a href="#cb28-7"></a>      <span class="fu">list</span>(<span class="at">family =</span> binomial),</span>
-<span id="cb28-8"><a href="#cb28-8"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb28-9"><a href="#cb28-9"></a>  )</span>
-<span id="cb28-10"><a href="#cb28-10"></a>tbl_uvreg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>tbl_uvreg <span class="ot">&lt;-</span> </span>
+<span id="cb25-2"><a href="#cb25-2"></a>  sm_trial <span class="sc">|&gt;</span> </span>
+<span id="cb25-3"><a href="#cb25-3"></a>  <span class="fu">tbl_uvregression</span>(</span>
+<span id="cb25-4"><a href="#cb25-4"></a>    <span class="at">method =</span> glm,</span>
+<span id="cb25-5"><a href="#cb25-5"></a>    <span class="at">y =</span> response,</span>
+<span id="cb25-6"><a href="#cb25-6"></a>    <span class="at">method.args =</span> </span>
+<span id="cb25-7"><a href="#cb25-7"></a>      <span class="fu">list</span>(<span class="at">family =</span> binomial),</span>
+<span id="cb25-8"><a href="#cb25-8"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb25-9"><a href="#cb25-9"></a>  )</span>
+<span id="cb25-10"><a href="#cb25-10"></a>tbl_uvreg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -3818,7 +3781,7 @@ III
 <p><img data-src="images/sister-act-2-dance.gif" style="width:100.0%"></p>
 
 <div class="cell-output-display">
-<div class="countdown" id="timer_2e26af75" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_c5761b2d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -4006,15 +3969,15 @@ III
 <h2>{gtsummary} reporting with inline_text()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-38_b3b95e006289ce7c6374ba0bd80a204d">
 <div class="column">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>gts_small_summary <span class="ot">&lt;-</span></span>
-<span id="cb29-2"><a href="#cb29-2"></a>  trial <span class="sc">%&gt;%</span> </span>
-<span id="cb29-3"><a href="#cb29-3"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb29-4"><a href="#cb29-4"></a>    <span class="at">by =</span> trt,</span>
-<span id="cb29-5"><a href="#cb29-5"></a>    <span class="at">include =</span> marker,</span>
-<span id="cb29-6"><a href="#cb29-6"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb29-7"><a href="#cb29-7"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb29-8"><a href="#cb29-8"></a>  <span class="fu">add_difference</span>()</span>
-<span id="cb29-9"><a href="#cb29-9"></a>gts_small_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>gts_small_summary <span class="ot">&lt;-</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a>  trial <span class="sc">%&gt;%</span> </span>
+<span id="cb26-3"><a href="#cb26-3"></a>  <span class="fu">tbl_summary</span>(</span>
+<span id="cb26-4"><a href="#cb26-4"></a>    <span class="at">by =</span> trt,</span>
+<span id="cb26-5"><a href="#cb26-5"></a>    <span class="at">include =</span> marker,</span>
+<span id="cb26-6"><a href="#cb26-6"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
+<span id="cb26-7"><a href="#cb26-7"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb26-8"><a href="#cb26-8"></a>  <span class="fu">add_difference</span>()</span>
+<span id="cb26-9"><a href="#cb26-9"></a>gts_small_summary</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -4114,7 +4077,7 @@ Marker Level (ng/mL)
 <li><p>Report the odds ratio for death from the multivariable logistic regression model.</p></li>
 </ol>
 <div class="cell-output-display">
-<div class="countdown" id="timer_fbf4906d" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
+<div class="countdown" id="timer_f6d00610" data-update-every="1" tabindex="0" style="right:0;bottom:0;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">08</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -4131,16 +4094,16 @@ Marker Level (ng/mL)
 <div class="column" style="width:50%;">
 <p>A <strong>univariable</strong> table:</p>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-40_399ad677ce33968ced8739a16fe11e20">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>tbl_uvsurv <span class="ot">&lt;-</span> </span>
-<span id="cb30-2"><a href="#cb30-2"></a>  trial <span class="sc">|&gt;</span> </span>
-<span id="cb30-3"><a href="#cb30-3"></a>  <span class="fu">select</span>(age, grade, death, ttdeath) <span class="sc">|&gt;</span> </span>
-<span id="cb30-4"><a href="#cb30-4"></a>  <span class="fu">tbl_uvregression</span>(</span>
-<span id="cb30-5"><a href="#cb30-5"></a>    <span class="at">method =</span> coxph,</span>
-<span id="cb30-6"><a href="#cb30-6"></a>    <span class="at">y =</span> <span class="fu">Surv</span>(ttdeath, death),</span>
-<span id="cb30-7"><a href="#cb30-7"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb30-8"><a href="#cb30-8"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb30-9"><a href="#cb30-9"></a>  <span class="fu">add_global_p</span>()</span>
-<span id="cb30-10"><a href="#cb30-10"></a>tbl_uvsurv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>tbl_uvsurv <span class="ot">&lt;-</span> </span>
+<span id="cb27-2"><a href="#cb27-2"></a>  trial <span class="sc">|&gt;</span> </span>
+<span id="cb27-3"><a href="#cb27-3"></a>  <span class="fu">select</span>(age, grade, death, ttdeath) <span class="sc">|&gt;</span> </span>
+<span id="cb27-4"><a href="#cb27-4"></a>  <span class="fu">tbl_uvregression</span>(</span>
+<span id="cb27-5"><a href="#cb27-5"></a>    <span class="at">method =</span> coxph,</span>
+<span id="cb27-6"><a href="#cb27-6"></a>    <span class="at">y =</span> <span class="fu">Surv</span>(ttdeath, death),</span>
+<span id="cb27-7"><a href="#cb27-7"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb27-8"><a href="#cb27-8"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb27-9"><a href="#cb27-9"></a>  <span class="fu">add_global_p</span>()</span>
+<span id="cb27-10"><a href="#cb27-10"></a>tbl_uvsurv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -4254,16 +4217,16 @@ III
 </div><div class="column" style="width:50%;">
 <p>A <strong>multivariable</strong> table:</p>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-41_8a9bb0dd6a6be1a1cf9c030718890eef">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>tbl_mvsurv <span class="ot">&lt;-</span> </span>
-<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">coxph</span>(</span>
-<span id="cb31-3"><a href="#cb31-3"></a>    <span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> age <span class="sc">+</span> grade, </span>
-<span id="cb31-4"><a href="#cb31-4"></a>    <span class="at">data =</span> trial</span>
-<span id="cb31-5"><a href="#cb31-5"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb31-6"><a href="#cb31-6"></a>  <span class="fu">tbl_regression</span>(</span>
-<span id="cb31-7"><a href="#cb31-7"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb31-8"><a href="#cb31-8"></a>  ) <span class="sc">|&gt;</span> </span>
-<span id="cb31-9"><a href="#cb31-9"></a>  <span class="fu">add_global_p</span>() </span>
-<span id="cb31-10"><a href="#cb31-10"></a>tbl_mvsurv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>tbl_mvsurv <span class="ot">&lt;-</span> </span>
+<span id="cb28-2"><a href="#cb28-2"></a>  <span class="fu">coxph</span>(</span>
+<span id="cb28-3"><a href="#cb28-3"></a>    <span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> age <span class="sc">+</span> grade, </span>
+<span id="cb28-4"><a href="#cb28-4"></a>    <span class="at">data =</span> trial</span>
+<span id="cb28-5"><a href="#cb28-5"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb28-6"><a href="#cb28-6"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb28-7"><a href="#cb28-7"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb28-8"><a href="#cb28-8"></a>  ) <span class="sc">|&gt;</span> </span>
+<span id="cb28-9"><a href="#cb28-9"></a>  <span class="fu">add_global_p</span>() </span>
+<span id="cb28-10"><a href="#cb28-10"></a>tbl_mvsurv</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -4365,10 +4328,10 @@ III
 <section id="tbl_merge-for-side-by-side-tables-1" class="slide level2">
 <h2>tbl_merge() for side-by-side tables</h2>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-42_c65192b3371e93b11e26fcc600f42579">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">tbl_merge</span>(</span>
-<span id="cb32-2"><a href="#cb32-2"></a>  <span class="fu">list</span>(tbl_uvsurv, tbl_mvsurv),</span>
-<span id="cb32-3"><a href="#cb32-3"></a>  <span class="at">tab_spanner =</span> <span class="fu">c</span>(<span class="st">"**Univariable**"</span>, <span class="st">"**Multivariable**"</span>)</span>
-<span id="cb32-4"><a href="#cb32-4"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="fu">tbl_merge</span>(</span>
+<span id="cb29-2"><a href="#cb29-2"></a>  <span class="fu">list</span>(tbl_uvsurv, tbl_mvsurv),</span>
+<span id="cb29-3"><a href="#cb29-3"></a>  <span class="at">tab_spanner =</span> <span class="fu">c</span>(<span class="st">"**Univariable**"</span>, <span class="st">"**Multivariable**"</span>)</span>
+<span id="cb29-4"><a href="#cb29-4"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -4543,15 +4506,15 @@ III
 <div class="column" style="width:50%;">
 <p>A <strong>univariable</strong> table:</p>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-43_102d610eb0f148d441e57270d670c9fc">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>tbl_uvsurv2 <span class="ot">&lt;-</span></span>
-<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">coxph</span>(<span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> trt, </span>
-<span id="cb33-3"><a href="#cb33-3"></a>        <span class="at">data =</span> trial) <span class="sc">|&gt;</span></span>
-<span id="cb33-4"><a href="#cb33-4"></a>  <span class="fu">tbl_regression</span>(</span>
-<span id="cb33-5"><a href="#cb33-5"></a>    <span class="at">show_single_row =</span> trt,</span>
-<span id="cb33-6"><a href="#cb33-6"></a>    <span class="at">label =</span> trt <span class="sc">~</span> <span class="st">"Drug B vs A"</span>,</span>
-<span id="cb33-7"><a href="#cb33-7"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb33-8"><a href="#cb33-8"></a>  )</span>
-<span id="cb33-9"><a href="#cb33-9"></a>tbl_uvsurv2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>tbl_uvsurv2 <span class="ot">&lt;-</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a>  <span class="fu">coxph</span>(<span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> trt, </span>
+<span id="cb30-3"><a href="#cb30-3"></a>        <span class="at">data =</span> trial) <span class="sc">|&gt;</span></span>
+<span id="cb30-4"><a href="#cb30-4"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb30-5"><a href="#cb30-5"></a>    <span class="at">show_single_row =</span> trt,</span>
+<span id="cb30-6"><a href="#cb30-6"></a>    <span class="at">label =</span> trt <span class="sc">~</span> <span class="st">"Drug B vs A"</span>,</span>
+<span id="cb30-7"><a href="#cb30-7"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb30-8"><a href="#cb30-8"></a>  )</span>
+<span id="cb30-9"><a href="#cb30-9"></a>tbl_uvsurv2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -4599,17 +4562,17 @@ Drug B vs A
 </div><div class="column" style="width:50%;">
 <p>A <strong>multivariable</strong> table:</p>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-44_40c63de8be3354feb2980dd276a2f7bf">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>tbl_mvsurv2 <span class="ot">&lt;-</span></span>
-<span id="cb34-2"><a href="#cb34-2"></a>  <span class="fu">coxph</span>(<span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> </span>
-<span id="cb34-3"><a href="#cb34-3"></a>          trt <span class="sc">+</span> grade <span class="sc">+</span> stage <span class="sc">+</span> marker, </span>
-<span id="cb34-4"><a href="#cb34-4"></a>        <span class="at">data =</span> trial) <span class="sc">|&gt;</span></span>
-<span id="cb34-5"><a href="#cb34-5"></a>  <span class="fu">tbl_regression</span>(</span>
-<span id="cb34-6"><a href="#cb34-6"></a>    <span class="at">show_single_row =</span> trt,</span>
-<span id="cb34-7"><a href="#cb34-7"></a>    <span class="at">label =</span> trt <span class="sc">~</span> <span class="st">"Drug B vs A"</span>,</span>
-<span id="cb34-8"><a href="#cb34-8"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span>, </span>
-<span id="cb34-9"><a href="#cb34-9"></a>    <span class="at">include =</span> <span class="st">"trt"</span></span>
-<span id="cb34-10"><a href="#cb34-10"></a>  )</span>
-<span id="cb34-11"><a href="#cb34-11"></a>tbl_mvsurv2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>tbl_mvsurv2 <span class="ot">&lt;-</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a>  <span class="fu">coxph</span>(<span class="fu">Surv</span>(ttdeath, death) <span class="sc">~</span> </span>
+<span id="cb31-3"><a href="#cb31-3"></a>          trt <span class="sc">+</span> grade <span class="sc">+</span> stage <span class="sc">+</span> marker, </span>
+<span id="cb31-4"><a href="#cb31-4"></a>        <span class="at">data =</span> trial) <span class="sc">|&gt;</span></span>
+<span id="cb31-5"><a href="#cb31-5"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb31-6"><a href="#cb31-6"></a>    <span class="at">show_single_row =</span> trt,</span>
+<span id="cb31-7"><a href="#cb31-7"></a>    <span class="at">label =</span> trt <span class="sc">~</span> <span class="st">"Drug B vs A"</span>,</span>
+<span id="cb31-8"><a href="#cb31-8"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb31-9"><a href="#cb31-9"></a>    <span class="at">include =</span> <span class="st">"trt"</span></span>
+<span id="cb31-10"><a href="#cb31-10"></a>  )</span>
+<span id="cb31-11"><a href="#cb31-11"></a>tbl_mvsurv2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -4661,11 +4624,11 @@ Drug B vs A
 <h2>tbl_stack() to combine vertically</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-45_1ed60518f6de5d399dc1598befefbb27">
 <div class="column">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">list</span>(tbl_uvsurv2, tbl_mvsurv2) <span class="sc">|&gt;</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a>  <span class="fu">tbl_stack</span>(</span>
-<span id="cb35-3"><a href="#cb35-3"></a>    <span class="at">group_header =</span> </span>
-<span id="cb35-4"><a href="#cb35-4"></a>      <span class="fu">c</span>(<span class="st">"Unadjusted"</span>, <span class="st">"Adjusted"</span>)</span>
-<span id="cb35-5"><a href="#cb35-5"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a><span class="fu">list</span>(tbl_uvsurv2, tbl_mvsurv2) <span class="sc">|&gt;</span></span>
+<span id="cb32-2"><a href="#cb32-2"></a>  <span class="fu">tbl_stack</span>(</span>
+<span id="cb32-3"><a href="#cb32-3"></a>    <span class="at">group_header =</span> </span>
+<span id="cb32-4"><a href="#cb32-4"></a>      <span class="fu">c</span>(<span class="st">"Unadjusted"</span>, <span class="st">"Adjusted"</span>)</span>
+<span id="cb32-5"><a href="#cb32-5"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -4740,13 +4703,13 @@ Drug B vs A
 <section id="tbl_strata-for-stratified-tables" class="slide level2">
 <h2>tbl_strata() for stratified tables</h2>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-46_a460b9a50c52f3e727157157c6fee332">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a>sm_trial <span class="sc">|&gt;</span></span>
-<span id="cb36-2"><a href="#cb36-2"></a>  <span class="fu">mutate</span>(<span class="at">grade =</span> <span class="fu">paste</span>(<span class="st">"Grade"</span>, grade)) <span class="sc">|&gt;</span></span>
-<span id="cb36-3"><a href="#cb36-3"></a>  <span class="fu">tbl_strata</span>(</span>
-<span id="cb36-4"><a href="#cb36-4"></a>    <span class="at">strata =</span> grade,</span>
-<span id="cb36-5"><a href="#cb36-5"></a>    <span class="sc">~</span><span class="fu">tbl_summary</span>(.x, <span class="at">by =</span> trt, <span class="at">missing =</span> <span class="st">"no"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb36-6"><a href="#cb36-6"></a>      <span class="fu">modify_header</span>(<span class="fu">all_stat_cols</span>() <span class="sc">~</span> <span class="st">"**{level}**"</span>)</span>
-<span id="cb36-7"><a href="#cb36-7"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>sm_trial <span class="sc">|&gt;</span></span>
+<span id="cb33-2"><a href="#cb33-2"></a>  <span class="fu">mutate</span>(<span class="at">grade =</span> <span class="fu">paste</span>(<span class="st">"Grade"</span>, grade)) <span class="sc">|&gt;</span></span>
+<span id="cb33-3"><a href="#cb33-3"></a>  <span class="fu">tbl_strata</span>(</span>
+<span id="cb33-4"><a href="#cb33-4"></a>    <span class="at">strata =</span> grade,</span>
+<span id="cb33-5"><a href="#cb33-5"></a>    <span class="sc">~</span><span class="fu">tbl_summary</span>(.x, <span class="at">by =</span> trt, <span class="at">missing =</span> <span class="st">"no"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb33-6"><a href="#cb33-6"></a>      <span class="fu">modify_header</span>(<span class="fu">all_stat_cols</span>() <span class="sc">~</span> <span class="st">"**{level}**"</span>)</span>
+<span id="cb33-7"><a href="#cb33-7"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <thead style="border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -4869,17 +4832,17 @@ Tumor Response
 </div>
 </div>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-47_86c3ddd2f68cd087066e198b2d29beb9">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>gtreg<span class="sc">::</span>df_adverse_events <span class="sc">|&gt;</span></span>
-<span id="cb37-2"><a href="#cb37-2"></a>  gtreg<span class="sc">::</span><span class="fu">tbl_ae</span>(</span>
-<span id="cb37-3"><a href="#cb37-3"></a>    <span class="at">id_df =</span> gtreg<span class="sc">::</span>df_patient_characteristics,</span>
-<span id="cb37-4"><a href="#cb37-4"></a>    <span class="at">id =</span> patient_id,</span>
-<span id="cb37-5"><a href="#cb37-5"></a>    <span class="at">ae =</span> adverse_event,</span>
-<span id="cb37-6"><a href="#cb37-6"></a>    <span class="at">soc =</span> system_organ_class, </span>
-<span id="cb37-7"><a href="#cb37-7"></a>    <span class="at">by =</span> grade, </span>
-<span id="cb37-8"><a href="#cb37-8"></a>    <span class="at">strata =</span> trt</span>
-<span id="cb37-9"><a href="#cb37-9"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb37-10"><a href="#cb37-10"></a>  <span class="fu">modify_header</span>(gtreg<span class="sc">::</span><span class="fu">all_ae_cols</span>() <span class="sc">~</span> <span class="st">"**Grade {by}**"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb37-11"><a href="#cb37-11"></a>  <span class="fu">bold_labels</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>gtreg<span class="sc">::</span>df_adverse_events <span class="sc">|&gt;</span></span>
+<span id="cb34-2"><a href="#cb34-2"></a>  gtreg<span class="sc">::</span><span class="fu">tbl_ae</span>(</span>
+<span id="cb34-3"><a href="#cb34-3"></a>    <span class="at">id_df =</span> gtreg<span class="sc">::</span>df_patient_characteristics,</span>
+<span id="cb34-4"><a href="#cb34-4"></a>    <span class="at">id =</span> patient_id,</span>
+<span id="cb34-5"><a href="#cb34-5"></a>    <span class="at">ae =</span> adverse_event,</span>
+<span id="cb34-6"><a href="#cb34-6"></a>    <span class="at">soc =</span> system_organ_class, </span>
+<span id="cb34-7"><a href="#cb34-7"></a>    <span class="at">by =</span> grade, </span>
+<span id="cb34-8"><a href="#cb34-8"></a>    <span class="at">strata =</span> trt</span>
+<span id="cb34-9"><a href="#cb34-9"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb34-10"><a href="#cb34-10"></a>  <span class="fu">modify_header</span>(gtreg<span class="sc">::</span><span class="fu">all_ae_cols</span>() <span class="sc">~</span> <span class="st">"**Grade {by}**"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb34-11"><a href="#cb34-11"></a>  <span class="fu">bold_labels</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 </section><section id="gtreg-for-regulatory-submissions-output" class="slide level2 output-location-slide"><h2>{gtreg} for regulatory submissions</h2><div class="cell output-location-slide" data-hash="index_cache/revealjs/unnamed-chunk-47_86c3ddd2f68cd087066e198b2d29beb9">
@@ -5338,14 +5301,14 @@ Pancreatic enzyme abnormality
 <h2>{gtsummary} default theme</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-48_b7ba6cfb658f30215b5b2d29ef67f503">
 <div class="column">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
-<span id="cb38-2"><a href="#cb38-2"></a>m1 <span class="sc">|&gt;</span></span>
-<span id="cb38-3"><a href="#cb38-3"></a>  <span class="fu">tbl_regression</span>(</span>
-<span id="cb38-4"><a href="#cb38-4"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb38-5"><a href="#cb38-5"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb38-6"><a href="#cb38-6"></a>  <span class="fu">modify_caption</span>(</span>
-<span id="cb38-7"><a href="#cb38-7"></a>    <span class="st">"Default Theme"</span></span>
-<span id="cb38-8"><a href="#cb38-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
+<span id="cb35-2"><a href="#cb35-2"></a>m1 <span class="sc">|&gt;</span></span>
+<span id="cb35-3"><a href="#cb35-3"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb35-4"><a href="#cb35-4"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb35-5"><a href="#cb35-5"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb35-6"><a href="#cb35-6"></a>  <span class="fu">modify_caption</span>(</span>
+<span id="cb35-7"><a href="#cb35-7"></a>    <span class="st">"Default Theme"</span></span>
+<span id="cb35-8"><a href="#cb35-8"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -5466,16 +5429,16 @@ T4
 <h2>{gtsummary} theme_gtsummary_journal()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-49_9d46db8d05f1472a351ce1160ed5ac37">
 <div class="column">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
-<span id="cb39-2"><a href="#cb39-2"></a><span class="fu">theme_gtsummary_journal</span>(<span class="at">journal =</span> <span class="st">"jama"</span>)</span>
-<span id="cb39-3"><a href="#cb39-3"></a></span>
-<span id="cb39-4"><a href="#cb39-4"></a>m1 <span class="sc">|&gt;</span></span>
-<span id="cb39-5"><a href="#cb39-5"></a>  <span class="fu">tbl_regression</span>(</span>
-<span id="cb39-6"><a href="#cb39-6"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb39-7"><a href="#cb39-7"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb39-8"><a href="#cb39-8"></a>  <span class="fu">modify_caption</span>(</span>
-<span id="cb39-9"><a href="#cb39-9"></a>    <span class="st">"Journal Theme (JAMA)"</span></span>
-<span id="cb39-10"><a href="#cb39-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
+<span id="cb36-2"><a href="#cb36-2"></a><span class="fu">theme_gtsummary_journal</span>(<span class="at">journal =</span> <span class="st">"jama"</span>)</span>
+<span id="cb36-3"><a href="#cb36-3"></a></span>
+<span id="cb36-4"><a href="#cb36-4"></a>m1 <span class="sc">|&gt;</span></span>
+<span id="cb36-5"><a href="#cb36-5"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb36-6"><a href="#cb36-6"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb36-7"><a href="#cb36-7"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb36-8"><a href="#cb36-8"></a>  <span class="fu">modify_caption</span>(</span>
+<span id="cb36-9"><a href="#cb36-9"></a>    <span class="st">"Journal Theme (JAMA)"</span></span>
+<span id="cb36-10"><a href="#cb36-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -5577,16 +5540,16 @@ T4
 <h2>{gtsummary} theme_gtsummary_language()</h2>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-50_6cd919a84f6ce0915b07d82d2e2aef42">
 <div class="column">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
-<span id="cb40-2"><a href="#cb40-2"></a><span class="fu">theme_gtsummary_language</span>(<span class="at">language =</span> <span class="st">"zh-tw"</span>)</span>
-<span id="cb40-3"><a href="#cb40-3"></a></span>
-<span id="cb40-4"><a href="#cb40-4"></a>m1 <span class="sc">|&gt;</span></span>
-<span id="cb40-5"><a href="#cb40-5"></a>  <span class="fu">tbl_regression</span>(</span>
-<span id="cb40-6"><a href="#cb40-6"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
-<span id="cb40-7"><a href="#cb40-7"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb40-8"><a href="#cb40-8"></a>  <span class="fu">modify_caption</span>(</span>
-<span id="cb40-9"><a href="#cb40-9"></a>    <span class="st">"Language Theme (Chinese)"</span></span>
-<span id="cb40-10"><a href="#cb40-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
+<span id="cb37-2"><a href="#cb37-2"></a><span class="fu">theme_gtsummary_language</span>(<span class="at">language =</span> <span class="st">"zh-tw"</span>)</span>
+<span id="cb37-3"><a href="#cb37-3"></a></span>
+<span id="cb37-4"><a href="#cb37-4"></a>m1 <span class="sc">|&gt;</span></span>
+<span id="cb37-5"><a href="#cb37-5"></a>  <span class="fu">tbl_regression</span>(</span>
+<span id="cb37-6"><a href="#cb37-6"></a>    <span class="at">exponentiate =</span> <span class="cn">TRUE</span></span>
+<span id="cb37-7"><a href="#cb37-7"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb37-8"><a href="#cb37-8"></a>  <span class="fu">modify_caption</span>(</span>
+<span id="cb37-9"><a href="#cb37-9"></a>    <span class="st">"Language Theme (Chinese)"</span></span>
+<span id="cb37-10"><a href="#cb37-10"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
@@ -5735,11 +5698,11 @@ T4
 <section id="gtsummary-theme_gtsummary_compact" class="slide level2">
 <h2>{gtsummary} theme_gtsummary_compact()</h2>
 <div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-51_169ddcce964fefe22055e0ea24ad61c2">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
-<span id="cb41-2"><a href="#cb41-2"></a><span class="fu">theme_gtsummary_compact</span>()</span>
-<span id="cb41-3"><a href="#cb41-3"></a></span>
-<span id="cb41-4"><a href="#cb41-4"></a><span class="fu">tbl_regression</span>(m1, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
-<span id="cb41-5"><a href="#cb41-5"></a>  <span class="fu">modify_caption</span>(<span class="st">"Compact Theme"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">reset_gtsummary_theme</span>()</span>
+<span id="cb38-2"><a href="#cb38-2"></a><span class="fu">theme_gtsummary_compact</span>()</span>
+<span id="cb38-3"><a href="#cb38-3"></a></span>
+<span id="cb38-4"><a href="#cb38-4"></a><span class="fu">tbl_regression</span>(m1, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span></span>
+<span id="cb38-5"><a href="#cb38-5"></a>  <span class="fu">modify_caption</span>(<span class="st">"Compact Theme"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 13px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;">
 <caption>
@@ -5877,14 +5840,14 @@ T4
 <p>Use any print engine to customize table</p>
 <div class="cell columns column-output-location" data-hash="index_cache/revealjs/unnamed-chunk-52_fabc6bdb7a6b0c0aca69957ce42d70b5">
 <div class="column">
-<div class="sourceCode cell-code" id="cb42" data-code-line-numbers="1,5,6,7,8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb42-2"><a href="#cb42-2"></a>trial <span class="sc">|&gt;</span></span>
-<span id="cb42-3"><a href="#cb42-3"></a>  <span class="fu">select</span>(age, grade) <span class="sc">|&gt;</span></span>
-<span id="cb42-4"><a href="#cb42-4"></a>  <span class="fu">tbl_summary</span>() <span class="sc">|&gt;</span></span>
-<span id="cb42-5"><a href="#cb42-5"></a>  <span class="fu">as_gt</span>() <span class="sc">|&gt;</span></span>
-<span id="cb42-6"><a href="#cb42-6"></a>  <span class="fu">cols_width</span>(label <span class="sc">~</span> <span class="fu">px</span>(<span class="dv">300</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb42-7"><a href="#cb42-7"></a>  <span class="fu">cols_align</span>(<span class="at">columns =</span> stat_0, </span>
-<span id="cb42-8"><a href="#cb42-8"></a>             <span class="at">align =</span> <span class="st">"left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39" data-code-line-numbers="1,5,6,7,8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb39-2"><a href="#cb39-2"></a>trial <span class="sc">|&gt;</span></span>
+<span id="cb39-3"><a href="#cb39-3"></a>  <span class="fu">select</span>(age, grade) <span class="sc">|&gt;</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a>  <span class="fu">tbl_summary</span>() <span class="sc">|&gt;</span></span>
+<span id="cb39-5"><a href="#cb39-5"></a>  <span class="fu">as_gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb39-6"><a href="#cb39-6"></a>  <span class="fu">cols_width</span>(label <span class="sc">~</span> <span class="fu">px</span>(<span class="dv">300</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb39-7"><a href="#cb39-7"></a>  <span class="fu">cols_align</span>(<span class="at">columns =</span> stat_0, </span>
+<span id="cb39-8"><a href="#cb39-8"></a>             <span class="at">align =</span> <span class="st">"left"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column">
 
 <table style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif; display: table; border-collapse: collapse; margin-left: auto; margin-right: auto; color: #333333; font-size: 13px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; table-layout: fixed;">
@@ -5962,92 +5925,9 @@ III
 </table>
 </div>
 </div>
-</section></section>
-<section>
-<section id="in-closing" class="title-slide slide level1 center">
-<h1>In Closing</h1>
 
-</section>
-<section id="gtsummary-website" class="slide level2">
-<h2>{gtsummary} website</h2>
-<p><a href="http://www.danieldsjoberg.com/gtsummary/">http://www.danieldsjoberg.com/gtsummary/</a></p>
-<iframe width="780" height="500" src="http://www.danieldsjoberg.com/gtsummary/" title="gtsummary Documentation"></iframe>
-</section>
-<section id="gtsummary-installation" class="slide level2">
-<h2>{gtsummary} installation</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Install production version from CRAN:</p>
-<div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-53_4e021ffdb336d9b0ec904720f270f4d2">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">install.packages</span>(<span class="st">"gtsummary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div><div class="column" style="width:50%;">
-<p>Install development version from GitHub:</p>
-<div class="cell" data-hash="index_cache/revealjs/unnamed-chunk-54_9b24e30b882a0250c27b8b2d124e55fd">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"ddsjoberg/gtsummary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</div>
 
-<img data-src="index_files/figure-revealjs/unnamed-chunk-55-1.png" style="width:100.0%" class="r-stretch"></section>
-<section id="gtsummary-sandbox-in-bstfun" class="slide level2">
-<h2>{gtsummary} sandbox in {bstfun}</h2>
-<p><a href="http://www.danieldsjoberg.com/bstfun/">http://www.danieldsjoberg.com/bstfun/</a></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><img data-src="images/bstfun_website.jpg"></p>
-</div><div class="column" style="width:50%;">
-<p><img data-src="images/add_sparkline_ex1.png"> <img data-src="images/add_inline_forest_plot_ex1.png"></p>
-</div>
-</div>
-</section>
-<section id="section" class="slide level2">
-<h2></h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<h3 id="package-authorscontributors">Package Authors/Contributors</h3>
-<div class="small">
-<p>Daniel D. Sjoberg</p>
-<p>Michael Curry</p>
-<p>Joseph Larmarange</p>
-<p>Jessica Lavery</p>
-<p>Karissa Whiting</p>
-<p>Emily C. Zabor</p>
-<p>Xing Bai</p>
-<p>Esther Drill</p>
-<p>Jessica Flynn</p>
-<p>Margie Hannum</p>
-<p>Stephanie Lobaugh</p>
-<p>Shannon Pileggi</p>
-<p>Amy Tin</p>
-<p>Gustavo Zapata Wainberg</p>
-</div>
-</div><div class="column" style="width:40%;">
-<h3 id="other-contributors">Other Contributors</h3>
-<div class="smallish">
-<p><a href="https://github.com/ablack3">@ablack3</a>, <a href="https://github.com/ABorakati">@ABorakati</a>, <a href="https://github.com/aghaynes">@aghaynes</a>, <a href="https://github.com/ahinton-mmc">@ahinton-mmc</a>, <a href="https://github.com/aito123">@aito123</a>, <a href="https://github.com/akarsteve">@akarsteve</a>, <a href="https://github.com/akefley">@akefley</a>, <a href="https://github.com/albertostefanelli">@albertostefanelli</a>, <a href="https://github.com/alexis-catherine">@alexis-catherine</a>, <a href="https://github.com/amygimma">@amygimma</a>, <a href="https://github.com/anaavu">@anaavu</a>, <a href="https://github.com/andrader">@andrader</a>, <a href="https://github.com/angelgar">@angelgar</a>, <a href="https://github.com/arbet003">@arbet003</a>, <a href="https://github.com/arnmayer">@arnmayer</a>, <a href="https://github.com/aspina7">@aspina7</a>, <a href="https://github.com/asshah4">@asshah4</a>, <a href="https://github.com/awcm0n">@awcm0n</a>, <a href="https://github.com/barthelmes">@barthelmes</a>, <a href="https://github.com/bcjaeger">@bcjaeger</a>, <a href="https://github.com/BeauMeche">@BeauMeche</a>, <a href="https://github.com/benediktclaus">@benediktclaus</a>, <a href="https://github.com/berg-michael">@berg-michael</a>, <a href="https://github.com/bhattmaulik">@bhattmaulik</a>, <a href="https://github.com/BioYork">@BioYork</a>, <a href="https://github.com/brachem-christian">@brachem-christian</a>, <a href="https://github.com/bwiernik">@bwiernik</a>, <a href="https://github.com/bx259">@bx259</a>, <a href="https://github.com/calebasaraba">@calebasaraba</a>, <a href="https://github.com/CarolineXGao">@CarolineXGao</a>, <a href="https://github.com/ChongTienGoh">@ChongTienGoh</a>, <a href="https://github.com/Chris-M-P">@Chris-M-P</a>, <a href="https://github.com/chrisleitzinger">@chrisleitzinger</a>, <a href="https://github.com/cjprobst">@cjprobst</a>, <a href="https://github.com/clmawhorter">@clmawhorter</a>, <a href="https://github.com/CodieMonster">@CodieMonster</a>, <a href="https://github.com/coeus-analytics">@coeus-analytics</a>, <a href="https://github.com/coreysparks">@coreysparks</a>, <a href="https://github.com/ctlamb">@ctlamb</a>, <a href="https://github.com/davidgohel">@davidgohel</a>, <a href="https://github.com/davidkane9">@davidkane9</a>, <a href="https://github.com/dax44">@dax44</a>, <a href="https://github.com/dchiu911">@dchiu911</a>, <a href="https://github.com/ddsjoberg">@ddsjoberg</a>, <a href="https://github.com/DeFilippis">@DeFilippis</a>, <a href="https://github.com/denis-or">@denis-or</a>, <a href="https://github.com/dereksonderegger">@dereksonderegger</a>, <a href="https://github.com/dieuv0">@dieuv0</a>, <a href="https://github.com/discoleo">@discoleo</a>, <a href="https://github.com/djbirke">@djbirke</a>, <a href="https://github.com/dmenne">@dmenne</a>, <a href="https://github.com/ElfatihHasabo">@ElfatihHasabo</a>, <a href="https://github.com/emilyvertosick">@emilyvertosick</a>, <a href="https://github.com/ercbk">@ercbk</a>, <a href="https://github.com/erikvona">@erikvona</a>, <a href="https://github.com/eweisbrod">@eweisbrod</a>, <a href="https://github.com/feizhadj">@feizhadj</a>, <a href="https://github.com/fh-jsnider">@fh-jsnider</a>, <a href="https://github.com/ge-generation">@ge-generation</a>, <a href="https://github.com/ghost">@ghost</a>, <a href="https://github.com/gjones1219">@gjones1219</a>, <a href="https://github.com/gorkang">@gorkang</a>, <a href="https://github.com/GuiMarthe">@GuiMarthe</a>, <a href="https://github.com/hass91">@hass91</a>, <a href="https://github.com/HichemLa">@HichemLa</a>, <a href="https://github.com/hughjonesd">@hughjonesd</a>, <a href="https://github.com/iaingallagher">@iaingallagher</a>, <a href="https://github.com/ilyamusabirov">@ilyamusabirov</a>, <a href="https://github.com/IndrajeetPatil">@IndrajeetPatil</a>, <a href="https://github.com/IsadoraBM">@IsadoraBM</a>, <a href="https://github.com/j-tamad">@j-tamad</a>, <a href="https://github.com/jalavery">@jalavery</a>, <a href="https://github.com/jeanmanguy">@jeanmanguy</a>, <a href="https://github.com/jemus42">@jemus42</a>, <a href="https://github.com/jenifav">@jenifav</a>, <a href="https://github.com/jennybc">@jennybc</a>, <a href="https://github.com/JeremyPasco">@JeremyPasco</a>, <a href="https://github.com/JesseRop">@JesseRop</a>, <a href="https://github.com/jflynn264">@jflynn264</a>, <a href="https://github.com/jjallaire">@jjallaire</a>, <a href="https://github.com/jmbarajas">@jmbarajas</a>, <a href="https://github.com/jmbarbone">@jmbarbone</a>, <a href="https://github.com/JoanneF1229">@JoanneF1229</a>, <a href="https://github.com/joelgautschi">@joelgautschi</a>, <a href="https://github.com/jojosgithub">@jojosgithub</a>, <a href="https://github.com/JonGretar">@JonGretar</a>, <a href="https://github.com/jordan49er">@jordan49er</a>, <a href="https://github.com/jthomasmock">@jthomasmock</a>, <a href="https://github.com/juseer">@juseer</a>, <a href="https://github.com/jwilliman">@jwilliman</a>, <a href="https://github.com/karissawhiting">@karissawhiting</a>, <a href="https://github.com/kendonB">@kendonB</a>, <a href="https://github.com/kmdono02">@kmdono02</a>, <a href="https://github.com/kwakuduahc1">@kwakuduahc1</a>, <a href="https://github.com/lamhine">@lamhine</a>, <a href="https://github.com/larmarange">@larmarange</a>, <a href="https://github.com/leejasme">@leejasme</a>, <a href="https://github.com/loukesio">@loukesio</a>, <a href="https://github.com/lspeetluk">@lspeetluk</a>, <a href="https://github.com/ltin1214">@ltin1214</a>, <a href="https://github.com/lucavd">@lucavd</a>, <a href="https://github.com/LuiNov">@LuiNov</a>, <a href="https://github.com/maia-sh">@maia-sh</a>, <a href="https://github.com/Marsus1972">@Marsus1972</a>, <a href="https://github.com/matthieu-faron">@matthieu-faron</a>, <a href="https://github.com/mbac">@mbac</a>, <a href="https://github.com/mdidish">@mdidish</a>, <a href="https://github.com/MelissaAssel">@MelissaAssel</a>, <a href="https://github.com/michaelcurry1123">@michaelcurry1123</a>, <a href="https://github.com/mljaniczek">@mljaniczek</a>, <a href="https://github.com/moleps">@moleps</a>, <a href="https://github.com/motocci">@motocci</a>, <a href="https://github.com/msberends">@msberends</a>, <a href="https://github.com/mvuorre">@mvuorre</a>, <a href="https://github.com/myensr">@myensr</a>, <a href="https://github.com/MyKo101">@MyKo101</a>, <a href="https://github.com/oranwutang">@oranwutang</a>, <a href="https://github.com/palantre">@palantre</a>, <a href="https://github.com/Pascal-Schmidt">@Pascal-Schmidt</a>, <a href="https://github.com/pedersebastian">@pedersebastian</a>, <a href="https://github.com/perlatex">@perlatex</a>, <a href="https://github.com/philsf">@philsf</a>, <a href="https://github.com/polc1410">@polc1410</a>, <a href="https://github.com/postgres-newbie">@postgres-newbie</a>, <a href="https://github.com/proshano">@proshano</a>, <a href="https://github.com/raphidoc">@raphidoc</a>, <a href="https://github.com/RaviBot">@RaviBot</a>, <a href="https://github.com/rich-iannone">@rich-iannone</a>, <a href="https://github.com/RiversPharmD">@RiversPharmD</a>, <a href="https://github.com/rmgpanw">@rmgpanw</a>, <a href="https://github.com/roman2023">@roman2023</a>, <a href="https://github.com/ryzhu75">@ryzhu75</a>, <a href="https://github.com/sachijay">@sachijay</a>, <a href="https://github.com/saifelayan">@saifelayan</a>, <a href="https://github.com/sammo3182">@sammo3182</a>, <a href="https://github.com/sandhyapc">@sandhyapc</a>, <a href="https://github.com/sbalci">@sbalci</a>, <a href="https://github.com/sda030">@sda030</a>, <a href="https://github.com/shannonpileggi">@shannonpileggi</a>, <a href="https://github.com/shengchaohou">@shengchaohou</a>, <a href="https://github.com/ShixiangWang">@ShixiangWang</a>, <a href="https://github.com/simonpcouch">@simonpcouch</a>, <a href="https://github.com/slb2240">@slb2240</a>, <a href="https://github.com/slobaugh">@slobaugh</a>, <a href="https://github.com/spiralparagon">@spiralparagon</a>, <a href="https://github.com/StaffanBetner">@StaffanBetner</a>, <a href="https://github.com/Stephonomon">@Stephonomon</a>, <a href="https://github.com/storopoli">@storopoli</a>, <a href="https://github.com/szimmer">@szimmer</a>, <a href="https://github.com/tamytsujimoto">@tamytsujimoto</a>, <a href="https://github.com/TarJae">@TarJae</a>, <a href="https://github.com/themichjam">@themichjam</a>, <a href="https://github.com/THIB20">@THIB20</a>, <a href="https://github.com/tibirkrajc">@tibirkrajc</a>, <a href="https://github.com/tjmeyers">@tjmeyers</a>, <a href="https://github.com/tldrcharlene">@tldrcharlene</a>, <a href="https://github.com/tormodb">@tormodb</a>, <a href="https://github.com/toshifumikuroda">@toshifumikuroda</a>, <a href="https://github.com/UAB-BST-680">@UAB-BST-680</a>, <a href="https://github.com/uakimix">@uakimix</a>, <a href="https://github.com/uriahf">@uriahf</a>, <a href="https://github.com/Valja64">@Valja64</a>, <a href="https://github.com/vvm02">@vvm02</a>, <a href="https://github.com/xkcococo">@xkcococo</a>, <a href="https://github.com/yonicd">@yonicd</a>, <a href="https://github.com/yoursdearboy">@yoursdearboy</a>, <a href="https://github.com/zabore">@zabore</a>, <a href="https://github.com/zachariae">@zachariae</a>, <a href="https://github.com/zaddyzad">@zaddyzad</a>, <a href="https://github.com/zeyunlu">@zeyunlu</a>, <a href="https://github.com/zhengnow">@zhengnow</a>, <a href="https://github.com/zlkrvsm">@zlkrvsm</a>, <a href="https://github.com/zongell-star">@zongell-star</a>, and <a href="https://github.com/Zoulf001">@Zoulf001</a>.</p>
-</div>
-</div>
-</div>
-</section>
-<section id="thank-you" class="slide level2">
-<h2>Thank you</h2>
-<p><img data-src="https://raw.githubusercontent.com/ddsjoberg/gtsummary/main/data-raw/misc_files/tbl_summary_demo_fast.gif"></p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 384 512" style="height:1em;width:0.75em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"></path></svg> Ask on <a href="stackoverflow.com">stackoverflow.com</a></p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M448 64c0-17.7-14.3-32-32-32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32zm0 256c0-17.7-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32zM0 192c0 17.7 14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H32c-17.7 0-32 14.3-32 32zM448 448c0-17.7-14.3-32-32-32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32z"></path></svg> <em>Use the gtsummary tag</em></p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M159.3 5.4c7.8-7.3 19.9-7.2 27.7 .1c27.6 25.9 53.5 53.8 77.7 84c11-14.4 23.5-30.1 37-42.9c7.9-7.4 20.1-7.4 28 .1c34.6 33 63.9 76.6 84.5 118c20.3 40.8 33.8 82.5 33.8 111.9C448 404.2 348.2 512 224 512C98.4 512 0 404.1 0 276.5c0-38.4 17.8-85.3 45.4-131.7C73.3 97.7 112.7 48.6 159.3 5.4zM225.7 416c25.3 0 47.7-7 68.8-21c42.1-29.4 53.4-88.2 28.1-134.4c-4.5-9-16-9.6-22.5-2l-25.2 29.3c-6.6 7.6-18.5 7.4-24.7-.5c-16.5-21-46-58.5-62.8-79.8c-6.3-8-18.3-8.1-24.7-.1c-33.8 42.5-50.8 69.3-50.8 99.4C112 375.4 162.6 416 225.7 416z"></path></svg> Hundreds of Qs already answered!</p>
-</div><div class="column" style="width:50%;">
-<p><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"></path></svg> <a href="https://www.danieldsjoberg.com/">danieldsjoberg.com</a></p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 512 512" style="height:1em;width:1em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> <a href="https://twitter.com/statistishdan">@statistishdan</a></p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 448 512" style="height:1em;width:0.88em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg> <a href="https://www.linkedin.com/in/ddsjoberg/">linkedin.com/in/ddsjoberg/</a></p>
-<p><svg aria-hidden="true" role="img" viewbox="0 0 496 512" style="height:1em;width:0.97em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:#606060;overflow:visible;position:relative;"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg> <a href="https://github.com/ddsjoberg/">github.com/ddsjoberg</a></p>
-</div>
-</div>
-
-<p><img src="images/chirallogo.jpg" class="slide-logo"></p>
-<div class="footer footer-default">
+<img src="images/chirallogo.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
 <p>R for Bioinformatics | © 2023 Md. Jubayer Hossain</p>
 </div>
 </section></section>
