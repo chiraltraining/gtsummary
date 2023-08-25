@@ -18,8 +18,8 @@ website:
 
   open-graph: true
   twitter-card:
-    creator: "@statistishdan"
-    image: "/images/banner.png"
+    creator: "@hossainlab"
+    image: "/images/banner.jpg"
 
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/). Inspired by [@minebocek](https://twitter.com/minebocek)"
