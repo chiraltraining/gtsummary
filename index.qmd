@@ -14,7 +14,7 @@ editor: source
 
 💥 **Register** with [Google Form]()
 
-📝 📝 📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.
+📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.
 
 ------------------------------------------------------------------------
 
@@ -41,7 +41,17 @@ knitr::include_graphics("images/gtsummary.gif")
 
 ## Learning objectives
 
-Build, customize, and report tables often found in medical journals and other research-related publications.
+- Understand the importance of standardized clinical reporting in public health research and practice.
+- Learn the basics of the `{gtsummary}` package and its capabilities for creating summary tables in R.
+- Explore various data formats and structures that can be used with `{gtsummary}`.
+- Learn how to prepare and clean data for clinical reporting using {gtsummary}.
+- Gain proficiency in creating common clinical summary tables, such as frequency tables, cross-tabulations, and stratified tables.
+- Understand how to incorporate descriptive statistics, including means, medians, and proportions, into {gtsummary} tables.
+- Learn how to customize table formatting, including titles, captions, footnotes, and table themes.
+- Explore advanced features of `{gtsummary}` for creating complex tables, including multi-variable summaries and interaction tables.
+- Understand the role of regression model summaries in clinical reporting and learn how to generate these summaries using `{gtsummary}`.
+
+
 
 ## Is this course for me?
 

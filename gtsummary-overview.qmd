@@ -1,0 +1,22 @@
+---
+title: "Public Health Insights: Clinical Reporting Using {gtsummary}"
+subtitle: "A Beginner 's Guide"
+---
+
+## Introduction 
+When it comes to presenting the results of statistical analyses, data visualization often steals the spotlight. However, well-structured and informative summary tables are equally essential in conveying complex findings effectively. In this guide, we'll dive into the world of summary tables using the powerful R package, `gtsummary.` We'll explore its features, learn how to create elegant and informative summary tables, and provide practical examples along the way.
+
+
+## What is {gtsummary}?
+`gtsummary` is an R package that simplifies the process of creating elegant and customizable summary tables from various types of statistical models, such as linear regression, logistic regression, survival models, and more. It's built on top of the gt package, which offers a flexible and intuitive way to create publication-quality tables.
+
+## Installation
+Before we get started, make sure you have the `gtsummary` package installed. You can install it from CRAN using the following command:
+
+```{r}
+#| label: install-gtsummary
+#| eval: false
+#| warning: false
+#| message: false
+install.packages("gtsummary")
+```

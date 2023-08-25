@@ -32,14 +32,14 @@
     "href": "index.html#prework",
     "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "Prework",
-    "text": "Prework\nBefore attending the workshop please have the following installed and configured on your machine.\n\nRecent version of R\nRecent version of RStudio\nMost recent release of the gtsummary and other packages used in workshop.\ninstll_pkgs &lt;- \n  c(\"gtsummary\", \"tidyverse\", \"labelled\", \"usethis\", \n    \"causaldata\", \"fs\", \"skimr\", \"car\", \"emmeans\")\ninstall.packages(instll_pkgs)\nEnsure you can knit R markdown documents\n\nOpen RStudio and create a new Rmarkdown document\nSave the document and check you are able to knit it.\n\n\n\n\n\n\n\n\nWho We Are: CHIRAL Bangladesh\n\n\n\nCenter for Health Innovation, Research, Action and Learning - Bangladesh (CHIRAL Bangladesh) is a voluntary non-profit research organization, resolving to promote interdisciplinary research in the field of health data science, computational biology and genomics."
+    "text": "Prework\nBefore attending the workshop please have the following installed and configured on your machine.\n\nRecent version of R\nRecent version of RStudio\n\nMost recent release of the gtsummary and other packages used in workshop.\ninstll_pkgs &lt;- \n  c(\"gtsummary\", \"tidyverse\", \"labelled\", \"usethis\", \n    \"causaldata\", \"fs\", \"skimr\", \"car\", \"emmeans\")\ninstall.packages(instll_pkgs)\n\n\nEnsure you can knit R markdown documents\n\nOpen RStudio and create a new Rmarkdown document\nSave the document and check you are able to knit it.\n\n\n\n\n\n\n\n\n\nWho We Are: CHIRAL Bangladesh\n\n\n\nCenter for Health Innovation, Research, Action and Learning - Bangladesh (CHIRAL Bangladesh) is a voluntary non-profit research organization, resolving to promote interdisciplinary research in the field of health data science, computational biology and genomics."
   },
   {
     "objectID": "index.html#instructor",
     "href": "index.html#instructor",
     "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "Instructor",
-    "text": "Instructor\n\nBio\n\nHi, I am Jubayer, a highly motivated biomedical research enthusiasts with a Master of Science in Microbiology focus on public health and health data science. Research experience designing and implementing projects for biomedical data analysis (including next‑generation sequencing, RNA‑seq , and ssRNA‑seq ). I am interested in applying machine learning/deep learning tools and techniques in the context of disease diagnosis and large data analytics for public health while focusing on bridging the gap between computational and experimental laboratories through highly engaging and fruitful collaborations\nPython is my primary language for data analysis and machine learning. I also have a basic understanding of R, Julia, SPSS, QGIS, and SQL.\nThis page highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.\n\n\nSkills\nProgramming Languages: Python, R, SQL, Julia, JavaScript; Data Science: scikit-learn, PyCaret, Dask, PySpark; GIS & Remote Sensing: ArcGIS, Geopandas, Xarray, Giovani; Analytics Softwares: SPSS, PowerBI, Microsoft Excel; Survey Tools: RedCap, KoboToolBox, EpiCollect, Google Forms; Academic Writing Tools: Microsoft Word, LaTeX, Mendeley; Bioinformatics: BioPython, Bioconductor, BioPandas, Galaxy, NGS, RNASeq, ssRNASeq; Miscellaneous Skills: UNIX, Version Control(Git), Web Scraping, APIs.\n\n\nSelected Publications\n\nHossain, M.J., Islam, M.W., Munni, U.R. et al. Health-related quality of life among thalassemia patients in Bangladesh using the SF-36 questionnaire. Scientific Reports 13, 7734 (2023). https://doi.org/10.1038/s41598-023-34205-9\nTowhid, S. T., Hossain, M. J., Sammo, M. A. S., & Akter, S. (2022). Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh. European Journal of Biology and Biotechnology, 3(3), 14–19. https://doi.org/10.24018/ejbio.2022.3.3.341\nHossain, M.J., Towhid ST, Sultana S, Mukta SA, Gulshan R, Miah MS (2022). Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh. Microbial Bioactives, 5(2), https://doi.org/10.25163/microbbioacts.526325."
+    "text": "Instructor\nBio\n\nHi, I am Jubayer, a highly motivated biomedical research enthusiasts with a Master of Science in Microbiology focus on public health and health data science. Research experience designing and implementing projects for biomedical data analysis (including next‑generation sequencing, RNA‑seq , and ssRNA‑seq ). I am interested in applying machine learning/deep learning tools and techniques in the context of disease diagnosis and large data analytics for public health while focusing on bridging the gap between computational and experimental laboratories through highly engaging and fruitful collaborations\nPython is my primary language for data analysis and machine learning. I also have a basic understanding of R, Julia, SPSS, QGIS, and SQL.\nThis page highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.\nSkills\nProgramming Languages: Python, R, SQL, Julia, JavaScript; Data Science: scikit-learn, PyCaret, Dask, PySpark; GIS & Remote Sensing: ArcGIS, Geopandas, Xarray, Giovani; Analytics Softwares: SPSS, PowerBI, Microsoft Excel; Survey Tools: RedCap, KoboToolBox, EpiCollect, Google Forms; Academic Writing Tools: Microsoft Word, LaTeX, Mendeley; Bioinformatics: BioPython, Bioconductor, BioPandas, Galaxy, NGS, RNASeq, ssRNASeq; Miscellaneous Skills: UNIX, Version Control(Git), Web Scraping, APIs.\nSelected Publications\n\n\nHossain, M.J., Islam, M.W., Munni, U.R. et al. Health-related quality of life among thalassemia patients in Bangladesh using the SF-36 questionnaire. Scientific Reports 13, 7734 (2023). https://doi.org/10.1038/s41598-023-34205-9\n\nTowhid, S. T., Hossain, M. J., Sammo, M. A. S., & Akter, S. (2022). Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh. European Journal of Biology and Biotechnology, 3(3), 14–19. https://doi.org/10.24018/ejbio.2022.3.3.341\n\n\nHossain, M.J., Towhid ST, Sultana S, Mukta SA, Gulshan R, Miah MS (2022). Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh. Microbial Bioactives, 5(2), https://doi.org/10.25163/microbbioacts.526325."
   },
   {
     "objectID": "slides/index.html",
@@ -593,5 +593,33 @@
     "title": "Material",
     "section": "",
     "text": "Welcome to the “R for Research” series! In this video, we will dive into the fundamentals of R, a powerful programming language and environment widely used in research and data analysis.R provides comprehensive tools and packages for statistical analysis, data visualization, and data manipulation. Whether you’re a biologist, social scientist, or any researcher looking to harness the power of data, this series will equip you with the necessary skills to leverage R for your research projects.! Check it out: \nIn Part 2, we will continue our exploration of the fundamentals of R, building upon the knowledge gained in Part 1. This video will cover additional essential topics to further enhance your skills in using R for research and data analysis. Check it out:"
+  },
+  {
+    "objectID": "gtsummary-overview.html",
+    "href": "gtsummary-overview.html",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "",
+    "text": "When it comes to presenting the results of statistical analyses, data visualization often steals the spotlight. However, well-structured and informative summary tables are equally essential in conveying complex findings effectively. In this guide, we’ll dive into the world of summary tables using the powerful R package, gtsummary. We’ll explore its features, learn how to create elegant and informative summary tables, and provide practical examples along the way."
+  },
+  {
+    "objectID": "gtsummary-overview.html#introduction",
+    "href": "gtsummary-overview.html#introduction",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "",
+    "text": "When it comes to presenting the results of statistical analyses, data visualization often steals the spotlight. However, well-structured and informative summary tables are equally essential in conveying complex findings effectively. In this guide, we’ll dive into the world of summary tables using the powerful R package, gtsummary. We’ll explore its features, learn how to create elegant and informative summary tables, and provide practical examples along the way."
+  },
+  {
+    "objectID": "gtsummary-overview.html#what-is-gtsummary",
+    "href": "gtsummary-overview.html#what-is-gtsummary",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "What is {gtsummary}?",
+    "text": "What is {gtsummary}?\ngtsummary is an R package that simplifies the process of creating elegant and customizable summary tables from various types of statistical models, such as linear regression, logistic regression, survival models, and more. It’s built on top of the gt package, which offers a flexible and intuitive way to create publication-quality tables."
+  },
+  {
+    "objectID": "gtsummary-overview.html#installation",
+    "href": "gtsummary-overview.html#installation",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "Installation",
+    "text": "Installation\nBefore we get started, make sure you have the gtsummary package installed. You can install it from CRAN using the following command:\n\ninstall.packages(\"gtsummary\")"
   }
 ]
