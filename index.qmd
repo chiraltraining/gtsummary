@@ -68,6 +68,119 @@ The workshop is designed for those with some experience in R.
 It will be expected that you can perform basic data manipulation.
 Experience with the {tidyverse} and the `%>%` operator is a plus, but not required.
 
+## What you will learn? 
+### Descriptive Tables 
+Descriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).
+
+
+```{r}
+#| label: load-data-pkg 
+#| echo: false
+#| warning: false
+#| message: false
+# load data 
+library(tidyverse)
+library(gtsummary)
+library(gt)
+data <- readxl::read_excel(here::here("data/KAP_Thals_Processed.xlsx"), sheet = 5)
+```
+
+
+
+```{r}
+#| label: descriptive-tables 
+#| echo: false
+# descriptive tables 
+data %>% 
+  select(2:7) %>% 
+  tbl_summary(statistic = all_continuous() ~ "{mean} ({sd})", 
+              type = all_dichotomous() ~ "categorical") %>% 
+  as_gt() %>% 
+  tab_caption("Table 1. General characteristics of the study participants (N = 680)")
+
+```
+
+### Comparative Tables 
+
+```{r}
+#| label: comparative tables
+#| echo: false
+# descriptive tables 
+data <- data %>% filter(`Do you know about thalassemia?` == "Yes")  
+
+data %>% 
+  select(2:6, KnowledgeLevelBinary) %>% 
+  tbl_summary(statistic = all_continuous() ~ "{mean} ({sd})", 
+              type = all_dichotomous() ~ "categorical", 
+              by = KnowledgeLevelBinary) %>% 
+  add_overall() %>% 
+  as_gt() %>% 
+  tab_caption("Table 2. Level of knowledge of thalassemia who heard abouth thalassemia (N = 610")
+
+```
+
+
+
+
+### Analytical Tables
+
+```{r}
+#| label: analytical-tables 
+#| echo: false
+# descriptive tables 
+data %>% 
+  select(2:6, KnowledgeLevelBinary) %>% 
+  tbl_summary(statistic = all_continuous() ~ "{mean} ({sd})", 
+              type = all_dichotomous() ~ "categorical", 
+              by = KnowledgeLevelBinary) %>% 
+  add_overall() %>% 
+  add_p() %>% 
+  bold_p(t = 0.05) %>% 
+  as_gt() %>% 
+  tab_caption("Table 3. Level of knowledge of thalassemia among university students (N = 610)")
+```
+
+## Univariate Regression Tables 
+```{r}
+#| label: uv-regression
+#| echo: false
+#| message: false
+# descriptive tables 
+trial %>%
+  select(response, age, grade) %>%
+  tbl_uvregression(
+    method = glm,
+    y = response,
+    method.args = list(family = binomial),
+    exponentiate = TRUE,
+    pvalue_fun = ~ style_pvalue(.x, digits = 2)
+  ) %>%
+  add_global_p() %>% # add global p-value
+  add_nevent() %>% # add number of events of the outcome
+  add_q() %>% # adjusts global p-values for multiple testing
+  bold_p() %>% # bold p-values under a given threshold (default 0.05)
+  bold_p(t = 0.10, q = TRUE) %>% # now bold q-values under the threshold of 0.10
+  bold_labels()
+```
+
+## Multivariate Regression Tables 
+
+```{r}
+#| label: mv-regression
+#| echo: false
+#| message: false
+# descriptive tables 
+m1 <- glm(response ~ age + stage, trial, family = binomial)
+m1 %>%
+  tbl_regression(
+    exponentiate = TRUE,
+    pvalue_fun = ~ style_pvalue(.x, digits = 2),
+  ) %>%
+  add_global_p() %>%
+  bold_p(t = 0.05) %>%
+  bold_labels() %>%
+  italicize_levels() 
+```
 
 ## Prework
 
@@ -90,6 +203,7 @@ Before attending the workshop please have the following installed and configured
     - Save the document and check you are able to knit it.
 
  
+
 
 ::: callout-tip
 ## Who We Are: CHIRAL Bangladesh
