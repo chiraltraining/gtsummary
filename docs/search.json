@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "",
-    "text": "🗓️Friday, August 25, 2023|9:00am-12:00pm\n🏨 Virtual\n💥 Register with Google Form\n📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration."
+    "text": "🗓️Friday,September 1,2023|9:00am to 12:00pm\n🏨 Virtual\n💥 Register with Google Form\n📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration."
   },
   {
     "objectID": "index.html#what-is-gtsummary",
@@ -557,7 +557,7 @@
     "href": "q-and-a.html",
     "title": "FAQs - Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "",
-    "text": "Q: Who is this workshop designed for?\n\n\nThis workshop is tailored for public health professionals, researchers, analysts, and anyone interested in effectively utilizing the {gtsummary} package for clinical reporting to support evidence-based decision-making in public health.\n\n\nQ: Is this workshop suitable for beginners in public health?\n\n\nYes, the workshop caters to both beginners and those with some experience in public health analysis. We cover foundational concepts and offer advanced insights for those seeking to enhance their skills.\n\n\nQ: Will the workshop be held in-person or virtually?\n\n\nThis workshop will be conducted virtually. Participants will receive detailed instructions on how to join the session.\n\n\nQ: What software/tools are required for the workshop?\n\n\nParticipants will need a laptop with internet access and R and RStudio installed. We’ll provide guidance on setting up these tools if needed.\n\n\nQ: Are there any prerequisites for attending the workshop?\n\n\nNo specific prerequisites are required, but basic familiarity with public health concepts and an interest in data analysis will be beneficial.\n\n\nQ: Will I receive any materials for the workshop? &gt;Yes, participants will receive workshop materials, including presentation slides and example datasets, prior to the workshop.\nQ: Is there a fee to attend the workshop? &gt; Yes, there is a registration fee to attend the workshop. Details about the fee and payment methods can be found on the registration page.\nQ: Can I ask questions during the workshop? &gt; Absolutely! We encourage active participation. There will be dedicated Q&A segments where you can ask questions and engage with the instructors.\nQ: Will the workshop be recorded for later viewing? &gt; Yes, the workshop sessions will be recorded, and registered participants will have access to the recordings for a limited time after the workshop concludes.\nQ: Will I receive a certificate upon completion? &gt; Yes, participants who complete the workshop will receive a certificate of participation, which can be a valuable addition to your professional portfolio."
+    "text": "Q: Who is this workshop designed for?\n\n\nThis workshop is tailored for public health professionals, researchers, analysts, and anyone interested in effectively utilizing the {gtsummary} package for clinical reporting to support evidence-based decision-making in public health.\n\n\n\nQ: Is this workshop suitable for beginners in public health?\n\n\nYes, the workshop caters to both beginners and those with some experience in public health analysis. We cover foundational concepts and offer advanced insights for those seeking to enhance their skills.\n\n\n\nQ: Will the workshop be held in-person or virtually?\n\n\nThis workshop will be conducted virtually. Participants will receive detailed instructions on how to join the session.\n\n\n\nQ: What software/tools are required for the workshop?\n\n\nParticipants will need a laptop with internet access and R and RStudio installed. We’ll provide guidance on setting up these tools if needed.\n\n\n\nQ: Are there any prerequisites for attending the workshop?\n\n\nNo specific prerequisites are required, but basic familiarity with public health concepts and an interest in data analysis will be beneficial.\n\n\n\nQ: Will I receive any materials for the workshop?\n\n\nYes, participants will receive workshop materials, including presentation slides and example datasets, prior to the workshop.\n\n\n\nQ: Is there a fee to attend the workshop?\n\n\nYes, there is a registration fee to attend the workshop. Details about the fee and payment methods can be found on the registration page.\n\n\n\nQ: Can I ask questions during the workshop?\n\n\nAbsolutely! We encourage active participation. There will be dedicated Q&A segments where you can ask questions and engage with the instructors.\n\n\n\nQ: Will the workshop be recorded for later viewing?\n\n\nYes, the workshop sessions will be recorded, and registered participants will have access to the recordings for a limited time after the workshop concludes.\n\n\n\nQ: Will I receive a certificate upon completion?\n\n\nYes, participants who complete the workshop will receive a certificate of participation, which can be a valuable addition to your professional portfolio."
   },
   {
     "objectID": "q-and-a.html#answered-questions",
@@ -621,5 +621,40 @@
     "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "Installation",
     "text": "Installation\nBefore we get started, make sure you have the gtsummary package installed. You can install it from CRAN using the following command:\n\ninstall.packages(\"gtsummary\")"
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Install R and RStudio",
+    "section": "",
+    "text": "R is a powerful analytical language and contains a number of useful packages for analyzing data.\nRStudio is a free and open-source integrated development environment (IDE) for R. RStudio provides comprehensive facilities to R programmers and is highly recommended in this class."
+  },
+  {
+    "objectID": "setup.html#installing-r",
+    "href": "setup.html#installing-r",
+    "title": "Install R and RStudio",
+    "section": "Installing R",
+    "text": "Installing R\nWe recommend installing the most recent version or R – 4.2.3 as of March 18, 2023 If you have had installed R already some time ago, we recommend updating/reinstalling it to the most recent version. Use a link below to launch download of R installers (if the download does not start, a fix may be to copy-paste the below link to your browser):\n\nFor Mac users: https://cran.r-project.org/bin/macosx/\nFor Windows users: https://cran.r-project.org/bin/windows/base/R-4.2.3-win.exe\nFor Ubuntu users: https://cran.r-project.org/bin/linux/ubuntu/\n\nFor other operating systems, or if you prefer to access the download link from the official website, visit http://cran.us.r-project.org and select Download R for Linux, Download R for macOS or Download R for Windows based on which device you have.\nOnce the proper installation package has been selected, run the package and follow the on-screen directions. This installation includes the R language and a graphical user interface (GUI). Rather using the GUI, we recommend installing RStudio - an integrated development environment (IDE) that lets you interact with R with some added benefits."
+  },
+  {
+    "objectID": "setup.html#installing-rstudio",
+    "href": "setup.html#installing-rstudio",
+    "title": "Install R and RStudio",
+    "section": "Installing RStudio",
+    "text": "Installing RStudio\nTo install RStudio, visit https://posit.co/download/rstudio-desktop/. Once on the website, select DOWNLOAD tab (upper left corner), scroll down and click Download under the RStudio Desktop – Free version (1st out of 4 columns), and select the proper installation file for your platform (Windows or Mac).\nWhen you open up RStudio, it should look like this:\n\nClick the top left button to create a new script:\n\nRStudio, should now look like this:\n\nThere are four main windows.\n\nThe console is the lower-left window where you can run lines of code and see the output.\nThe script window is the upper-left window where you can edit and write scripts or markdown documents. From the script window, you can run the current line of code in your script (or multiple lines if you highlight multiple rows) by pressing\n\nCMD + Return on Mac\nCTRL + Enter on Windows\n\nThe workspace is the upper-right window where you can manage your data and variables and see previous commands entered (under the history tab).\nThe plots window allows you to see the output of plots. On the other tabs, you can also look at directories, install packages, and look at help files for various R commands.\n\nYou can customize the look of your RStudio IDE in Tools &gt; Global Options...."
+  },
+  {
+    "objectID": "setup.html#r-packages",
+    "href": "setup.html#r-packages",
+    "title": "Install R and RStudio",
+    "section": "R Packages",
+    "text": "R Packages\nPackages are the fundamental units of reproducible R code. They are collections of R code that typically share some common purpose. Examples:\n\ndplyr - package of functions for fast data set manipulation (subsetting, summarizing, rearranging, and joining together data sets);\nggplot2 - “R’s famous package for making beautiful graphics”; allows to build multiple-layers, highly customizable plots."
+  },
+  {
+    "objectID": "setup.html#installing-and-loading-r-packages",
+    "href": "setup.html#installing-and-loading-r-packages",
+    "title": "Install R and RStudio",
+    "section": "Installing and Loading R Packages",
+    "text": "Installing and Loading R Packages\n\nTo install an R package, type in the RStudio console\ninstall.packages(\"replace_with_package_name\")\nand press enter to execute the command.\nOnce a package is installed, to use its contents in current R session, we run in the RStudio console the command\nlibrary(replace_with_package_name)\n\n(Note the difference in presence of the quotation mark in the two above commands.)"
   }
 ]

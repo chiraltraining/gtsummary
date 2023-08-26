@@ -33,21 +33,26 @@ theme_gtsummary_compact()
 
 5. **Q:** Are there any prerequisites for attending the workshop?
 
->   No specific prerequisites are required, but basic familiarity with public health concepts and an interest in data analysis will be beneficial.
+> No specific prerequisites are required, but basic familiarity with public health concepts and an interest in data analysis will be beneficial.
 
 6. **Q:** Will I receive any materials for the workshop?
+
 >Yes, participants will receive workshop materials, including presentation slides and example datasets, prior to the workshop.
 
 7.  **Q:** Is there a fee to attend the workshop?
+
 > Yes, there is a registration fee to attend the workshop. Details about the fee and payment methods can be found on the registration page.
 
 8.  **Q:** Can I ask questions during the workshop?
+
 > Absolutely! We encourage active participation. There will be dedicated Q&A segments where you can ask questions and engage with the instructors.
 
 
 9. **Q:** Will the workshop be recorded for later viewing?
+
 > Yes, the workshop sessions will be recorded, and registered participants will have access to the recordings for a limited time after the workshop concludes.
 
 
 10. **Q:** Will I receive a certificate upon completion?
+
 > Yes, participants who complete the workshop will receive a certificate of participation, which can be a valuable addition to your professional portfolio.

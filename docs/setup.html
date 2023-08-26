@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Public Health Insights: Clinical Reporting Using {gtsummary} - Material</title>
+<title>Public Health Insights: Clinical Reporting Using {gtsummary} - Install R and RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./q-and-a.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./license.html" rel="next">
+<link href="./q-and-a.html" rel="prev">
 <link href="./images/trans - gt.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -63,10 +63,13 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<meta property="og:title" content="Public Health Insights: Clinical Reporting Using {gtsummary} - Material">
+<meta property="og:title" content="Public Health Insights: Clinical Reporting Using {gtsummary} - Install R and RStudio">
 <meta property="og:description" content="">
+<meta property="og:image" content="https://chiraltraining.github.io/gtsummary4publichealth/images/RStudio_console.png">
 <meta property="og:site-name" content="Public Health Insights: Clinical Reporting Using {gtsummary}">
-<meta name="twitter:title" content="Public Health Insights: Clinical Reporting Using {gtsummary} - Material">
+<meta property="og:image:height" content="987">
+<meta property="og:image:width" content="1312">
+<meta name="twitter:title" content="Public Health Insights: Clinical Reporting Using {gtsummary} - Install R and RStudio">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://chiraltraining.github.io/gtsummary4publichealth//images/banner.jpg">
 <meta name="twitter:creator" content="@hossainlab">
@@ -82,7 +85,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./material.html">Material</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./setup.html">Setup</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -121,7 +124,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./material.html" class="sidebar-item-text sidebar-link active">
+  <a href="./material.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Material</span></a>
   </div>
 </li>
@@ -133,8 +136,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./gtsummary-overview.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tutorial</span></a>
+  <a href="./setup.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Setup</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -153,19 +156,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#videos" id="toc-videos" class="nav-link active" data-scroll-target="#videos">Videos</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
-  <li><a href="#recording" id="toc-recording" class="nav-link" data-scroll-target="#recording">Recording</a></li>
-  <li><a href="#exercises" id="toc-exercises" class="nav-link" data-scroll-target="#exercises">Exercises</a></li>
+  <li><a href="#installing-r" id="toc-installing-r" class="nav-link active" data-scroll-target="#installing-r">Installing <code>R</code></a></li>
+  <li><a href="#installing-rstudio" id="toc-installing-rstudio" class="nav-link" data-scroll-target="#installing-rstudio">Installing <code>RStudio</code></a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages"><code>R</code> Packages</a></li>
+  <li><a href="#installing-and-loading-r-packages" id="toc-installing-and-loading-r-packages" class="nav-link" data-scroll-target="#installing-and-loading-r-packages">Installing and Loading <code>R</code> Packages</a></li>
   </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/chiraltraining/gtsummary4publichealth/edit/main/material.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/chiraltraining/gtsummary4publichealth/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/chiraltraining/gtsummary4publichealth/edit/main/setup.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/chiraltraining/gtsummary4publichealth/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Material</h1>
+<h1 class="title">Install R and RStudio</h1>
 </div>
 
 
@@ -180,30 +183,59 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="videos" class="level2">
-<h2 class="anchored" data-anchor-id="videos">Videos</h2>
+<p><code>R</code> is a powerful analytical language and contains a number of useful packages for analyzing data.</p>
+<p><code>RStudio</code> is a free and open-source integrated development environment (IDE) for R. <code>RStudio</code> provides comprehensive facilities to <code>R</code> programmers and is highly recommended in this class.</p>
+<section id="installing-r" class="level2">
+<h2 class="anchored" data-anchor-id="installing-r">Installing <code>R</code></h2>
+<p>We recommend installing the most recent version or <code>R</code> – <code>4.2.3</code> as of March 18, 2023 <strong>If you have had installed <code>R</code> already some time ago, we recommend updating/reinstalling it to the most recent version.</strong> Use a link below to launch download of <code>R</code> installers (if the download does not start, a fix may be to copy-paste the below link to your browser):</p>
 <ul>
-<li><p>Welcome to the “R for Research” series! In this video, we will dive into the fundamentals of R, a powerful programming language and environment widely used in research and data analysis.R provides comprehensive tools and packages for statistical analysis, data visualization, and data manipulation. Whether you’re a biologist, social scientist, or any researcher looking to harness the power of data, this series will equip you with the necessary skills to leverage R for your research projects.! Check it out: </p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/dQhZjmw9BK0" title="R for Research || Fundamentals of R: Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p></li>
-<li><p>In Part 2, we will continue our exploration of the fundamentals of R, building upon the knowledge gained in Part 1. This video will cover additional essential topics to further enhance your skills in using R for research and data analysis. Check it out: </p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/f4AK5aPhGf4" title="R for Research || Fundamentals of R: Part 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p></li>
+<li><p>For Mac users: <a href="https://cran.r-project.org/bin/macosx/" class="uri">https://cran.r-project.org/bin/macosx/</a></p></li>
+<li><p>For Windows users: <a href="https://cran.r-project.org/bin/windows/base/R-4.2.3-win.exe" class="uri">https://cran.r-project.org/bin/windows/base/R-4.2.3-win.exe</a></p></li>
+<li><p>For Ubuntu users: <a href="https://cran.r-project.org/bin/linux/ubuntu/" class="uri">https://cran.r-project.org/bin/linux/ubuntu/</a></p></li>
+</ul>
+<p>For other operating systems, or if you prefer to access the download link from the official website, visit <a href="http://cran.us.r-project.org" class="uri">http://cran.us.r-project.org</a> and select <code>Download R for Linux</code>, <code>Download R for macOS</code> or <code>Download R for Windows</code> based on which device you have.</p>
+<p>Once the proper installation package has been selected, run the package and follow the on-screen directions. This installation includes the <code>R</code> language and a graphical user interface (GUI). Rather using the GUI, we recommend installing <code>RStudio</code> - an integrated development environment (IDE) that lets you interact with <code>R</code> with some added benefits.</p>
+</section>
+<section id="installing-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="installing-rstudio">Installing <code>RStudio</code></h2>
+<p>To install <code>RStudio</code>, visit <a href="https://posit.co/download/rstudio-desktop/" class="uri">https://posit.co/download/rstudio-desktop/</a>. Once on the website, select <code>DOWNLOAD</code> tab (upper left corner), scroll down and click <code>Download</code> under the <code>RStudio Desktop</code> – <code>Free</code> version (1st out of 4 columns), and select the proper installation file for your platform (Windows or Mac).</p>
+<p>When you open up <code>RStudio</code>, it should look like this:</p>
+<p><img src="images/RStudio_console.png" class="img-fluid"></p>
+<p>Click the top left button to create a new script:</p>
+<p><img src="images/New_script_click.png" class="img-fluid"></p>
+<p><code>RStudio</code>, should now look like this:</p>
+<p><img src="images/RStudio_4panes.png" class="img-fluid"></p>
+<p>There are four main windows.</p>
+<ul>
+<li><p>The <strong>console</strong> is the lower-left window where you can run lines of code and see the output.</p></li>
+<li><p>The <strong>script window</strong> is the upper-left window where you can edit and write scripts or markdown documents. From the script window, you can run the current line of code in your script (or multiple lines if you highlight multiple rows) by pressing</p>
+<ul>
+<li><code>CMD</code> + <code>Return</code> on Mac</li>
+<li><code>CTRL</code> + <code>Enter</code> on Windows</li>
+</ul></li>
+<li><p>The <strong>workspace</strong> is the upper-right window where you can manage your data and variables and see previous commands entered (under the history tab).</p></li>
+<li><p>The <strong>plots</strong> window allows you to see the output of plots. On the other tabs, you can also look at directories, install packages, and look at help files for various <code>R</code> commands.</p></li>
+</ul>
+<p>You can customize the look of your RStudio IDE in <code>Tools &gt; Global Options...</code>.</p>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages"><code>R</code> Packages</h2>
+<p>Packages are the fundamental units of reproducible <code>R</code> code. They are collections of <code>R</code> code that typically share some common purpose. Examples:</p>
+<ul>
+<li><p><code>dplyr</code> - package of functions for fast data set manipulation (subsetting, summarizing, rearranging, and joining together data sets);</p></li>
+<li><p><code>ggplot2</code> - “R’s famous package for making beautiful graphics”; allows to build multiple-layers, highly customizable plots.</p></li>
 </ul>
 </section>
-<section id="slides" class="level2">
-<h2 class="anchored" data-anchor-id="slides">Slides</h2>
-<p><a href="./slides/index.html">View slides in full screen</a></p>
-<iframe class="slide-deck" src="./slides/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
-</section>
-<section id="recording" class="level2">
-<h2 class="anchored" data-anchor-id="recording">Recording</h2>
-<p>After workshop!</p>
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/p-diyV2E77o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-</section>
-<section id="exercises" class="level2">
-<h2 class="anchored" data-anchor-id="exercises">Exercises</h2>
-<ol type="1">
-<li><p>Download zip file with exercises with <a href="https://github.com/chirtaltraining/gtsummary4publichealth/raw/main/exercises/exercises.zip">this link</a>.</p></li>
-<li><p>Extract the zip file locally and open in an RStudio project.</p></li>
-</ol>
-<p>Solutions available <a href="./exercises/solutions.html">here</a>.</p>
+<section id="installing-and-loading-r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="installing-and-loading-r-packages">Installing and Loading <code>R</code> Packages</h2>
+<ul>
+<li><p>To install an <code>R</code> package, type in the <code>RStudio</code> console</p>
+<pre><code>install.packages("replace_with_package_name")</code></pre>
+<p>and press enter to execute the command.</p></li>
+<li><p>Once a package is installed, to use its contents in current <code>R</code> session, we run in the <code>RStudio</code> console the command</p>
+<pre><code>library(replace_with_package_name)</code></pre></li>
+</ul>
+<p>(Note the difference in presence of the quotation mark in the two above commands.)</p>
 
 
 </section>
@@ -444,13 +476,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Home</span>
+      <a href="./q-and-a.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Workshop Q &amp; A</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./q-and-a.html" class="pagination-link">
-        <span class="nav-page-text">Workshop Q &amp; A</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./license.html" class="pagination-link">
+        <span class="nav-page-text">License</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

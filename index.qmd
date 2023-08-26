@@ -6,13 +6,14 @@ editor: source
 
 <!-- https://github.com/rstudio-conf-2022/teach-ds -->
 
-------------------------------------------------------------------------
+-------------------------------------------------------------------
 
-🗓️Friday, August 25, 2023\|9:00am-12:00pm
+
+🗓️Friday,September 1,2023\|9:00am to 12:00pm
 
 🏨 Virtual
 
-💥 **Register** with [Google Form]()
+💥 **Register** with [Google Form](https://forms.gle/L1aUjr7yW8cuiUuM9)
 
 📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.
 
