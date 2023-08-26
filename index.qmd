@@ -70,6 +70,7 @@ Experience with the {tidyverse} and the `%>%` operator is a plus, but not requir
 
 ## What you will learn? 
 ### Descriptive Tables 
+
 Descriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).
 
 
@@ -85,8 +86,6 @@ library(gt)
 data <- readxl::read_excel(here::here("data/KAP_Thals_Processed.xlsx"), sheet = 5)
 ```
 
-
-
 ```{r}
 #| label: descriptive-tables 
 #| echo: false
@@ -101,6 +100,7 @@ data %>%
 ```
 
 ### Comparative Tables 
+Comparative tables are a type of analytical table used to present and compare data across different variables, categories, or entities. These tables are commonly employed to highlight similarities, differences, and relationships between data points.They allow for a concise and structured way to showcase information side by side, making it easier for the audience to draw insights and conclusions.  
 
 ```{r}
 #| label: comparative tables
@@ -121,8 +121,9 @@ data %>%
 
 
 
-
 ### Analytical Tables
+Analytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.
+
 
 ```{r}
 #| label: analytical-tables 
@@ -141,6 +142,7 @@ data %>%
 ```
 
 ## Univariate Regression Tables 
+Univariate regression is a type of linear regression where you have one independent variable (predictor) and one dependent variable (response). Regression tables are used to present the results of regression analysis, including coefficients, standard errors, significance levels, and other relevant statistics. Below is an example of what a simple univariate regression table might look like:
 ```{r}
 #| label: uv-regression
 #| echo: false
@@ -163,7 +165,8 @@ trial %>%
   bold_labels()
 ```
 
-## Multivariate Regression Tables 
+### Multivariate Regression Tables 
+A multivariate regression table provides a summary of the results obtained from a multivariate regression analysis. This type of analysis involves multiple independent variables (predictors) and a single dependent variable. 
 
 ```{r}
 #| label: mv-regression
