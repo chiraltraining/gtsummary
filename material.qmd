@@ -13,7 +13,7 @@ editor: source
 
 ## Slides
 
-[View slides in full screen](/slides/index.qmq)
+[View slides in full screen](/slides/index.qmd)
 
 ```{=html}
 <iframe class="slide-deck" src="/slides/" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
