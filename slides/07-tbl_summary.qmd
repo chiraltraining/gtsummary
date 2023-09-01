@@ -1,5 +1,4 @@
 # tbl_summary()
-
 ## Basic tbl_summary()
 
 ::: columns
