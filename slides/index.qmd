@@ -9,7 +9,7 @@ author:
     - Founder & Management Lead 
 date: last-modified
 date-format: "[Last Updated on] MMMM, YYYY"
-footer: "R for Bioinformatics  | &copy; 2023 Md. Jubayer Hossain"
+footer: "Clinical Reporting with R  | &copy; 2023 Md. Jubayer Hossain"
 editor: source
 format: 
   revealjs: 
@@ -28,23 +28,31 @@ execute:
   freeze: auto
 cache: true
 ---
+{{< include setup.qmd >}}
 
-{{< include 00-setup.qmd >}}
+{{< include 00-getting-started.qmd >}}
 
-{{< include 01-background.qmd >}}
+{{< include 01-data-types.qmd >}}
 
-{{< include 02-trial.qmd >}}
+{{< include 03-operators.qmd >}}
 
-{{< include 03-tbl_summary.qmd >}}
+{{< include 04-data-structures.qmd >}}
 
-{{< include 04-tbl_regression.qmd >}}
+{{< include 05-background.qmd >}}
 
-{{< include 05-inline_text.qmd >}}
+{{< include 06-datasets.qmd >}}
 
-{{< include 06-tbl_merge.qmd >}}
+{{< include 07-tbl_summary.qmd >}}
 
-{{< include 07-themes.qmd >}}
+{{< include 08-tbl_regression.qmd >}}
 
-{{< include 08-print_engines.qmd >}}
+{{< include 09-tbl_merge.qmd >}} 
 
+{{< include 10-themes.qmd >}} 
+
+{{< include 11-print_engines.qmd >}}
+
+{{< include 12-inline_text.qmd >}}
+
+{{< include 13-summary.qmd >}}
 

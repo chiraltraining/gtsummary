@@ -2,15 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://chiraltraining.github.io/gtsummary4publichealth/index.html</loc>
-    <lastmod>2023-08-26T05:47:16.327Z</lastmod>
+    <lastmod>2023-09-01T00:48:33.116Z</lastmod>
   </url>
   <url>
     <loc>https://chiraltraining.github.io/gtsummary4publichealth/slides/index.html</loc>
-    <lastmod>2023-08-26T04:40:14.891Z</lastmod>
+    <lastmod>2023-09-01T00:48:45.679Z</lastmod>
   </url>
   <url>
     <loc>https://chiraltraining.github.io/gtsummary4publichealth/material.html</loc>
-    <lastmod>2023-08-26T04:41:42.013Z</lastmod>
+    <lastmod>2023-09-01T00:48:53.830Z</lastmod>
   </url>
   <url>
     <loc>https://chiraltraining.github.io/gtsummary4publichealth/exercises/solutions.html</loc>
@@ -31,5 +31,9 @@
   <url>
     <loc>https://chiraltraining.github.io/gtsummary4publichealth/setup.html</loc>
     <lastmod>2023-08-26T04:43:53.279Z</lastmod>
+  </url>
+  <url>
+    <loc>https://chiraltraining.github.io/gtsummary4publichealth/slides/setup.html</loc>
+    <lastmod>2023-09-01T00:48:22.515Z</lastmod>
   </url>
 </urlset>
