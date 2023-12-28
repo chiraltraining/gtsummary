@@ -2,7 +2,7 @@
 title: "Material"
 editor: source
 ---
-
+These videos cover essential concepts of R programming that will be beneficial during the workshop Please take the time to view them at your convenience.
 
 ## Videos 
 - Welcome to the "R for Research" series! In this video, we will dive into the fundamentals of R, a powerful programming language and environment widely used in research and data analysis.R provides comprehensive tools and packages for statistical analysis, data visualization, and data manipulation. Whether you're a biologist, social scientist, or any researcher looking to harness the power of data, this series will equip you with the necessary skills to leverage R for your research projects.! Check it out: {{< video https://youtu.be/dQhZjmw9BK0 title="R for Research || Fundamentals of R: Part 1" aspect-ratio="16x9" >}}
