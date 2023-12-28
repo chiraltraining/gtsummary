@@ -1,5 +1,5 @@
 ---
-title: "Public Health Insights: Clinical Reporting Using {gtsummary}"
+title: "Public Health Insights: Clinical Reporting Using R"
 subtitle: "R for Public Health Workshop"
 editor: source
 ---
@@ -9,7 +9,7 @@ editor: source
 -------------------------------------------------------------------
 
 
-🗓️Friday,September 1,2023\|9:00am to 12:00pm
+🗓 Firday & Saturday, January 12 & 13, 2024 | 9:00pm - 11: 00pm 
 
 🏨 Virtual
 
