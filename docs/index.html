@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <title>Public Health Insights: Clinical Reporting Using {gtsummary} - Public Health Insights: Clinical Reporting Using R</title>
 <style>
@@ -19,7 +19,7 @@ ul.task-list li input[type="checkbox"] {
 }
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span { line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -75,7 +75,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -84,6 +90,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
@@ -91,8 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <meta property="og:title" content="Public Health Insights: Clinical Reporting Using {gtsummary} - Public Health Insights: Clinical Reporting Using R">
 <meta property="og:description" content="R for Public Health Workshop">
-<meta property="og:image" content="https://chiraltraining.github.io/gtsummary4publichealth/images/gtsummary.gif">
-<meta property="og:site-name" content="Public Health Insights: Clinical Reporting Using {gtsummary}">
+<meta property="og:site_name" content="Public Health Insights: Clinical Reporting Using {gtsummary}">
 <meta name="twitter:title" content="Public Health Insights: Clinical Reporting Using {gtsummary} - Public Health Insights: Clinical Reporting Using R">
 <meta name="twitter:description" content="R for Public Health Workshop">
 <meta name="twitter:image" content="https://chiraltraining.github.io/gtsummary4publichealth//images/banner.jpg">
@@ -103,26 +109,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="quarto-secondary-nav"><div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
     </div>
   </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-center sidebar-header">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto"><div class="pt-lg-2 mt-2 text-left sidebar-header">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/trans - gt.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none"></a>
       <div class="sidebar-tools-main tools-wide">
-    <a href="https://github.com/chiraltraining/" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
-    <a href="https://www.facebook.com/chiralbd.org" rel="" title="Facebook" class="quarto-navigation-tool px-1" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-    <a href="https://twitter.com/chiralbd" rel="" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
-    <a href="https://www.linkedin.com/company/chiral-bangladesh/mycompany/?viewAsMember=true" rel="" title="LinkedIn" class="quarto-navigation-tool px-1" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="https://github.com/chiraltraining/" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://www.facebook.com/chiralbd.org" title="Facebook" class="quarto-navigation-tool px-1" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+    <a href="https://twitter.com/chiralbd" title="Twitter" class="quarto-navigation-tool px-1" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+    <a href="https://www.linkedin.com/company/chiral-bangladesh/mycompany/?viewAsMember=true" title="LinkedIn" class="quarto-navigation-tool px-1" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
 </div>
       </div>
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -164,7 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
     </ul>
 </div>
-</nav><div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+</nav><div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active"><h2 id="toc-title">On this page</h2>
@@ -201,7 +207,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
   </ul>
 </li>
-  </ul><div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/chiraltraining/gtsummary4publichealth/edit/main/index.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/chiraltraining/gtsummary4publichealth/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+  </ul><div class="toc-actions"><ul><li><a href="https://github.com/chiraltraining/gtsummary4publichealth/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chiraltraining/gtsummary4publichealth/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
@@ -219,8 +225,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
   
 
+
 </header><!-- https://github.com/rstudio-conf-2022/teach-ds --><hr>
-<p>🗓 Firday &amp; Saturday, January 12 &amp; 13, 2024 | 9:00pm - 11: 00pm</p>
+<p>🗓 Firday &amp; Saturday, February 9 &amp; 10, 2024 | 9:00pm - 11: 00pm</p>
 <p>🏨 Virtual</p>
 <p>💥 <strong>Register</strong> with <a href="https://forms.gle/L1aUjr7yW8cuiUuM9">Google Form</a></p>
 <p>📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.</p>
@@ -235,7 +242,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The package follows a tidy framework, making it easy to integrate with standard data workflows, and offers many table customization features through function arguments, helper functions, and custom themes.</p>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="images/gtsummary.gif" class="img-fluid"></p>
+<div>
+<figure class="figure"><p><img src="images/gtsummary.gif" class="img-fluid figure-img"></p>
+</figure>
+</div>
 </div>
 </div>
 </section><section id="learning-objectives" class="level2"><h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
@@ -262,24 +272,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Descriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="ujtcrjwsup" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ujtcrjwsup table {
+<div id="glmygmrpai" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#glmygmrpai table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ujtcrjwsup thead, #ujtcrjwsup tbody, #ujtcrjwsup tfoot, #ujtcrjwsup tr, #ujtcrjwsup td, #ujtcrjwsup th {
+#glmygmrpai thead, #glmygmrpai tbody, #glmygmrpai tfoot, #glmygmrpai tr, #glmygmrpai td, #glmygmrpai th {
   border-style: none;
 }
 
-#ujtcrjwsup p {
+#glmygmrpai p {
   margin: 0;
   padding: 0;
 }
 
-#ujtcrjwsup .gt_table {
+#glmygmrpai .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -305,12 +314,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_caption {
+#glmygmrpai .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ujtcrjwsup .gt_title {
+#glmygmrpai .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -322,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ujtcrjwsup .gt_subtitle {
+#glmygmrpai .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -334,7 +343,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ujtcrjwsup .gt_heading {
+#glmygmrpai .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -346,13 +355,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_bottom_border {
+#glmygmrpai .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_col_headings {
+#glmygmrpai .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -367,7 +376,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_col_heading {
+#glmygmrpai .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -387,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ujtcrjwsup .gt_column_spanner_outer {
+#glmygmrpai .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -399,15 +408,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ujtcrjwsup .gt_column_spanner_outer:first-child {
+#glmygmrpai .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ujtcrjwsup .gt_column_spanner_outer:last-child {
+#glmygmrpai .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ujtcrjwsup .gt_column_spanner {
+#glmygmrpai .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -419,11 +428,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ujtcrjwsup .gt_spanner_row {
+#glmygmrpai .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ujtcrjwsup .gt_group_heading {
+#glmygmrpai .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -449,7 +458,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ujtcrjwsup .gt_empty_group_heading {
+#glmygmrpai .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -464,15 +473,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ujtcrjwsup .gt_from_md > :first-child {
+#glmygmrpai .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ujtcrjwsup .gt_from_md > :last-child {
+#glmygmrpai .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ujtcrjwsup .gt_row {
+#glmygmrpai .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -491,7 +500,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ujtcrjwsup .gt_stub {
+#glmygmrpai .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -504,7 +513,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ujtcrjwsup .gt_stub_row_group {
+#glmygmrpai .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -518,15 +527,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ujtcrjwsup .gt_row_group_first td {
+#glmygmrpai .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ujtcrjwsup .gt_row_group_first th {
+#glmygmrpai .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ujtcrjwsup .gt_summary_row {
+#glmygmrpai .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -536,16 +545,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ujtcrjwsup .gt_first_summary_row {
+#glmygmrpai .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_first_summary_row.thick {
+#glmygmrpai .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ujtcrjwsup .gt_last_summary_row {
+#glmygmrpai .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -555,7 +564,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_grand_summary_row {
+#glmygmrpai .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -565,7 +574,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ujtcrjwsup .gt_first_grand_summary_row {
+#glmygmrpai .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -575,7 +584,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_last_grand_summary_row_top {
+#glmygmrpai .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -585,11 +594,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_striped {
+#glmygmrpai .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ujtcrjwsup .gt_table_body {
+#glmygmrpai .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -598,7 +607,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_footnotes {
+#glmygmrpai .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -612,7 +621,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_footnote {
+#glmygmrpai .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -621,7 +630,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ujtcrjwsup .gt_sourcenotes {
+#glmygmrpai .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -635,7 +644,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ujtcrjwsup .gt_sourcenote {
+#glmygmrpai .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -643,164 +652,168 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ujtcrjwsup .gt_left {
+#glmygmrpai .gt_left {
   text-align: left;
 }
 
-#ujtcrjwsup .gt_center {
+#glmygmrpai .gt_center {
   text-align: center;
 }
 
-#ujtcrjwsup .gt_right {
+#glmygmrpai .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ujtcrjwsup .gt_font_normal {
+#glmygmrpai .gt_font_normal {
   font-weight: normal;
 }
 
-#ujtcrjwsup .gt_font_bold {
+#glmygmrpai .gt_font_bold {
   font-weight: bold;
 }
 
-#ujtcrjwsup .gt_font_italic {
+#glmygmrpai .gt_font_italic {
   font-style: italic;
 }
 
-#ujtcrjwsup .gt_super {
+#glmygmrpai .gt_super {
   font-size: 65%;
 }
 
-#ujtcrjwsup .gt_footnote_marks {
+#glmygmrpai .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ujtcrjwsup .gt_asterisk {
+#glmygmrpai .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ujtcrjwsup .gt_indent_1 {
+#glmygmrpai .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ujtcrjwsup .gt_indent_2 {
+#glmygmrpai .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ujtcrjwsup .gt_indent_3 {
+#glmygmrpai .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ujtcrjwsup .gt_indent_4 {
+#glmygmrpai .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ujtcrjwsup .gt_indent_5 {
+#glmygmrpai .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <caption>Table 1. General characteristics of the study participants (N = 680)</caption>
-  <thead><tr class="gt_col_headings">
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="<strong>Characteristic</strong>"><strong>Characteristic</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>N = 680</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead><tr class="header gt_col_headings">
+<th id="<strong>Characteristic</strong>" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="<strong>N = 680</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>N = 680</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-    </tr></thead>
+</tr></thead>
 <tbody class="gt_table_body">
-<tr>
-<td headers="label" class="gt_row gt_left">Age</td>
-<td headers="stat_0" class="gt_row gt_center">21.80 (2.99)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Age</td>
+<td class="gt_row gt_center" headers="stat_0">21.80 (2.99)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Gender</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Gender</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Female</td>
-<td headers="stat_0" class="gt_row gt_center">301 (44%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Female</td>
+<td class="gt_row gt_center" headers="stat_0">301 (44%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
-<td headers="stat_0" class="gt_row gt_center">379 (56%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
+<td class="gt_row gt_center" headers="stat_0">379 (56%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Marital Status</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Marital Status</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Married</td>
-<td headers="stat_0" class="gt_row gt_center">52 (7.6%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Married</td>
+<td class="gt_row gt_center" headers="stat_0">52 (7.6%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Unmarried</td>
-<td headers="stat_0" class="gt_row gt_center">628 (92%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unmarried</td>
+<td class="gt_row gt_center" headers="stat_0">628 (92%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Field of Study</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Field of Study</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Arts and Humanities</td>
-<td headers="stat_0" class="gt_row gt_center">88 (13%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Arts and Humanities</td>
+<td class="gt_row gt_center" headers="stat_0">88 (13%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Business</td>
-<td headers="stat_0" class="gt_row gt_center">85 (13%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Business</td>
+<td class="gt_row gt_center" headers="stat_0">85 (13%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Science</td>
-<td headers="stat_0" class="gt_row gt_center">445 (65%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Science</td>
+<td class="gt_row gt_center" headers="stat_0">445 (65%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Social science</td>
-<td headers="stat_0" class="gt_row gt_center">62 (9.1%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Social science</td>
+<td class="gt_row gt_center" headers="stat_0">62 (9.1%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Year of Study</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Year of Study</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;1st year</td>
-<td headers="stat_0" class="gt_row gt_center">266 (39%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1st year</td>
+<td class="gt_row gt_center" headers="stat_0">266 (39%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;2nd year</td>
-<td headers="stat_0" class="gt_row gt_center">131 (19%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2nd year</td>
+<td class="gt_row gt_center" headers="stat_0">131 (19%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;3rd year</td>
-<td headers="stat_0" class="gt_row gt_center">115 (17%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3rd year</td>
+<td class="gt_row gt_center" headers="stat_0">115 (17%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;4th year</td>
-<td headers="stat_0" class="gt_row gt_center">114 (17%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4th year</td>
+<td class="gt_row gt_center" headers="stat_0">114 (17%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Masters</td>
-<td headers="stat_0" class="gt_row gt_center">54 (7.9%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Masters</td>
+<td class="gt_row gt_center" headers="stat_0">54 (7.9%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Do you know about thalassemia?</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Do you know about thalassemia?</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
-<td headers="stat_0" class="gt_row gt_center">70 (10%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;No</td>
+<td class="gt_row gt_center" headers="stat_0">70 (10%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Yes</td>
-<td headers="stat_0" class="gt_row gt_center">610 (90%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Yes</td>
+<td class="gt_row gt_center" headers="stat_0">610 (90%)</td>
 </tr>
 </tbody>
-<tfoot class="gt_footnotes"><tr>
-<td class="gt_footnote" colspan="2">
+<tfoot class="gt_footnotes"><tr class="even">
+<td colspan="2" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> Mean (SD); n (%)</td>
-    </tr></tfoot>
+</tr></tfoot>
 </table>
 </div>
 </div>
@@ -809,24 +822,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Comparative tables are a type of analytical table used to present and compare data across different variables, categories, or entities. These tables are commonly employed to highlight similarities, differences, and relationships between data points.They allow for a concise and structured way to showcase information side by side, making it easier for the audience to draw insights and conclusions.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="ddyqviwgnb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ddyqviwgnb table {
+<div id="yayhiyufdc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#yayhiyufdc table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ddyqviwgnb thead, #ddyqviwgnb tbody, #ddyqviwgnb tfoot, #ddyqviwgnb tr, #ddyqviwgnb td, #ddyqviwgnb th {
+#yayhiyufdc thead, #yayhiyufdc tbody, #yayhiyufdc tfoot, #yayhiyufdc tr, #yayhiyufdc td, #yayhiyufdc th {
   border-style: none;
 }
 
-#ddyqviwgnb p {
+#yayhiyufdc p {
   margin: 0;
   padding: 0;
 }
 
-#ddyqviwgnb .gt_table {
+#yayhiyufdc .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -852,12 +864,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_caption {
+#yayhiyufdc .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ddyqviwgnb .gt_title {
+#yayhiyufdc .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -869,7 +881,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ddyqviwgnb .gt_subtitle {
+#yayhiyufdc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -881,7 +893,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ddyqviwgnb .gt_heading {
+#yayhiyufdc .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -893,13 +905,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_bottom_border {
+#yayhiyufdc .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_col_headings {
+#yayhiyufdc .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -914,7 +926,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_col_heading {
+#yayhiyufdc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -934,7 +946,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ddyqviwgnb .gt_column_spanner_outer {
+#yayhiyufdc .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -946,15 +958,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ddyqviwgnb .gt_column_spanner_outer:first-child {
+#yayhiyufdc .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ddyqviwgnb .gt_column_spanner_outer:last-child {
+#yayhiyufdc .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ddyqviwgnb .gt_column_spanner {
+#yayhiyufdc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -966,11 +978,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ddyqviwgnb .gt_spanner_row {
+#yayhiyufdc .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ddyqviwgnb .gt_group_heading {
+#yayhiyufdc .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -996,7 +1008,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ddyqviwgnb .gt_empty_group_heading {
+#yayhiyufdc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1011,15 +1023,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ddyqviwgnb .gt_from_md > :first-child {
+#yayhiyufdc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ddyqviwgnb .gt_from_md > :last-child {
+#yayhiyufdc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ddyqviwgnb .gt_row {
+#yayhiyufdc .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1038,7 +1050,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ddyqviwgnb .gt_stub {
+#yayhiyufdc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1051,7 +1063,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ddyqviwgnb .gt_stub_row_group {
+#yayhiyufdc .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1065,15 +1077,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ddyqviwgnb .gt_row_group_first td {
+#yayhiyufdc .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ddyqviwgnb .gt_row_group_first th {
+#yayhiyufdc .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ddyqviwgnb .gt_summary_row {
+#yayhiyufdc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1083,16 +1095,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ddyqviwgnb .gt_first_summary_row {
+#yayhiyufdc .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_first_summary_row.thick {
+#yayhiyufdc .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ddyqviwgnb .gt_last_summary_row {
+#yayhiyufdc .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1102,7 +1114,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_grand_summary_row {
+#yayhiyufdc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1112,7 +1124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ddyqviwgnb .gt_first_grand_summary_row {
+#yayhiyufdc .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1122,7 +1134,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_last_grand_summary_row_top {
+#yayhiyufdc .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1132,11 +1144,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_striped {
+#yayhiyufdc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ddyqviwgnb .gt_table_body {
+#yayhiyufdc .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1145,7 +1157,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_footnotes {
+#yayhiyufdc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1159,7 +1171,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_footnote {
+#yayhiyufdc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1168,7 +1180,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ddyqviwgnb .gt_sourcenotes {
+#yayhiyufdc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1182,7 +1194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ddyqviwgnb .gt_sourcenote {
+#yayhiyufdc .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1190,194 +1202,200 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ddyqviwgnb .gt_left {
+#yayhiyufdc .gt_left {
   text-align: left;
 }
 
-#ddyqviwgnb .gt_center {
+#yayhiyufdc .gt_center {
   text-align: center;
 }
 
-#ddyqviwgnb .gt_right {
+#yayhiyufdc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ddyqviwgnb .gt_font_normal {
+#yayhiyufdc .gt_font_normal {
   font-weight: normal;
 }
 
-#ddyqviwgnb .gt_font_bold {
+#yayhiyufdc .gt_font_bold {
   font-weight: bold;
 }
 
-#ddyqviwgnb .gt_font_italic {
+#yayhiyufdc .gt_font_italic {
   font-style: italic;
 }
 
-#ddyqviwgnb .gt_super {
+#yayhiyufdc .gt_super {
   font-size: 65%;
 }
 
-#ddyqviwgnb .gt_footnote_marks {
+#yayhiyufdc .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ddyqviwgnb .gt_asterisk {
+#yayhiyufdc .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ddyqviwgnb .gt_indent_1 {
+#yayhiyufdc .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ddyqviwgnb .gt_indent_2 {
+#yayhiyufdc .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ddyqviwgnb .gt_indent_3 {
+#yayhiyufdc .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ddyqviwgnb .gt_indent_4 {
+#yayhiyufdc .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ddyqviwgnb .gt_indent_5 {
+#yayhiyufdc .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <caption>Table 2. Level of knowledge of thalassemia who heard abouth thalassemia (N = 610</caption>
-  <thead><tr class="gt_col_headings">
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="<strong>Characteristic</strong>"><strong>Characteristic</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Overall</strong>, N = 610<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead><tr class="header gt_col_headings">
+<th id="<strong>Characteristic</strong>" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="<strong>Overall</strong>, N = 610<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>Overall</strong>, N = 610<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Good</strong>, N = 156<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<th id="<strong>Good</strong>, N = 156<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>Good</strong>, N = 156<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Poor</strong>, N = 454<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<th id="<strong>Poor</strong>, N = 454<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>Poor</strong>, N = 454<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-    </tr></thead>
+</tr></thead>
 <tbody class="gt_table_body">
-<tr>
-<td headers="label" class="gt_row gt_left">Age</td>
-<td headers="stat_0" class="gt_row gt_center">21.79 (3.06)</td>
-<td headers="stat_1" class="gt_row gt_center">21.85 (1.85)</td>
-<td headers="stat_2" class="gt_row gt_center">21.77 (3.38)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Age</td>
+<td class="gt_row gt_center" headers="stat_0">21.79 (3.06)</td>
+<td class="gt_row gt_center" headers="stat_1">21.85 (1.85)</td>
+<td class="gt_row gt_center" headers="stat_2">21.77 (3.38)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Gender</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Gender</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Female</td>
-<td headers="stat_0" class="gt_row gt_center">274 (45%)</td>
-<td headers="stat_1" class="gt_row gt_center">64 (41%)</td>
-<td headers="stat_2" class="gt_row gt_center">210 (46%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Female</td>
+<td class="gt_row gt_center" headers="stat_0">274 (45%)</td>
+<td class="gt_row gt_center" headers="stat_1">64 (41%)</td>
+<td class="gt_row gt_center" headers="stat_2">210 (46%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
-<td headers="stat_0" class="gt_row gt_center">336 (55%)</td>
-<td headers="stat_1" class="gt_row gt_center">92 (59%)</td>
-<td headers="stat_2" class="gt_row gt_center">244 (54%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
+<td class="gt_row gt_center" headers="stat_0">336 (55%)</td>
+<td class="gt_row gt_center" headers="stat_1">92 (59%)</td>
+<td class="gt_row gt_center" headers="stat_2">244 (54%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Marital Status</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Marital Status</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Married</td>
-<td headers="stat_0" class="gt_row gt_center">48 (7.9%)</td>
-<td headers="stat_1" class="gt_row gt_center">14 (9.0%)</td>
-<td headers="stat_2" class="gt_row gt_center">34 (7.5%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Married</td>
+<td class="gt_row gt_center" headers="stat_0">48 (7.9%)</td>
+<td class="gt_row gt_center" headers="stat_1">14 (9.0%)</td>
+<td class="gt_row gt_center" headers="stat_2">34 (7.5%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Unmarried</td>
-<td headers="stat_0" class="gt_row gt_center">562 (92%)</td>
-<td headers="stat_1" class="gt_row gt_center">142 (91%)</td>
-<td headers="stat_2" class="gt_row gt_center">420 (93%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unmarried</td>
+<td class="gt_row gt_center" headers="stat_0">562 (92%)</td>
+<td class="gt_row gt_center" headers="stat_1">142 (91%)</td>
+<td class="gt_row gt_center" headers="stat_2">420 (93%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Field of Study</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Field of Study</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Arts and Humanities</td>
-<td headers="stat_0" class="gt_row gt_center">69 (11%)</td>
-<td headers="stat_1" class="gt_row gt_center">17 (11%)</td>
-<td headers="stat_2" class="gt_row gt_center">52 (11%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Arts and Humanities</td>
+<td class="gt_row gt_center" headers="stat_0">69 (11%)</td>
+<td class="gt_row gt_center" headers="stat_1">17 (11%)</td>
+<td class="gt_row gt_center" headers="stat_2">52 (11%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Business</td>
-<td headers="stat_0" class="gt_row gt_center">72 (12%)</td>
-<td headers="stat_1" class="gt_row gt_center">16 (10%)</td>
-<td headers="stat_2" class="gt_row gt_center">56 (12%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Business</td>
+<td class="gt_row gt_center" headers="stat_0">72 (12%)</td>
+<td class="gt_row gt_center" headers="stat_1">16 (10%)</td>
+<td class="gt_row gt_center" headers="stat_2">56 (12%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Science</td>
-<td headers="stat_0" class="gt_row gt_center">414 (68%)</td>
-<td headers="stat_1" class="gt_row gt_center">115 (74%)</td>
-<td headers="stat_2" class="gt_row gt_center">299 (66%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Science</td>
+<td class="gt_row gt_center" headers="stat_0">414 (68%)</td>
+<td class="gt_row gt_center" headers="stat_1">115 (74%)</td>
+<td class="gt_row gt_center" headers="stat_2">299 (66%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Social science</td>
-<td headers="stat_0" class="gt_row gt_center">55 (9.0%)</td>
-<td headers="stat_1" class="gt_row gt_center">8 (5.1%)</td>
-<td headers="stat_2" class="gt_row gt_center">47 (10%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Social science</td>
+<td class="gt_row gt_center" headers="stat_0">55 (9.0%)</td>
+<td class="gt_row gt_center" headers="stat_1">8 (5.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">47 (10%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Year of Study</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Year of Study</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;1st year</td>
-<td headers="stat_0" class="gt_row gt_center">240 (39%)</td>
-<td headers="stat_1" class="gt_row gt_center">55 (35%)</td>
-<td headers="stat_2" class="gt_row gt_center">185 (41%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1st year</td>
+<td class="gt_row gt_center" headers="stat_0">240 (39%)</td>
+<td class="gt_row gt_center" headers="stat_1">55 (35%)</td>
+<td class="gt_row gt_center" headers="stat_2">185 (41%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;2nd year</td>
-<td headers="stat_0" class="gt_row gt_center">114 (19%)</td>
-<td headers="stat_1" class="gt_row gt_center">25 (16%)</td>
-<td headers="stat_2" class="gt_row gt_center">89 (20%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2nd year</td>
+<td class="gt_row gt_center" headers="stat_0">114 (19%)</td>
+<td class="gt_row gt_center" headers="stat_1">25 (16%)</td>
+<td class="gt_row gt_center" headers="stat_2">89 (20%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;3rd year</td>
-<td headers="stat_0" class="gt_row gt_center">101 (17%)</td>
-<td headers="stat_1" class="gt_row gt_center">26 (17%)</td>
-<td headers="stat_2" class="gt_row gt_center">75 (17%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3rd year</td>
+<td class="gt_row gt_center" headers="stat_0">101 (17%)</td>
+<td class="gt_row gt_center" headers="stat_1">26 (17%)</td>
+<td class="gt_row gt_center" headers="stat_2">75 (17%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;4th year</td>
-<td headers="stat_0" class="gt_row gt_center">107 (18%)</td>
-<td headers="stat_1" class="gt_row gt_center">35 (22%)</td>
-<td headers="stat_2" class="gt_row gt_center">72 (16%)</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4th year</td>
+<td class="gt_row gt_center" headers="stat_0">107 (18%)</td>
+<td class="gt_row gt_center" headers="stat_1">35 (22%)</td>
+<td class="gt_row gt_center" headers="stat_2">72 (16%)</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Masters</td>
-<td headers="stat_0" class="gt_row gt_center">48 (7.9%)</td>
-<td headers="stat_1" class="gt_row gt_center">15 (9.6%)</td>
-<td headers="stat_2" class="gt_row gt_center">33 (7.3%)</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Masters</td>
+<td class="gt_row gt_center" headers="stat_0">48 (7.9%)</td>
+<td class="gt_row gt_center" headers="stat_1">15 (9.6%)</td>
+<td class="gt_row gt_center" headers="stat_2">33 (7.3%)</td>
 </tr>
 </tbody>
-<tfoot class="gt_footnotes"><tr>
-<td class="gt_footnote" colspan="4">
+<tfoot class="gt_footnotes"><tr class="odd">
+<td colspan="4" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> Mean (SD); n (%)</td>
-    </tr></tfoot>
+</tr></tfoot>
 </table>
 </div>
 </div>
@@ -1386,24 +1404,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Analytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="ybbuxioqpk" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ybbuxioqpk table {
+<div id="rammrnvffg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rammrnvffg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ybbuxioqpk thead, #ybbuxioqpk tbody, #ybbuxioqpk tfoot, #ybbuxioqpk tr, #ybbuxioqpk td, #ybbuxioqpk th {
+#rammrnvffg thead, #rammrnvffg tbody, #rammrnvffg tfoot, #rammrnvffg tr, #rammrnvffg td, #rammrnvffg th {
   border-style: none;
 }
 
-#ybbuxioqpk p {
+#rammrnvffg p {
   margin: 0;
   padding: 0;
 }
 
-#ybbuxioqpk .gt_table {
+#rammrnvffg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1429,12 +1446,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_caption {
+#rammrnvffg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ybbuxioqpk .gt_title {
+#rammrnvffg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1446,7 +1463,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#ybbuxioqpk .gt_subtitle {
+#rammrnvffg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1458,7 +1475,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#ybbuxioqpk .gt_heading {
+#rammrnvffg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1470,13 +1487,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_bottom_border {
+#rammrnvffg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_col_headings {
+#rammrnvffg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1491,7 +1508,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_col_heading {
+#rammrnvffg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1511,7 +1528,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ybbuxioqpk .gt_column_spanner_outer {
+#rammrnvffg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1523,15 +1540,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#ybbuxioqpk .gt_column_spanner_outer:first-child {
+#rammrnvffg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ybbuxioqpk .gt_column_spanner_outer:last-child {
+#rammrnvffg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ybbuxioqpk .gt_column_spanner {
+#rammrnvffg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1543,11 +1560,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#ybbuxioqpk .gt_spanner_row {
+#rammrnvffg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ybbuxioqpk .gt_group_heading {
+#rammrnvffg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1573,7 +1590,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#ybbuxioqpk .gt_empty_group_heading {
+#rammrnvffg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1588,15 +1605,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#ybbuxioqpk .gt_from_md > :first-child {
+#rammrnvffg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ybbuxioqpk .gt_from_md > :last-child {
+#rammrnvffg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ybbuxioqpk .gt_row {
+#rammrnvffg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1615,7 +1632,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#ybbuxioqpk .gt_stub {
+#rammrnvffg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1628,7 +1645,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ybbuxioqpk .gt_stub_row_group {
+#rammrnvffg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1642,15 +1659,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#ybbuxioqpk .gt_row_group_first td {
+#rammrnvffg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ybbuxioqpk .gt_row_group_first th {
+#rammrnvffg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ybbuxioqpk .gt_summary_row {
+#rammrnvffg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1660,16 +1677,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ybbuxioqpk .gt_first_summary_row {
+#rammrnvffg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_first_summary_row.thick {
+#rammrnvffg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ybbuxioqpk .gt_last_summary_row {
+#rammrnvffg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1679,7 +1696,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_grand_summary_row {
+#rammrnvffg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1689,7 +1706,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ybbuxioqpk .gt_first_grand_summary_row {
+#rammrnvffg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1699,7 +1716,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_last_grand_summary_row_top {
+#rammrnvffg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1709,11 +1726,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_striped {
+#rammrnvffg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ybbuxioqpk .gt_table_body {
+#rammrnvffg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1722,7 +1739,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_footnotes {
+#rammrnvffg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1736,7 +1753,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_footnote {
+#rammrnvffg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1745,7 +1762,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ybbuxioqpk .gt_sourcenotes {
+#rammrnvffg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1759,7 +1776,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#ybbuxioqpk .gt_sourcenote {
+#rammrnvffg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1767,220 +1784,227 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#ybbuxioqpk .gt_left {
+#rammrnvffg .gt_left {
   text-align: left;
 }
 
-#ybbuxioqpk .gt_center {
+#rammrnvffg .gt_center {
   text-align: center;
 }
 
-#ybbuxioqpk .gt_right {
+#rammrnvffg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ybbuxioqpk .gt_font_normal {
+#rammrnvffg .gt_font_normal {
   font-weight: normal;
 }
 
-#ybbuxioqpk .gt_font_bold {
+#rammrnvffg .gt_font_bold {
   font-weight: bold;
 }
 
-#ybbuxioqpk .gt_font_italic {
+#rammrnvffg .gt_font_italic {
   font-style: italic;
 }
 
-#ybbuxioqpk .gt_super {
+#rammrnvffg .gt_super {
   font-size: 65%;
 }
 
-#ybbuxioqpk .gt_footnote_marks {
+#rammrnvffg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ybbuxioqpk .gt_asterisk {
+#rammrnvffg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ybbuxioqpk .gt_indent_1 {
+#rammrnvffg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ybbuxioqpk .gt_indent_2 {
+#rammrnvffg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ybbuxioqpk .gt_indent_3 {
+#rammrnvffg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ybbuxioqpk .gt_indent_4 {
+#rammrnvffg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ybbuxioqpk .gt_indent_5 {
+#rammrnvffg .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
 <caption>Table 3. Level of knowledge of thalassemia among university students (N = 610)</caption>
-  <thead><tr class="gt_col_headings">
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="<strong>Characteristic</strong>"><strong>Characteristic</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Overall</strong>, N = 610<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead><tr class="header gt_col_headings">
+<th id="<strong>Characteristic</strong>" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="<strong>Overall</strong>, N = 610<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>Overall</strong>, N = 610<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Good</strong>, N = 156<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<th id="<strong>Good</strong>, N = 156<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>Good</strong>, N = 156<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Poor</strong>, N = 454<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<th id="<strong>Poor</strong>, N = 454<span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>Poor</strong>, N = 454<span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>p-value</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>2</sup></span>">
+<th id="<strong>p-value</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>2</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>p-value</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span>
 </th>
-    </tr></thead>
+</tr></thead>
 <tbody class="gt_table_body">
-<tr>
-<td headers="label" class="gt_row gt_left">Age</td>
-<td headers="stat_0" class="gt_row gt_center">21.79 (3.06)</td>
-<td headers="stat_1" class="gt_row gt_center">21.85 (1.85)</td>
-<td headers="stat_2" class="gt_row gt_center">21.77 (3.38)</td>
-<td headers="p.value" class="gt_row gt_center">0.14</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Age</td>
+<td class="gt_row gt_center" headers="stat_0">21.79 (3.06)</td>
+<td class="gt_row gt_center" headers="stat_1">21.85 (1.85)</td>
+<td class="gt_row gt_center" headers="stat_2">21.77 (3.38)</td>
+<td class="gt_row gt_center" headers="p.value">0.14</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Gender</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
-<td headers="p.value" class="gt_row gt_center">0.3</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Gender</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
+<td class="gt_row gt_center" headers="p.value">0.3</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Female</td>
-<td headers="stat_0" class="gt_row gt_center">274 (45%)</td>
-<td headers="stat_1" class="gt_row gt_center">64 (41%)</td>
-<td headers="stat_2" class="gt_row gt_center">210 (46%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Female</td>
+<td class="gt_row gt_center" headers="stat_0">274 (45%)</td>
+<td class="gt_row gt_center" headers="stat_1">64 (41%)</td>
+<td class="gt_row gt_center" headers="stat_2">210 (46%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
-<td headers="stat_0" class="gt_row gt_center">336 (55%)</td>
-<td headers="stat_1" class="gt_row gt_center">92 (59%)</td>
-<td headers="stat_2" class="gt_row gt_center">244 (54%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Male</td>
+<td class="gt_row gt_center" headers="stat_0">336 (55%)</td>
+<td class="gt_row gt_center" headers="stat_1">92 (59%)</td>
+<td class="gt_row gt_center" headers="stat_2">244 (54%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Marital Status</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
-<td headers="p.value" class="gt_row gt_center">0.6</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Marital Status</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
+<td class="gt_row gt_center" headers="p.value">0.6</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Married</td>
-<td headers="stat_0" class="gt_row gt_center">48 (7.9%)</td>
-<td headers="stat_1" class="gt_row gt_center">14 (9.0%)</td>
-<td headers="stat_2" class="gt_row gt_center">34 (7.5%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Married</td>
+<td class="gt_row gt_center" headers="stat_0">48 (7.9%)</td>
+<td class="gt_row gt_center" headers="stat_1">14 (9.0%)</td>
+<td class="gt_row gt_center" headers="stat_2">34 (7.5%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Unmarried</td>
-<td headers="stat_0" class="gt_row gt_center">562 (92%)</td>
-<td headers="stat_1" class="gt_row gt_center">142 (91%)</td>
-<td headers="stat_2" class="gt_row gt_center">420 (93%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Unmarried</td>
+<td class="gt_row gt_center" headers="stat_0">562 (92%)</td>
+<td class="gt_row gt_center" headers="stat_1">142 (91%)</td>
+<td class="gt_row gt_center" headers="stat_2">420 (93%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Field of Study</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
-<td headers="p.value" class="gt_row gt_center">0.2</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">Field of Study</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
+<td class="gt_row gt_center" headers="p.value">0.2</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Arts and Humanities</td>
-<td headers="stat_0" class="gt_row gt_center">69 (11%)</td>
-<td headers="stat_1" class="gt_row gt_center">17 (11%)</td>
-<td headers="stat_2" class="gt_row gt_center">52 (11%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Arts and Humanities</td>
+<td class="gt_row gt_center" headers="stat_0">69 (11%)</td>
+<td class="gt_row gt_center" headers="stat_1">17 (11%)</td>
+<td class="gt_row gt_center" headers="stat_2">52 (11%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Business</td>
-<td headers="stat_0" class="gt_row gt_center">72 (12%)</td>
-<td headers="stat_1" class="gt_row gt_center">16 (10%)</td>
-<td headers="stat_2" class="gt_row gt_center">56 (12%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Business</td>
+<td class="gt_row gt_center" headers="stat_0">72 (12%)</td>
+<td class="gt_row gt_center" headers="stat_1">16 (10%)</td>
+<td class="gt_row gt_center" headers="stat_2">56 (12%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Science</td>
-<td headers="stat_0" class="gt_row gt_center">414 (68%)</td>
-<td headers="stat_1" class="gt_row gt_center">115 (74%)</td>
-<td headers="stat_2" class="gt_row gt_center">299 (66%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Science</td>
+<td class="gt_row gt_center" headers="stat_0">414 (68%)</td>
+<td class="gt_row gt_center" headers="stat_1">115 (74%)</td>
+<td class="gt_row gt_center" headers="stat_2">299 (66%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Social science</td>
-<td headers="stat_0" class="gt_row gt_center">55 (9.0%)</td>
-<td headers="stat_1" class="gt_row gt_center">8 (5.1%)</td>
-<td headers="stat_2" class="gt_row gt_center">47 (10%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Social science</td>
+<td class="gt_row gt_center" headers="stat_0">55 (9.0%)</td>
+<td class="gt_row gt_center" headers="stat_1">8 (5.1%)</td>
+<td class="gt_row gt_center" headers="stat_2">47 (10%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">Year of Study</td>
-<td headers="stat_0" class="gt_row gt_center"><br></td>
-<td headers="stat_1" class="gt_row gt_center"><br></td>
-<td headers="stat_2" class="gt_row gt_center"><br></td>
-<td headers="p.value" class="gt_row gt_center">0.3</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">Year of Study</td>
+<td class="gt_row gt_center" headers="stat_0"><br></td>
+<td class="gt_row gt_center" headers="stat_1"><br></td>
+<td class="gt_row gt_center" headers="stat_2"><br></td>
+<td class="gt_row gt_center" headers="p.value">0.3</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;1st year</td>
-<td headers="stat_0" class="gt_row gt_center">240 (39%)</td>
-<td headers="stat_1" class="gt_row gt_center">55 (35%)</td>
-<td headers="stat_2" class="gt_row gt_center">185 (41%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1st year</td>
+<td class="gt_row gt_center" headers="stat_0">240 (39%)</td>
+<td class="gt_row gt_center" headers="stat_1">55 (35%)</td>
+<td class="gt_row gt_center" headers="stat_2">185 (41%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;2nd year</td>
-<td headers="stat_0" class="gt_row gt_center">114 (19%)</td>
-<td headers="stat_1" class="gt_row gt_center">25 (16%)</td>
-<td headers="stat_2" class="gt_row gt_center">89 (20%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2nd year</td>
+<td class="gt_row gt_center" headers="stat_0">114 (19%)</td>
+<td class="gt_row gt_center" headers="stat_1">25 (16%)</td>
+<td class="gt_row gt_center" headers="stat_2">89 (20%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;3rd year</td>
-<td headers="stat_0" class="gt_row gt_center">101 (17%)</td>
-<td headers="stat_1" class="gt_row gt_center">26 (17%)</td>
-<td headers="stat_2" class="gt_row gt_center">75 (17%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3rd year</td>
+<td class="gt_row gt_center" headers="stat_0">101 (17%)</td>
+<td class="gt_row gt_center" headers="stat_1">26 (17%)</td>
+<td class="gt_row gt_center" headers="stat_2">75 (17%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;4th year</td>
-<td headers="stat_0" class="gt_row gt_center">107 (18%)</td>
-<td headers="stat_1" class="gt_row gt_center">35 (22%)</td>
-<td headers="stat_2" class="gt_row gt_center">72 (16%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4th year</td>
+<td class="gt_row gt_center" headers="stat_0">107 (18%)</td>
+<td class="gt_row gt_center" headers="stat_1">35 (22%)</td>
+<td class="gt_row gt_center" headers="stat_2">72 (16%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;Masters</td>
-<td headers="stat_0" class="gt_row gt_center">48 (7.9%)</td>
-<td headers="stat_1" class="gt_row gt_center">15 (9.6%)</td>
-<td headers="stat_2" class="gt_row gt_center">33 (7.3%)</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Masters</td>
+<td class="gt_row gt_center" headers="stat_0">48 (7.9%)</td>
+<td class="gt_row gt_center" headers="stat_1">15 (9.6%)</td>
+<td class="gt_row gt_center" headers="stat_2">33 (7.3%)</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
 </tbody>
 <tfoot class="gt_footnotes">
-<tr>
-<td class="gt_footnote" colspan="5">
+<tr class="odd">
+<td colspan="5" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> Mean (SD); n (%)</td>
-    </tr>
-<tr>
-<td class="gt_footnote" colspan="5">
+</tr>
+<tr class="even">
+<td colspan="5" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> Wilcoxon rank sum test; Pearson’s Chi-squared test</td>
-    </tr>
+</tr>
 </tfoot>
 </table>
 </div>
@@ -1990,24 +2014,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Univariate regression is a type of linear regression where you have one independent variable (predictor) and one dependent variable (response). Regression tables are used to present the results of regression analysis, including coefficients, standard errors, significance levels, and other relevant statistics. Below is an example of what a simple univariate regression table might look like:</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="icefsuewyj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#icefsuewyj table {
+<div id="zaqcfhtbrt" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#zaqcfhtbrt table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#icefsuewyj thead, #icefsuewyj tbody, #icefsuewyj tfoot, #icefsuewyj tr, #icefsuewyj td, #icefsuewyj th {
+#zaqcfhtbrt thead, #zaqcfhtbrt tbody, #zaqcfhtbrt tfoot, #zaqcfhtbrt tr, #zaqcfhtbrt td, #zaqcfhtbrt th {
   border-style: none;
 }
 
-#icefsuewyj p {
+#zaqcfhtbrt p {
   margin: 0;
   padding: 0;
 }
 
-#icefsuewyj .gt_table {
+#zaqcfhtbrt .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2033,12 +2056,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_caption {
+#zaqcfhtbrt .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#icefsuewyj .gt_title {
+#zaqcfhtbrt .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2050,7 +2073,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#icefsuewyj .gt_subtitle {
+#zaqcfhtbrt .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2062,7 +2085,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#icefsuewyj .gt_heading {
+#zaqcfhtbrt .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2074,13 +2097,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_bottom_border {
+#zaqcfhtbrt .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_col_headings {
+#zaqcfhtbrt .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2095,7 +2118,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_col_heading {
+#zaqcfhtbrt .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2115,7 +2138,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#icefsuewyj .gt_column_spanner_outer {
+#zaqcfhtbrt .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2127,15 +2150,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#icefsuewyj .gt_column_spanner_outer:first-child {
+#zaqcfhtbrt .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#icefsuewyj .gt_column_spanner_outer:last-child {
+#zaqcfhtbrt .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#icefsuewyj .gt_column_spanner {
+#zaqcfhtbrt .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2147,11 +2170,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#icefsuewyj .gt_spanner_row {
+#zaqcfhtbrt .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#icefsuewyj .gt_group_heading {
+#zaqcfhtbrt .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2177,7 +2200,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#icefsuewyj .gt_empty_group_heading {
+#zaqcfhtbrt .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2192,15 +2215,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#icefsuewyj .gt_from_md > :first-child {
+#zaqcfhtbrt .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#icefsuewyj .gt_from_md > :last-child {
+#zaqcfhtbrt .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#icefsuewyj .gt_row {
+#zaqcfhtbrt .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2219,7 +2242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#icefsuewyj .gt_stub {
+#zaqcfhtbrt .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2232,7 +2255,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#icefsuewyj .gt_stub_row_group {
+#zaqcfhtbrt .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2246,15 +2269,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#icefsuewyj .gt_row_group_first td {
+#zaqcfhtbrt .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#icefsuewyj .gt_row_group_first th {
+#zaqcfhtbrt .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#icefsuewyj .gt_summary_row {
+#zaqcfhtbrt .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2264,16 +2287,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#icefsuewyj .gt_first_summary_row {
+#zaqcfhtbrt .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_first_summary_row.thick {
+#zaqcfhtbrt .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#icefsuewyj .gt_last_summary_row {
+#zaqcfhtbrt .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2283,7 +2306,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_grand_summary_row {
+#zaqcfhtbrt .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2293,7 +2316,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#icefsuewyj .gt_first_grand_summary_row {
+#zaqcfhtbrt .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2303,7 +2326,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_last_grand_summary_row_top {
+#zaqcfhtbrt .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2313,11 +2336,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_striped {
+#zaqcfhtbrt .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#icefsuewyj .gt_table_body {
+#zaqcfhtbrt .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2326,7 +2349,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_footnotes {
+#zaqcfhtbrt .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2340,7 +2363,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_footnote {
+#zaqcfhtbrt .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2349,7 +2372,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#icefsuewyj .gt_sourcenotes {
+#zaqcfhtbrt .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2363,7 +2386,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#icefsuewyj .gt_sourcenote {
+#zaqcfhtbrt .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2371,138 +2394,147 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#icefsuewyj .gt_left {
+#zaqcfhtbrt .gt_left {
   text-align: left;
 }
 
-#icefsuewyj .gt_center {
+#zaqcfhtbrt .gt_center {
   text-align: center;
 }
 
-#icefsuewyj .gt_right {
+#zaqcfhtbrt .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#icefsuewyj .gt_font_normal {
+#zaqcfhtbrt .gt_font_normal {
   font-weight: normal;
 }
 
-#icefsuewyj .gt_font_bold {
+#zaqcfhtbrt .gt_font_bold {
   font-weight: bold;
 }
 
-#icefsuewyj .gt_font_italic {
+#zaqcfhtbrt .gt_font_italic {
   font-style: italic;
 }
 
-#icefsuewyj .gt_super {
+#zaqcfhtbrt .gt_super {
   font-size: 65%;
 }
 
-#icefsuewyj .gt_footnote_marks {
+#zaqcfhtbrt .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#icefsuewyj .gt_asterisk {
+#zaqcfhtbrt .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#icefsuewyj .gt_indent_1 {
+#zaqcfhtbrt .gt_indent_1 {
   text-indent: 5px;
 }
 
-#icefsuewyj .gt_indent_2 {
+#zaqcfhtbrt .gt_indent_2 {
   text-indent: 10px;
 }
 
-#icefsuewyj .gt_indent_3 {
+#zaqcfhtbrt .gt_indent_3 {
   text-indent: 15px;
 }
 
-#icefsuewyj .gt_indent_4 {
+#zaqcfhtbrt .gt_indent_4 {
   text-indent: 20px;
 }
 
-#icefsuewyj .gt_indent_5 {
+#zaqcfhtbrt .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead><tr class="gt_col_headings">
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="<strong>Characteristic</strong>"><strong>Characteristic</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>N</strong>"><strong>N</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>Event N</strong>"><strong>Event N</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>OR</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead><tr class="header gt_col_headings">
+<th id="<strong>Characteristic</strong>" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="<strong>N</strong>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>N</strong></th>
+<th id="<strong>Event N</strong>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>Event N</strong></th>
+<th id="<strong>OR</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>OR</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>95% CI</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<th id="<strong>95% CI</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>95% CI</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>p-value</strong>"><strong>p-value</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>q-value</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>2</sup></span>">
+<th id="<strong>p-value</strong>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>p-value</strong></th>
+<th id="<strong>q-value</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>2</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>q-value</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span>
 </th>
-    </tr></thead>
+</tr></thead>
 <tbody class="gt_table_body">
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-weight: bold;">Age</td>
-<td headers="stat_n" class="gt_row gt_center">183</td>
-<td headers="stat_nevent" class="gt_row gt_center">58</td>
-<td headers="estimate" class="gt_row gt_center">1.02</td>
-<td headers="ci" class="gt_row gt_center">1.00, 1.04</td>
-<td headers="p.value" class="gt_row gt_center">0.091</td>
-<td headers="q.value" class="gt_row gt_center">0.18</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">Age</td>
+<td class="gt_row gt_center" headers="stat_n">183</td>
+<td class="gt_row gt_center" headers="stat_nevent">58</td>
+<td class="gt_row gt_center" headers="estimate">1.02</td>
+<td class="gt_row gt_center" headers="ci">1.00, 1.04</td>
+<td class="gt_row gt_center" headers="p.value">0.091</td>
+<td class="gt_row gt_center" headers="q.value">0.18</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-weight: bold;">Grade</td>
-<td headers="stat_n" class="gt_row gt_center">193</td>
-<td headers="stat_nevent" class="gt_row gt_center">61</td>
-<td headers="estimate" class="gt_row gt_center"><br></td>
-<td headers="ci" class="gt_row gt_center"><br></td>
-<td headers="p.value" class="gt_row gt_center">0.93</td>
-<td headers="q.value" class="gt_row gt_center">0.93</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">Grade</td>
+<td class="gt_row gt_center" headers="stat_n">193</td>
+<td class="gt_row gt_center" headers="stat_nevent">61</td>
+<td class="gt_row gt_center" headers="estimate"><br></td>
+<td class="gt_row gt_center" headers="ci"><br></td>
+<td class="gt_row gt_center" headers="p.value">0.93</td>
+<td class="gt_row gt_center" headers="q.value">0.93</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;I</td>
-<td headers="stat_n" class="gt_row gt_center"><br></td>
-<td headers="stat_nevent" class="gt_row gt_center"><br></td>
-<td headers="estimate" class="gt_row gt_center">—</td>
-<td headers="ci" class="gt_row gt_center">—</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
-<td headers="q.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;I</td>
+<td class="gt_row gt_center" headers="stat_n"><br></td>
+<td class="gt_row gt_center" headers="stat_nevent"><br></td>
+<td class="gt_row gt_center" headers="estimate">—</td>
+<td class="gt_row gt_center" headers="ci">—</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
+<td class="gt_row gt_center" headers="q.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;II</td>
-<td headers="stat_n" class="gt_row gt_center"><br></td>
-<td headers="stat_nevent" class="gt_row gt_center"><br></td>
-<td headers="estimate" class="gt_row gt_center">0.95</td>
-<td headers="ci" class="gt_row gt_center">0.45, 2.00</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
-<td headers="q.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;II</td>
+<td class="gt_row gt_center" headers="stat_n"><br></td>
+<td class="gt_row gt_center" headers="stat_nevent"><br></td>
+<td class="gt_row gt_center" headers="estimate">0.95</td>
+<td class="gt_row gt_center" headers="ci">0.45, 2.00</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
+<td class="gt_row gt_center" headers="q.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left">&nbsp;&nbsp;&nbsp;&nbsp;III</td>
-<td headers="stat_n" class="gt_row gt_center"><br></td>
-<td headers="stat_nevent" class="gt_row gt_center"><br></td>
-<td headers="estimate" class="gt_row gt_center">1.10</td>
-<td headers="ci" class="gt_row gt_center">0.52, 2.29</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
-<td headers="q.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;III</td>
+<td class="gt_row gt_center" headers="stat_n"><br></td>
+<td class="gt_row gt_center" headers="stat_nevent"><br></td>
+<td class="gt_row gt_center" headers="estimate">1.10</td>
+<td class="gt_row gt_center" headers="ci">0.52, 2.29</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
+<td class="gt_row gt_center" headers="q.value"><br></td>
 </tr>
 </tbody>
 <tfoot class="gt_footnotes">
-<tr>
-<td class="gt_footnote" colspan="7">
+<tr class="even">
+<td colspan="7" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> OR = Odds Ratio, CI = Confidence Interval</td>
-    </tr>
-<tr>
-<td class="gt_footnote" colspan="7">
+</tr>
+<tr class="odd">
+<td colspan="7" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>2</sup></span> False discovery rate correction for multiple testing</td>
-    </tr>
+</tr>
 </tfoot>
 </table>
 </div>
@@ -2512,24 +2544,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>A multivariate regression table provides a summary of the results obtained from a multivariate regression analysis. This type of analysis involves multiple independent variables (predictors) and a single dependent variable.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="tovftsvqvc" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#tovftsvqvc table {
+<div id="nlpafflzpw" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#nlpafflzpw table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#tovftsvqvc thead, #tovftsvqvc tbody, #tovftsvqvc tfoot, #tovftsvqvc tr, #tovftsvqvc td, #tovftsvqvc th {
+#nlpafflzpw thead, #nlpafflzpw tbody, #nlpafflzpw tfoot, #nlpafflzpw tr, #nlpafflzpw td, #nlpafflzpw th {
   border-style: none;
 }
 
-#tovftsvqvc p {
+#nlpafflzpw p {
   margin: 0;
   padding: 0;
 }
 
-#tovftsvqvc .gt_table {
+#nlpafflzpw .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -2555,12 +2586,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-left-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_caption {
+#nlpafflzpw .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#tovftsvqvc .gt_title {
+#nlpafflzpw .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2572,7 +2603,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-width: 0;
 }
 
-#tovftsvqvc .gt_subtitle {
+#nlpafflzpw .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2584,7 +2615,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-width: 0;
 }
 
-#tovftsvqvc .gt_heading {
+#nlpafflzpw .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2596,13 +2627,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_bottom_border {
+#nlpafflzpw .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_col_headings {
+#nlpafflzpw .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2617,7 +2648,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_col_heading {
+#nlpafflzpw .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2637,7 +2668,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#tovftsvqvc .gt_column_spanner_outer {
+#nlpafflzpw .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2649,15 +2680,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 4px;
 }
 
-#tovftsvqvc .gt_column_spanner_outer:first-child {
+#nlpafflzpw .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#tovftsvqvc .gt_column_spanner_outer:last-child {
+#nlpafflzpw .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#tovftsvqvc .gt_column_spanner {
+#nlpafflzpw .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2669,11 +2700,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   width: 100%;
 }
 
-#tovftsvqvc .gt_spanner_row {
+#nlpafflzpw .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#tovftsvqvc .gt_group_heading {
+#nlpafflzpw .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2699,7 +2730,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   text-align: left;
 }
 
-#tovftsvqvc .gt_empty_group_heading {
+#nlpafflzpw .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2714,15 +2745,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: middle;
 }
 
-#tovftsvqvc .gt_from_md > :first-child {
+#nlpafflzpw .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#tovftsvqvc .gt_from_md > :last-child {
+#nlpafflzpw .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#tovftsvqvc .gt_row {
+#nlpafflzpw .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2741,7 +2772,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   overflow-x: hidden;
 }
 
-#tovftsvqvc .gt_stub {
+#nlpafflzpw .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2754,7 +2785,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#tovftsvqvc .gt_stub_row_group {
+#nlpafflzpw .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2768,15 +2799,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   vertical-align: top;
 }
 
-#tovftsvqvc .gt_row_group_first td {
+#nlpafflzpw .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#tovftsvqvc .gt_row_group_first th {
+#nlpafflzpw .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#tovftsvqvc .gt_summary_row {
+#nlpafflzpw .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2786,16 +2817,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#tovftsvqvc .gt_first_summary_row {
+#nlpafflzpw .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_first_summary_row.thick {
+#nlpafflzpw .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#tovftsvqvc .gt_last_summary_row {
+#nlpafflzpw .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2805,7 +2836,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_grand_summary_row {
+#nlpafflzpw .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2815,7 +2846,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#tovftsvqvc .gt_first_grand_summary_row {
+#nlpafflzpw .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2825,7 +2856,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-top-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_last_grand_summary_row_top {
+#nlpafflzpw .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2835,11 +2866,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_striped {
+#nlpafflzpw .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#tovftsvqvc .gt_table_body {
+#nlpafflzpw .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2848,7 +2879,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-bottom-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_footnotes {
+#nlpafflzpw .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2862,7 +2893,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_footnote {
+#nlpafflzpw .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -2871,7 +2902,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#tovftsvqvc .gt_sourcenotes {
+#nlpafflzpw .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2885,7 +2916,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   border-right-color: #D3D3D3;
 }
 
-#tovftsvqvc .gt_sourcenote {
+#nlpafflzpw .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -2893,119 +2924,125 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   padding-right: 5px;
 }
 
-#tovftsvqvc .gt_left {
+#nlpafflzpw .gt_left {
   text-align: left;
 }
 
-#tovftsvqvc .gt_center {
+#nlpafflzpw .gt_center {
   text-align: center;
 }
 
-#tovftsvqvc .gt_right {
+#nlpafflzpw .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#tovftsvqvc .gt_font_normal {
+#nlpafflzpw .gt_font_normal {
   font-weight: normal;
 }
 
-#tovftsvqvc .gt_font_bold {
+#nlpafflzpw .gt_font_bold {
   font-weight: bold;
 }
 
-#tovftsvqvc .gt_font_italic {
+#nlpafflzpw .gt_font_italic {
   font-style: italic;
 }
 
-#tovftsvqvc .gt_super {
+#nlpafflzpw .gt_super {
   font-size: 65%;
 }
 
-#tovftsvqvc .gt_footnote_marks {
+#nlpafflzpw .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#tovftsvqvc .gt_asterisk {
+#nlpafflzpw .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#tovftsvqvc .gt_indent_1 {
+#nlpafflzpw .gt_indent_1 {
   text-indent: 5px;
 }
 
-#tovftsvqvc .gt_indent_2 {
+#nlpafflzpw .gt_indent_2 {
   text-indent: 10px;
 }
 
-#tovftsvqvc .gt_indent_3 {
+#nlpafflzpw .gt_indent_3 {
   text-indent: 15px;
 }
 
-#tovftsvqvc .gt_indent_4 {
+#nlpafflzpw .gt_indent_4 {
   text-indent: 20px;
 }
 
-#tovftsvqvc .gt_indent_5 {
+#nlpafflzpw .gt_indent_5 {
   text-indent: 25px;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead><tr class="gt_col_headings">
-<th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="<strong>Characteristic</strong>"><strong>Characteristic</strong></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>OR</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead><tr class="header gt_col_headings">
+<th id="<strong>Characteristic</strong>" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
+<th id="<strong>OR</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>OR</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>95% CI</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>">
+<th id="<strong>95% CI</strong><span class=&quot;gt_footnote_marks&quot; style=&quot;white-space:nowrap;font-style:italic;font-weight:normal;&quot;><sup>1</sup></span>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">
 <strong>95% CI</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span>
 </th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" scope="col" id="<strong>p-value</strong>"><strong>p-value</strong></th>
-    </tr></thead>
+<th id="<strong>p-value</strong>" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>p-value</strong></th>
+</tr></thead>
 <tbody class="gt_table_body">
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-weight: bold;">Age</td>
-<td headers="estimate" class="gt_row gt_center">1.02</td>
-<td headers="ci" class="gt_row gt_center">1.00, 1.04</td>
-<td headers="p.value" class="gt_row gt_center">0.087</td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">Age</td>
+<td class="gt_row gt_center" headers="estimate">1.02</td>
+<td class="gt_row gt_center" headers="ci">1.00, 1.04</td>
+<td class="gt_row gt_center" headers="p.value">0.087</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-weight: bold;">T Stage</td>
-<td headers="estimate" class="gt_row gt_center"><br></td>
-<td headers="ci" class="gt_row gt_center"><br></td>
-<td headers="p.value" class="gt_row gt_center">0.62</td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="font-weight: bold">T Stage</td>
+<td class="gt_row gt_center" headers="estimate"><br></td>
+<td class="gt_row gt_center" headers="ci"><br></td>
+<td class="gt_row gt_center" headers="p.value">0.62</td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;T1</td>
-<td headers="estimate" class="gt_row gt_center">—</td>
-<td headers="ci" class="gt_row gt_center">—</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-style: italic">&nbsp;&nbsp;&nbsp;&nbsp;T1</td>
+<td class="gt_row gt_center" headers="estimate">—</td>
+<td class="gt_row gt_center" headers="ci">—</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;T2</td>
-<td headers="estimate" class="gt_row gt_center">0.58</td>
-<td headers="ci" class="gt_row gt_center">0.24, 1.37</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="font-style: italic">&nbsp;&nbsp;&nbsp;&nbsp;T2</td>
+<td class="gt_row gt_center" headers="estimate">0.58</td>
+<td class="gt_row gt_center" headers="ci">0.24, 1.37</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;T3</td>
-<td headers="estimate" class="gt_row gt_center">0.94</td>
-<td headers="ci" class="gt_row gt_center">0.39, 2.28</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="odd">
+<td class="gt_row gt_left" headers="label" style="font-style: italic">&nbsp;&nbsp;&nbsp;&nbsp;T3</td>
+<td class="gt_row gt_center" headers="estimate">0.94</td>
+<td class="gt_row gt_center" headers="ci">0.39, 2.28</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
-<tr>
-<td headers="label" class="gt_row gt_left" style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;T4</td>
-<td headers="estimate" class="gt_row gt_center">0.79</td>
-<td headers="ci" class="gt_row gt_center">0.33, 1.90</td>
-<td headers="p.value" class="gt_row gt_center"><br></td>
+<tr class="even">
+<td class="gt_row gt_left" headers="label" style="font-style: italic">&nbsp;&nbsp;&nbsp;&nbsp;T4</td>
+<td class="gt_row gt_center" headers="estimate">0.79</td>
+<td class="gt_row gt_center" headers="ci">0.33, 1.90</td>
+<td class="gt_row gt_center" headers="p.value"><br></td>
 </tr>
 </tbody>
-<tfoot class="gt_footnotes"><tr>
-<td class="gt_footnote" colspan="4">
+<tfoot class="gt_footnotes"><tr class="odd">
+<td colspan="4" class="gt_footnote">
 <span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;"><sup>1</sup></span> OR = Odds Ratio, CI = Confidence Interval</td>
-    </tr></tfoot>
+</tr></tfoot>
 </table>
 </div>
 </div>
@@ -3142,10 +3179,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -3155,8 +3191,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -3169,6 +3214,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -3212,6 +3376,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -3237,6 +3402,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -3298,18 +3489,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script><nav class="page-navigation"><div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./material.html" class="pagination-link">
+      <a href="./material.html" class="pagination-link" aria-label="Material">
         <span class="nav-page-text">Material</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
-    <div class="nav-footer-left">This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</div>   
+    <div class="nav-footer-left">
+<p>This page is built with ❤️ and <a href="https://quarto.org/">Quarto</a>.</p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
-    </div>
-    <div class="nav-footer-right">© Copyright 2023, Md. Jubayer Hossain</div>
+    <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/chiraltraining/gtsummary4publichealth/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/chiraltraining/gtsummary4publichealth/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+    <div class="nav-footer-right">
+<p>© Copyright 2023, Md. Jubayer Hossain</p>
+</div>
   </div>
 </footer>
 
