@@ -3,17 +3,18 @@ project:
   output-dir: docs 
   render:
     - "*.qmd"
-    - "!exercises/exercises.Rmd"
+    - "!exercises/"
     - "!slides/*.qmd"
+    - "!solutions/*.qmd"
     
 website:
   page-navigation: true
-  title: "Public Health Insights: Clinical Reporting Using {gtsummary}"
-  description: "Homepage for workshop on Public Health Insights: Clinical Reporting Using {gtsummary} Workshop"
-  site-url: "https://chiraltraining.github.io/gtsummary4publichealth/"
+  title: "Publication-ready Tables with R"
+  description: "Homepage for Publication-ready Tables with R Workshop"
+  site-url: "https://chiraltraining.github.io/gtsummary/"
   favicon: "images/trans - gt.png"
   
-  repo-url: https://github.com/chiraltraining/gtsummary4publichealth
+  repo-url: https://github.com/chiraltraining/gtsummary
   repo-actions: [edit, issue]
 
   open-graph: true
@@ -23,7 +24,7 @@ website:
 
   page-footer:
     left: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    right: "&copy; Copyright 2023, Md. Jubayer Hossain"
+    right: "&copy; Copyright 2025, Md. Jubayer Hossain"
     background: "#758283"
   sidebar:
     background: "#758283"

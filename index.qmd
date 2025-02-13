@@ -1,76 +1,116 @@
 ---
-title: "Public Health Insights: Clinical Reporting Using R"
-subtitle: "R for Public Health Workshop"
+title: "Publication-ready Tables with R"
+subtitle: "Make Your Research Easy—Stop Wasting Time on Formatting and Start Creating Stunning Tables for Your Next Research Paper with gtsummary!"
 editor: source
 ---
 
-<!-- https://github.com/rstudio-conf-2022/teach-ds -->
-
 -------------------------------------------------------------------
+📊 An all-in-one, interactive workshop designed to help you create stunning, publication-ready tables effortlessly with gtsummary.
 
+📅 Firday, February 28, 2025 | 9:00pm - 12:00 00am 
 
-🗓 Firday & Saturday, February 9 & 10, 2024 | 9:00pm - 11: 00pm 
+💻 Mode of Instructions (Virtual/Zoom)
 
-🏨 Virtual
+✍️ **Register** with [Google Form](https://forms.gle/L1aUjr7yW8cuiUuM9)
 
-💥 **Register** with [Google Form](https://forms.gle/L1aUjr7yW8cuiUuM9)
-
-📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.
+📧 After registration, you will receive a confirmation email within 24 hours with further instructions to join the workshop.
 
 ------------------------------------------------------------------------
 
-# Workshop Overview
-Join us for an engaging and informative workshop on "Public Health Insights: Clinical Reporting Using {gtsummary}." This workshop is designed to equip public health professionals, researchers, and analysts with the skills and knowledge to effectively utilize the `{gtsummary}` package for creating comprehensive clinical reports. `{gtsummary}` is a powerful tool that streamlines the process of summarizing data, making it an invaluable asset for deriving meaningful insights and driving evidence-based decisions in public health contexts.
+## Workshop Overview
+In this workshop, you’ll learn how to effortlessly create publication-ready tables for your research papers using the powerful `{gtsummary}` package in R. Designed for researchers. This workshop will guide you through the process of transforming raw data into clean, well-organized, and visually appealing tables—without spending excessive time on formatting.
 
-Through hands-on demonstrations and interactive sessions, participants will learn how to leverage `{gtsummary}` to generate visually appealing and interpretable clinical reports. The workshop will cover essential concepts, best practices, and practical examples that demonstrate the application of `{gtsummary}` in real-world public health scenarios. Whether you're a seasoned data analyst or new to the world of data reporting, this workshop will provide you with the tools and techniques needed to elevate your clinical reporting capabilities.
+Through interactive demonstrations and hands-on exercises, you will gain a solid understanding of how to summarize research data efficiently, generate insightful reports, and ensure your results are presentation-ready for scientific journals. By the end of the workshop, you’ll be equipped with the skills and tools needed to streamline your data reporting process and focus on what matters most—your research.
+
+## Let's make great tables!
+This online workshop will only take a few hours of your time but will drastically improve your skills in creating publication-ready tables with `{gtsummary}` in R.
+
+By the end, you’ll become the go-to expert in your team when it comes to summarizing and presenting data in a way that’s both clear and visually appealing. You'll generate tables that are not only easy to interpret but also publication-ready, eliminating the hassle of endless formatting.
+
+Sure, you could spend hours piecing together tips and tricks from blogs, forums, and documentation, but we've condensed all the essential techniques into one streamlined workshop to save you time and effort.
+
+This ultimate workshop on publication-ready tables with gtsummary is designed to make your research reporting process easier and more efficient than ever.
+
+![](images/gtsummary.gif)
+
+## Master Publication-Ready Tables with gtsummary, step by step
+You will begin with basic table generation and progress to creating the most customized and visually appealing clinical reports with gtsummary in R.
+
+Each module also includes detailed explanations of key gtsummary functions and essential data summarization concepts, ensuring that by the end, you'll be equipped to create professional-quality tables for any research paper.
+
+Here is the plan:
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<p class="card-text">Module 1</p>
+<p class="card-text"><b>Introduction & Setup</p></b>
+<p class="card-text">Learn why R is the best tool for automating table creation and ensuring publication-quality formatting using **gtsummary** and **gt**. Set up R, install required packages, and prepare datasets for table generation.</p>
+
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<p class="card-text">Module 2</p>
+<p class="card-text"><b>Descriptive Tables</p></b>
+<p class="card-text">Create well-structured summary tables for **categorical** and **continuous** variables. The module will also cover how to create **cross-tabulation (contingency)** tables to examine relationships between categorical variables.</p>
+
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<p class="card-text">Module 3</p>
+<p class="card-text"><b>Difference Tables</p></b>
+<p class="card-text">In this module, you'll learn how to create Difference Tables that summarize statistical comparisons, such as **t-tests** and **ANOVA** results, between different groups. These tables are essential for presenting the differences in means or other summary statistics across categorical variables.</p>
+
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<p class="card-text">Module 4</p>
+<p class="card-text"><b>Association Tables</p></b>
+<p class="card-text">In this module, you will learn how to create Association Tables that summarize the relationship between categorical variables, such as those tested using **chi-square** tests. These tables are essential for presenting statistical associations between different groups or factors.</p>
+
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<p class="card-text">Module 5</p>
+<p class="card-text"><b>Regression Analysis Tables</p></b>
+<p class="card-text">In this module, you'll learn how to create Regression Analysis Tables for various types of regression models, including **Linear Regression**, **Logistic Regression**, **Ordinal Regression**, and **Poisson Regression**. These tables are key for summarizing model results, providing a clear overview of the relationships between predictors and outcomes.</p>
+
+</div>
+</div>
+:::
+
+::: {.g-col-12 .g-col-md-6}
+<div class="card h-100" id="card-first-color">
+<div class="card-body d-flex flex-column">
+<p class="card-text">Module 6</p>
+<p class="card-text"><b>Survival Analysis Tables</p></b>
+<p class="card-text">In this module, you will learn how to create Survival Analysis Tables that summarize the results of time-to-event analyses, such as **Cox Proportional Hazards** and **Kaplan-Meier survival curves**. These tables are crucial for presenting **survival rates**, **hazard ratios**, and associated statistics in clinical and epidemiological research.</p>
+
+</div>
+</div>
+:::
+:::
 
 
-## What is gtsummary? 
-
-The [**gtsummary**](https://www.danieldsjoberg.com/gtsummary/) package provides an elegant and flexible way to create publication-ready summary tables in **R**. 
-
-A critical part of the work of statisticians, data scientists, and analysts is summarizing data sets and regression models in R and publishing or sharing polished summary tables.
-
-The [**gtsummary**](https://www.danieldsjoberg.com/gtsummary/) package was created to streamline these everyday analysis tasks by allowing users to easily create reproducible summaries of data sets, regression models, survey data, and survival data with a simple interface and very little code.
-
-The package follows a tidy framework, making it easy to integrate with standard data workflows, and offers many table customization features through function arguments, helper functions, and custom themes.
-
-
-```{r, echo=FALSE}
-knitr::include_graphics("images/gtsummary.gif")
-```
-
-## Learning objectives
-
-- Understand the importance of standardized clinical reporting in public health research and practice.
-- Learn the basics of the `{gtsummary}` package and its capabilities for creating summary tables in R.
-- Explore various data formats and structures that can be used with `{gtsummary}`.
-- Learn how to prepare and clean data for clinical reporting using {gtsummary}.
-- Gain proficiency in creating common clinical summary tables, such as frequency tables, cross-tabulations, and stratified tables.
-- Understand how to incorporate descriptive statistics, including means, medians, and proportions, into {gtsummary} tables.
-- Learn how to customize table formatting, including titles, captions, footnotes, and table themes.
-- Explore advanced features of `{gtsummary}` for creating complex tables, including multi-variable summaries and interaction tables.
-- Understand the role of regression model summaries in clinical reporting and learn how to generate these summaries using `{gtsummary}`.
-
-
-
-## Is this course for me?
-
-If your answer to any of the following questions is "yes", then this is the right workshop for you.
-
--   Do you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?
-
--   Do you want your workflow to be reproducible?
-
--   Are you often frustrated with the immense amount of code required to create great-looking tables in R?
-
-The workshop is designed for those with some experience in R. 
-It will be expected that you can perform basic data manipulation.
-Experience with the {tidyverse} and the `%>%` operator is a plus, but not required.
-
-## What you will learn? 
-### Descriptive Tables 
-
+## Descriptive Tables 
 Descriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).
 
 
@@ -83,7 +123,7 @@ Descriptive statistics for continuous, categorical, and dichotomous variables in
 library(tidyverse)
 library(gtsummary)
 library(gt)
-data <- readxl::read_excel(here::here("data/KAP_Thals_Processed.xlsx"), sheet = 5)
+data <- readxl::read_excel("./code/data/KAP_Thals_Processed.xlsx", sheet = 5)
 ```
 
 ```{r}
@@ -93,10 +133,9 @@ data <- readxl::read_excel(here::here("data/KAP_Thals_Processed.xlsx"), sheet = 
 data %>% 
   select(2:7) %>% 
   tbl_summary(statistic = all_continuous() ~ "{mean} ({sd})", 
-              type = all_dichotomous() ~ "categorical") %>% 
-  as_gt() %>% 
-  tab_caption("Table 1. General characteristics of the study participants (N = 680)")
-
+              type = all_dichotomous() ~ "categorical") |> 
+  bold_labels() |> 
+  as_kable_extra()
 ```
 
 ### Comparative Tables 
@@ -114,14 +153,13 @@ data %>%
               type = all_dichotomous() ~ "categorical", 
               by = KnowledgeLevelBinary) %>% 
   add_overall() %>% 
-  as_gt() %>% 
-  tab_caption("Table 2. Level of knowledge of thalassemia who heard abouth thalassemia (N = 610")
-
+  bold_labels() |> 
+  as_kable_extra()
 ```
 
 
 
-### Analytical Tables
+### Association Tables
 Analytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.
 
 
@@ -129,16 +167,16 @@ Analytical tables typically refer to organized and structured data representatio
 #| label: analytical-tables 
 #| echo: false
 # descriptive tables 
-data %>% 
-  select(2:6, KnowledgeLevelBinary) %>% 
+data |> 
+  select(2:6, KnowledgeLevelBinary) |> 
   tbl_summary(statistic = all_continuous() ~ "{mean} ({sd})", 
               type = all_dichotomous() ~ "categorical", 
-              by = KnowledgeLevelBinary) %>% 
-  add_overall() %>% 
-  add_p() %>% 
-  bold_p(t = 0.05) %>% 
-  as_gt() %>% 
-  tab_caption("Table 3. Level of knowledge of thalassemia among university students (N = 610)")
+              by = KnowledgeLevelBinary) |> 
+  add_overall() |> 
+  add_p() |> 
+  bold_p(t = 0.05) |> 
+  bold_labels() |> 
+  as_kable_extra()
 ```
 
 ## Univariate Regression Tables 
@@ -148,21 +186,22 @@ Univariate regression is a type of linear regression where you have one independ
 #| echo: false
 #| message: false
 # descriptive tables 
-trial %>%
-  select(response, age, grade) %>%
+trial |> 
+  select(response, age, trt, marker, stage, grade) |> 
   tbl_uvregression(
     method = glm,
     y = response,
     method.args = list(family = binomial),
     exponentiate = TRUE,
     pvalue_fun = ~ style_pvalue(.x, digits = 2)
-  ) %>%
-  add_global_p() %>% # add global p-value
-  add_nevent() %>% # add number of events of the outcome
-  add_q() %>% # adjusts global p-values for multiple testing
-  bold_p() %>% # bold p-values under a given threshold (default 0.05)
-  bold_p(t = 0.10, q = TRUE) %>% # now bold q-values under the threshold of 0.10
-  bold_labels()
+  ) |> 
+  add_global_p() |> 
+  add_nevent() |> 
+  add_q() |> 
+  bold_p() |> 
+  bold_p(t = 0.10, q = TRUE) |> 
+  bold_labels() |> 
+  as_kable_extra()
 ```
 
 ### Multivariate Regression Tables 
@@ -173,16 +212,17 @@ A multivariate regression table provides a summary of the results obtained from 
 #| echo: false
 #| message: false
 # descriptive tables 
-m1 <- glm(response ~ age + stage, trial, family = binomial)
-m1 %>%
+m1 <- glm(response ~ age + stage + trt + marker + grade, trial, family = binomial)
+m1 |> 
   tbl_regression(
     exponentiate = TRUE,
     pvalue_fun = ~ style_pvalue(.x, digits = 2),
-  ) %>%
-  add_global_p() %>%
-  bold_p(t = 0.05) %>%
-  bold_labels() %>%
-  italicize_levels() 
+  ) |> 
+  add_global_p() |> 
+  bold_p(t = 0.05) |> 
+  bold_labels() |> 
+  italicize_levels() |> 
+  as_kable_extra()
 ```
 
 ## Prework
@@ -207,31 +247,55 @@ Before attending the workshop please have the following installed and configured
 
  
 
-
-::: callout-tip
-## Who We Are: CHIRAL Bangladesh
-
-[Center for Health Innovation, Research, Action and Learning - Bangladesh (CHIRAL Bangladesh)](https://chiralbd.org/) is a voluntary non-profit research organization, resolving to promote interdisciplinary research in the field of health data science, computational biology and genomics.
-:::
-
-
 ## Instructor 
 ### Bio
 ![](images/JHossain.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Jubayer" width="200"} 
 
-Hi, I am [Jubayer](https://hossainlab.github.io/), a highly motivated biomedical research enthusiasts with a Master of Science in Microbiology focus on public health and health data science. Research experience designing and implementing projects for biomedical data analysis (including next‑generation sequencing, RNA‑seq , and ssRNA‑seq ). I am interested in applying machine learning/deep learning tools and techniques in the context of disease diagnosis and large data analytics for public health while focusing on bridging the gap between computational and experimental laboratories through highly engaging and fruitful collaborations
+I am a biomedical researcher focusing on neuroepidemiology, cancer epidemiology, and cancer bioinformatics. My primary interest lies in applying machine learning algorithms to health data including electronic health records, multi-omics big data, and neurological images. I aim to optimize clinically actionable biomarkers and develop predictive models to enable early diagnosis and treatment for neurological disorders and cancer. Furthermore, I am interested in visualizing these data and models to facilitate biological interpretation and clinical applications.
 
-Python is my primary language for data analysis and machine learning. I also have a basic understanding of R, Julia, SPSS, QGIS, and SQL.
+I am currently the Founder and Executive Director of [CHIRAL Bangladesh](https://chiralbd.org/). My leadership extends to [aiHealth Lab](https://aihealthlab.owlstown.net/) and Big Bioinformatics Lab, where the focus is on advancing cancer bioinformatics and artificial intelligence for health. As an educator, I hold the position of Lead Instructor and Organizer at the Training Unit of CHIRAL. Additionally, I serve as an instructor for the Data Science for Biologists program at cBLAST.
 
-This [page](https://hossainlab.github.io/) highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.
+To further bridge data science with biomedical research, I have initiated [DataViz Gallery](https://hossainlab.github.io/dataviz-gallery/), a curated collection of compelling data visualizations using Python and R. This initiative aims to enhance the interpretability of complex biological and clinical data through effective visual storytelling. 
+
+This [page](https://hossainlab.owlstown.net/) highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.
 
 ### Skills 
 **Programming Languages:** Python, R, SQL, Julia, JavaScript; **Data Science:** scikit-learn, PyCaret, Dask, PySpark; **GIS & Remote Sensing:** ArcGIS, Geopandas, Xarray, Giovani; **Analytics Softwares:** SPSS, PowerBI, Microsoft Excel; **Survey Tools:** RedCap, KoboToolBox, EpiCollect, Google Forms; **Academic Writing Tools:** Microsoft Word, LaTeX, Mendeley; **Bioinformatics:** BioPython, Bioconductor, BioPandas, Galaxy, NGS, RNASeq, ssRNASeq; **Miscellaneous Skills:** UNIX, Version Control(Git), Web Scraping, APIs.
 
 
 ### Selected Publications 
-1. **Hossain, M.J.**, Islam, M.W., Munni, U.R. et al. Health-related quality of life among thalassemia patients in Bangladesh using the SF-36 questionnaire. Scientific Reports 13, 7734 (2023). <https://doi.org/10.1038/s41598-023-34205-9>
-2. Towhid, S. T., **Hossain, M. J.**, Sammo, M. A. S., & Akter, S. (2022). Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh. European Journal of Biology and Biotechnology, 3(3), 14–19. <https://doi.org/10.24018/ejbio.2022.3.3.341>
-3. **Hossain, M.J.**, Towhid ST, Sultana S, Mukta SA, Gulshan R, Miah MS (2022). *Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh*. Microbial Bioactives, 5(2), <https://doi.org/10.25163/microbbioacts.526325>.
+1. **Hossain, M.J.**, Das, M. & Munni, U.R.  
+   *Urgent call for compulsory premarital screening: a crucial step towards thalassemia prevention in Bangladesh.*  
+   Orphanet J Rare Dis 19, 326 (2024). [DOI: 10.1186/s13023-024-03344-1](https://doi.org/10.1186/s13023-024-03344-1)
 
+2. Shanta, A.S.; Islam, N.; Al Asad, M.; Akter, K.; Habib, M.B.; **Hossain, M.J.**; Nahar, S.; Godman, B.; Islam, S.  
+   *Resistance and Co-Resistance of Metallo-Beta-Lactamase Genes in Diarrheal and Urinary-Tract Pathogens in Bangladesh.*  
+   Microorganisms 2024, 12, 1589. [DOI: 10.3390/microorganisms12081589](https://doi.org/10.3390/microorganisms12081589)
 
+3. Islam, M.W., Shahjahan, M., Azad, A.K., **Hossain, M.J.**  
+   *Factors contributing to antibiotic misuse among parents of school-going children in Dhaka City, Bangladesh.*  
+   Sci Rep 14, 2318 (2024). [DOI: 10.1038/s41598-024-52313-y](https://doi.org/10.1038/s41598-024-52313-y)
+
+4. **Hossain, M.J.**, Islam, M.W., Munni, U.R., Gulshan, R., Mukta, S.A., Miah, M.S., Sultana, S., Karmakar, M., Ferdous, J., & Islam, M.A.  
+   *Health-related quality of life among thalassemia patients in Bangladesh using the SF‑36 questionnaire.*  
+   Scientific Reports, 13(1). [DOI: 10.1038/s41598-023-34205-9](https://doi.org/10.1038/s41598-023-34205-9)
+
+5. Towhid, S.T., **Hossain, M.J.**, Sammo, M.A.S., & Akter, S.  
+   *Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh.*  
+   European Journal of Biology and Biotechnology, 3(3), 14–19. [DOI: 10.24018/ejbio.2022.3.3.341](https://doi.org/10.24018/ejbio.2022.3.3.341)
+
+6. **Hossain, M.J.**, Towhid, S.T., Sultana, S., Mukta, S.A., Gulshan, R., Miah, M.S.  
+   *Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh.*  
+   Microbial Bioactives, 5(2). [DOI: 10.25163/microbbioacts.526325](https://doi.org/10.25163/microbbioacts.526325)
+
+7. **Hossain, M.J.**, Towhid, S.T., Akter, S., Shahjahan, M., Roy, T., Akter, B., & Nodee, T.A.  
+   *Knowledge and Self-Management Practice Among Diabetic Patients from the Urban Areas in Bangladesh.*  
+   Journal of Angiotherapy, 7(1), 1-10. [DOI: 10.25163/angiotherapy.717340](https://doi.org/10.25163/angiotherapy.717340)
+
+8. **Hossain, M.J.**, Das, M., Islam, M.W., Shahjahan, M., Ferdous, J.  
+   *Community engagement and social participation in dengue prevention: A cross-sectional study in Dhaka City.*  
+   Health Sci Rep. 2024; 7:e2022. [DOI: 10.1002/hsr2.2022](https://doi.org/10.1002/hsr2.2022)
+
+9. **Hossain, M.J.**, Azad, A.K., Shahid, M.S.B., Shahjahan, M., Ferdous, J.  
+   *Prevalence, antibiotic resistance pattern for bacteriuria from patients with urinary tract infections.*  
+   Health Sci Rep. 2024; 7:e2039. [DOI: 10.1002/hsr2.2039](https://doi.org/10.1002/hsr2.2039)

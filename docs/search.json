@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "",
-    "text": "🗓 Firday & Saturday, February 9 & 10, 2024 | 9:00pm - 11: 00pm\n🏨 Virtual\n💥 Register with Google Form\n📝 To register for the workshop, follow instructions in the email “ Workshops” you received after registration.",
+    "text": "📊 An all-in-one, interactive workshop designed to help you create stunning, publication-ready tables effortlessly with gtsummary.\n\n\n📅 Firday, February 28, 2025 | 9:00pm - 12:00 00am\n\n\n💻 Mode of Instructions (Virtual/Zoom)\n\n\n✍️ Register with Google Form\n\n\n\n📧 After registration, you will receive a confirmation email within 24 hours with further instructions to join the workshop.",
     "crumbs": [
       "Home"
     ]
@@ -12,7 +12,7 @@
   {
     "objectID": "index.html#what-is-gtsummary",
     "href": "index.html#what-is-gtsummary",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "What is gtsummary?",
     "text": "What is gtsummary?\nThe gtsummary package provides an elegant and flexible way to create publication-ready summary tables in R.\nA critical part of the work of statisticians, data scientists, and analysts is summarizing data sets and regression models in R and publishing or sharing polished summary tables.\nThe gtsummary package was created to streamline these everyday analysis tasks by allowing users to easily create reproducible summaries of data sets, regression models, survey data, and survival data with a simple interface and very little code.\nThe package follows a tidy framework, making it easy to integrate with standard data workflows, and offers many table customization features through function arguments, helper functions, and custom themes.",
     "crumbs": [
@@ -22,7 +22,7 @@
   {
     "objectID": "index.html#learning-objectives",
     "href": "index.html#learning-objectives",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "Learning objectives",
     "text": "Learning objectives\n\nUnderstand the importance of standardized clinical reporting in public health research and practice.\nLearn the basics of the gtsummary package and its capabilities for creating summary tables in R.\nExplore various data formats and structures that can be used with gtsummary.\nLearn how to prepare and clean data for clinical reporting using {gtsummary}.\nGain proficiency in creating common clinical summary tables, such as frequency tables, cross-tabulations, and stratified tables.\nUnderstand how to incorporate descriptive statistics, including means, medians, and proportions, into {gtsummary} tables.\nLearn how to customize table formatting, including titles, captions, footnotes, and table themes.\nExplore advanced features of gtsummary for creating complex tables, including multi-variable summaries and interaction tables.\nUnderstand the role of regression model summaries in clinical reporting and learn how to generate these summaries using gtsummary.",
     "crumbs": [
@@ -32,7 +32,7 @@
   {
     "objectID": "index.html#is-this-course-for-me",
     "href": "index.html#is-this-course-for-me",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "Is this course for me?",
     "text": "Is this course for me?\nIf your answer to any of the following questions is “yes”, then this is the right workshop for you.\n\nDo you make summary tables in R (data, survey data, regression models, time-to-event data, adverse event reports)?\nDo you want your workflow to be reproducible?\nAre you often frustrated with the immense amount of code required to create great-looking tables in R?\n\nThe workshop is designed for those with some experience in R. It will be expected that you can perform basic data manipulation. Experience with the {tidyverse} and the %&gt;% operator is a plus, but not required.",
     "crumbs": [
@@ -42,9 +42,9 @@
   {
     "objectID": "index.html#what-you-will-learn",
     "href": "index.html#what-you-will-learn",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "What you will learn?",
-    "text": "What you will learn?\nDescriptive Tables\nDescriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).\n\n\n\n\n\nTable 1. General characteristics of the study participants (N = 680)\n\n\n\n\n\nCharacteristic\n\nN = 6801\n\n\n\n\nAge\n21.80 (2.99)\n\n\nGender\n\n\n\n    Female\n301 (44%)\n\n\n    Male\n379 (56%)\n\n\nMarital Status\n\n\n\n    Married\n52 (7.6%)\n\n\n    Unmarried\n628 (92%)\n\n\nField of Study\n\n\n\n    Arts and Humanities\n88 (13%)\n\n\n    Business\n85 (13%)\n\n\n    Science\n445 (65%)\n\n\n    Social science\n62 (9.1%)\n\n\nYear of Study\n\n\n\n    1st year\n266 (39%)\n\n\n    2nd year\n131 (19%)\n\n\n    3rd year\n115 (17%)\n\n\n    4th year\n114 (17%)\n\n\n    Masters\n54 (7.9%)\n\n\nDo you know about thalassemia?\n\n\n\n    No\n70 (10%)\n\n\n    Yes\n610 (90%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\nComparative Tables\nComparative tables are a type of analytical table used to present and compare data across different variables, categories, or entities. These tables are commonly employed to highlight similarities, differences, and relationships between data points.They allow for a concise and structured way to showcase information side by side, making it easier for the audience to draw insights and conclusions.\n\n\n\n\n\nTable 2. Level of knowledge of thalassemia who heard abouth thalassemia (N = 610\n\n\n\n\n\n\n\nCharacteristic\n\nOverall, N = 6101\n\n\nGood, N = 1561\n\n\nPoor, N = 4541\n\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n\n\nGender\n\n\n\n\n\n    Female\n274 (45%)\n64 (41%)\n210 (46%)\n\n\n    Male\n336 (55%)\n92 (59%)\n244 (54%)\n\n\nMarital Status\n\n\n\n\n\n    Married\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\n    Unmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\nField of Study\n\n\n\n\n\n    Arts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\n    Business\n72 (12%)\n16 (10%)\n56 (12%)\n\n\n    Science\n414 (68%)\n115 (74%)\n299 (66%)\n\n\n    Social science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\nYear of Study\n\n\n\n\n\n    1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n    2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n    3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n    4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\n    Masters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\nAnalytical Tables\nAnalytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.\n\n\n\n\n\nTable 3. Level of knowledge of thalassemia among university students (N = 610)\n\n\n\n\n\n\n\n\nCharacteristic\n\nOverall, N = 6101\n\n\nGood, N = 1561\n\n\nPoor, N = 4541\n\n\np-value2\n\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n0.14\n\n\nGender\n\n\n\n0.3\n\n\n    Female\n274 (45%)\n64 (41%)\n210 (46%)\n\n\n\n    Male\n336 (55%)\n92 (59%)\n244 (54%)\n\n\n\nMarital Status\n\n\n\n0.6\n\n\n    Married\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\n\n    Unmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\n\nField of Study\n\n\n\n0.2\n\n\n    Arts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\n\n    Business\n72 (12%)\n16 (10%)\n56 (12%)\n\n\n\n    Science\n414 (68%)\n115 (74%)\n299 (66%)\n\n\n\n    Social science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\n\nYear of Study\n\n\n\n0.3\n\n\n    1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n\n    2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n\n    3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n\n    4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\n\n    Masters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n2 Wilcoxon rank sum test; Pearson’s Chi-squared test",
+    "text": "What you will learn?\nDescriptive Tables\nDescriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).\n\n\n\n\nCharacteristic\nN = 680\n\n\n\nAge\n21.80 (2.99)\n\n\nGender\n\n\n\nFemale\n301 (44%)\n\n\nMale\n379 (56%)\n\n\nMarital Status\n\n\n\nMarried\n52 (7.6%)\n\n\nUnmarried\n628 (92%)\n\n\nField of Study\n\n\n\nArts and Humanities\n88 (13%)\n\n\nBusiness\n85 (13%)\n\n\nScience\n445 (65%)\n\n\nSocial science\n62 (9.1%)\n\n\nYear of Study\n\n\n\n1st year\n266 (39%)\n\n\n2nd year\n131 (19%)\n\n\n3rd year\n115 (17%)\n\n\n4th year\n114 (17%)\n\n\nMasters\n54 (7.9%)\n\n\nDo you know about thalassemia?\n\n\n\nNo\n70 (10%)\n\n\nYes\n610 (90%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\nComparative Tables\nComparative tables are a type of analytical table used to present and compare data across different variables, categories, or entities. These tables are commonly employed to highlight similarities, differences, and relationships between data points.They allow for a concise and structured way to showcase information side by side, making it easier for the audience to draw insights and conclusions.\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 610\nGood\nN = 156\nPoor\nN = 454\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n\n\nGender\n\n\n\n\n\nFemale\n274 (45%)\n64 (41%)\n210 (46%)\n\n\nMale\n336 (55%)\n92 (59%)\n244 (54%)\n\n\nMarital Status\n\n\n\n\n\nMarried\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\nUnmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\nField of Study\n\n\n\n\n\nArts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\nBusiness\n72 (12%)\n16 (10%)\n56 (12%)\n\n\nScience\n414 (68%)\n115 (74%)\n299 (66%)\n\n\nSocial science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\nYear of Study\n\n\n\n\n\n1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\nMasters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\n\n\nAnalytical Tables\nAnalytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.\n\n\n\n\n\nTable 3. Level of knowledge of thalassemia among university students (N = 610)\n\n\n\n\n\n\n\n\nCharacteristic\n\nOverall N = 6101\n\n\nGood N = 1561\n\n\nPoor N = 4541\n\n\np-value2\n\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n0.14\n\n\nGender\n\n\n\n0.3\n\n\n    Female\n274 (45%)\n64 (41%)\n210 (46%)\n\n\n\n    Male\n336 (55%)\n92 (59%)\n244 (54%)\n\n\n\nMarital Status\n\n\n\n0.6\n\n\n    Married\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\n\n    Unmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\n\nField of Study\n\n\n\n0.2\n\n\n    Arts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\n\n    Business\n72 (12%)\n16 (10%)\n56 (12%)\n\n\n\n    Science\n414 (68%)\n115 (74%)\n299 (66%)\n\n\n\n    Social science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\n\nYear of Study\n\n\n\n0.3\n\n\n    1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n\n    2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n\n    3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n\n    4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\n\n    Masters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n2 Wilcoxon rank sum test; Pearson’s Chi-squared test",
     "crumbs": [
       "Home"
     ]
@@ -52,9 +52,9 @@
   {
     "objectID": "index.html#univariate-regression-tables",
     "href": "index.html#univariate-regression-tables",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "Univariate Regression Tables",
-    "text": "Univariate Regression Tables\nUnivariate regression is a type of linear regression where you have one independent variable (predictor) and one dependent variable (response). Regression tables are used to present the results of regression analysis, including coefficients, standard errors, significance levels, and other relevant statistics. Below is an example of what a simple univariate regression table might look like:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nN\nEvent N\n\nOR1\n\n\n95% CI1\n\np-value\n\nq-value2\n\n\n\n\nAge\n183\n58\n1.02\n1.00, 1.04\n0.091\n0.18\n\n\nGrade\n193\n61\n\n\n0.93\n0.93\n\n\n    I\n\n\n—\n—\n\n\n\n\n    II\n\n\n0.95\n0.45, 2.00\n\n\n\n\n    III\n\n\n1.10\n0.52, 2.29\n\n\n\n\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval\n\n\n\n2 False discovery rate correction for multiple testing\n\n\n\n\n\n\nMultivariate Regression Tables\nA multivariate regression table provides a summary of the results obtained from a multivariate regression analysis. This type of analysis involves multiple independent variables (predictors) and a single dependent variable.\n\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\n\nOR1\n\n\n95% CI1\n\np-value\n\n\n\nAge\n1.02\n1.00, 1.04\n0.087\n\n\nT Stage\n\n\n0.62\n\n\n    T1\n—\n—\n\n\n\n    T2\n0.58\n0.24, 1.37\n\n\n\n    T3\n0.94\n0.39, 2.28\n\n\n\n    T4\n0.79\n0.33, 1.90\n\n\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval",
+    "text": "Univariate Regression Tables\nUnivariate regression is a type of linear regression where you have one independent variable (predictor) and one dependent variable (response). Regression tables are used to present the results of regression analysis, including coefficients, standard errors, significance levels, and other relevant statistics. Below is an example of what a simple univariate regression table might look like:\n\n\n\n\nCharacteristic\nN\nEvent N\nOR\n95% CI\np-value\nq-value\n\n\n\nAge\n183\n58\n1.02\n1.00, 1.04\n0.091\n0.25\n\n\nChemotherapy Treatment\n193\n61\n\n\n0.53\n0.73\n\n\nDrug A\n\n\n—\n—\n\n\n\n\nDrug B\n\n\n1.21\n0.66, 2.24\n\n\n\n\nMarker Level (ng/mL)\n183\n57\n1.35\n0.94, 1.93\n0.10\n0.25\n\n\nT Stage\n193\n61\n\n\n0.58\n0.73\n\n\nT1\n\n\n—\n—\n\n\n\n\nT2\n\n\n0.63\n0.27, 1.46\n\n\n\n\nT3\n\n\n1.13\n0.48, 2.68\n\n\n\n\nT4\n\n\n0.83\n0.36, 1.92\n\n\n\n\nGrade\n193\n61\n\n\n0.93\n0.93\n\n\nI\n\n\n—\n—\n\n\n\n\nII\n\n\n0.95\n0.45, 2.00\n\n\n\n\nIII\n\n\n1.10\n0.52, 2.29\n\n\n\n\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval\n\n\n\n\n\n\n\n\n\n2 False discovery rate correction for multiple testing\n\n\n\n\n\n\n\n\n\n\n\nMultivariate Regression Tables\nA multivariate regression table provides a summary of the results obtained from a multivariate regression analysis. This type of analysis involves multiple independent variables (predictors) and a single dependent variable.\n\n\n\n\nCharacteristic\nOR\n95% CI\np-value\n\n\n\nAge\n1.02\n1.00, 1.04\n0.11\n\n\nT Stage\n\n\n0.32\n\n\nT1\n—\n—\n\n\n\nT2\n0.45\n0.17, 1.11\n\n\n\nT3\n0.86\n0.33, 2.22\n\n\n\nT4\n0.64\n0.25, 1.62\n\n\n\nChemotherapy Treatment\n\n\n0.39\n\n\nDrug A\n—\n—\n\n\n\nDrug B\n1.34\n0.69, 2.64\n\n\n\nMarker Level (ng/mL)\n1.41\n0.96, 2.09\n0.080\n\n\nGrade\n\n\n&gt;0.99\n\n\nI\n—\n—\n\n\n\nII\n1.04\n0.45, 2.42\n\n\n\nIII\n1.04\n0.47, 2.32\n\n\n\n\n\n1 OR = Odds Ratio, CI = Confidence Interval",
     "crumbs": [
       "Home"
     ]
@@ -62,9 +62,9 @@
   {
     "objectID": "index.html#prework",
     "href": "index.html#prework",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "Prework",
-    "text": "Prework\nBefore attending the workshop please have the following installed and configured on your machine.\n\nRecent version of R\nRecent version of RStudio\n\nMost recent release of the gtsummary and other packages used in workshop.\ninstll_pkgs &lt;- \n  c(\"gtsummary\", \"tidyverse\", \"labelled\", \"usethis\", \n    \"causaldata\", \"fs\", \"skimr\", \"car\", \"emmeans\")\ninstall.packages(instll_pkgs)\n\n\nEnsure you can knit R markdown documents\n\nOpen RStudio and create a new Rmarkdown document\nSave the document and check you are able to knit it.\n\n\n\n\n\n\n\n\n\nWho We Are: CHIRAL Bangladesh\n\n\n\nCenter for Health Innovation, Research, Action and Learning - Bangladesh (CHIRAL Bangladesh) is a voluntary non-profit research organization, resolving to promote interdisciplinary research in the field of health data science, computational biology and genomics.",
+    "text": "Prework\nBefore attending the workshop please have the following installed and configured on your machine.\n\nRecent version of R\nRecent version of RStudio\n\nMost recent release of the gtsummary and other packages used in workshop.\ninstll_pkgs &lt;- \n  c(\"gtsummary\", \"tidyverse\", \"labelled\", \"usethis\", \n    \"causaldata\", \"fs\", \"skimr\", \"car\", \"emmeans\")\ninstall.packages(instll_pkgs)\n\n\nEnsure you can knit R markdown documents\n\nOpen RStudio and create a new Rmarkdown document\nSave the document and check you are able to knit it.",
     "crumbs": [
       "Home"
     ]
@@ -72,9 +72,9 @@
   {
     "objectID": "index.html#instructor",
     "href": "index.html#instructor",
-    "title": "Public Health Insights: Clinical Reporting Using R",
+    "title": "Publication-ready Tables with R",
     "section": "Instructor",
-    "text": "Instructor\nBio\n\nHi, I am Jubayer, a highly motivated biomedical research enthusiasts with a Master of Science in Microbiology focus on public health and health data science. Research experience designing and implementing projects for biomedical data analysis (including next‑generation sequencing, RNA‑seq , and ssRNA‑seq ). I am interested in applying machine learning/deep learning tools and techniques in the context of disease diagnosis and large data analytics for public health while focusing on bridging the gap between computational and experimental laboratories through highly engaging and fruitful collaborations\nPython is my primary language for data analysis and machine learning. I also have a basic understanding of R, Julia, SPSS, QGIS, and SQL.\nThis page highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.\nSkills\nProgramming Languages: Python, R, SQL, Julia, JavaScript; Data Science: scikit-learn, PyCaret, Dask, PySpark; GIS & Remote Sensing: ArcGIS, Geopandas, Xarray, Giovani; Analytics Softwares: SPSS, PowerBI, Microsoft Excel; Survey Tools: RedCap, KoboToolBox, EpiCollect, Google Forms; Academic Writing Tools: Microsoft Word, LaTeX, Mendeley; Bioinformatics: BioPython, Bioconductor, BioPandas, Galaxy, NGS, RNASeq, ssRNASeq; Miscellaneous Skills: UNIX, Version Control(Git), Web Scraping, APIs.\nSelected Publications\n\n\nHossain, M.J., Islam, M.W., Munni, U.R. et al. Health-related quality of life among thalassemia patients in Bangladesh using the SF-36 questionnaire. Scientific Reports 13, 7734 (2023). https://doi.org/10.1038/s41598-023-34205-9\n\nTowhid, S. T., Hossain, M. J., Sammo, M. A. S., & Akter, S. (2022). Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh. European Journal of Biology and Biotechnology, 3(3), 14–19. https://doi.org/10.24018/ejbio.2022.3.3.341\n\n\nHossain, M.J., Towhid ST, Sultana S, Mukta SA, Gulshan R, Miah MS (2022). Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh. Microbial Bioactives, 5(2), https://doi.org/10.25163/microbbioacts.526325.",
+    "text": "Instructor\nBio\n\nI am a biomedical researcher focusing on neuroepidemiology, cancer epidemiology, and cancer bioinformatics. My primary interest lies in applying machine learning algorithms to health data including electronic health records, multi-omics big data, and neurological images. I aim to optimize clinically actionable biomarkers and develop predictive models to enable early diagnosis and treatment for neurological disorders and cancer. Furthermore, I am interested in visualizing these data and models to facilitate biological interpretation and clinical applications.\nI am currently the Founder and Executive Director of CHIRAL Bangladesh. My leadership extends to aiHealth Lab and Big Bioinformatics Lab, where the focus is on advancing cancer bioinformatics and artificial intelligence for health. As an educator, I hold the position of Lead Instructor and Organizer at the Training Unit of CHIRAL. Additionally, I serve as an instructor for the Data Science for Biologists program at cBLAST.\nTo further bridge data science with biomedical research, I have initiated DataViz Gallery, a curated collection of compelling data visualizations using Python and R. This initiative aims to enhance the interpretability of complex biological and clinical data through effective visual storytelling.\nThis page highlights my teaching and research projects. Please reach out if you want to collaborate or have questions.\nSkills\nProgramming Languages: Python, R, SQL, Julia, JavaScript; Data Science: scikit-learn, PyCaret, Dask, PySpark; GIS & Remote Sensing: ArcGIS, Geopandas, Xarray, Giovani; Analytics Softwares: SPSS, PowerBI, Microsoft Excel; Survey Tools: RedCap, KoboToolBox, EpiCollect, Google Forms; Academic Writing Tools: Microsoft Word, LaTeX, Mendeley; Bioinformatics: BioPython, Bioconductor, BioPandas, Galaxy, NGS, RNASeq, ssRNASeq; Miscellaneous Skills: UNIX, Version Control(Git), Web Scraping, APIs.\nSelected Publications\n\nHossain, M.J., Das, M. & Munni, U.R.Urgent call for compulsory premarital screening: a crucial step towards thalassemia prevention in Bangladesh.\nOrphanet J Rare Dis 19, 326 (2024). DOI: 10.1186/s13023-024-03344-1\nShanta, A.S.; Islam, N.; Al Asad, M.; Akter, K.; Habib, M.B.; Hossain, M.J.; Nahar, S.; Godman, B.; Islam, S.Resistance and Co-Resistance of Metallo-Beta-Lactamase Genes in Diarrheal and Urinary-Tract Pathogens in Bangladesh.\nMicroorganisms 2024, 12, 1589. DOI: 10.3390/microorganisms12081589\nIslam, M.W., Shahjahan, M., Azad, A.K., Hossain, M.J.Factors contributing to antibiotic misuse among parents of school-going children in Dhaka City, Bangladesh.\nSci Rep 14, 2318 (2024). DOI: 10.1038/s41598-024-52313-y\nHossain, M.J., Islam, M.W., Munni, U.R., Gulshan, R., Mukta, S.A., Miah, M.S., Sultana, S., Karmakar, M., Ferdous, J., & Islam, M.A.Health-related quality of life among thalassemia patients in Bangladesh using the SF‑36 questionnaire.\nScientific Reports, 13(1). DOI: 10.1038/s41598-023-34205-9\nTowhid, S.T., Hossain, M.J., Sammo, M.A.S., & Akter, S.Perception of Students on Antibiotic Resistance and Prevention: An Online, Community-Based Case Study from Dhaka, Bangladesh.\nEuropean Journal of Biology and Biotechnology, 3(3), 14–19. DOI: 10.24018/ejbio.2022.3.3.341\nHossain, M.J., Towhid, S.T., Sultana, S., Mukta, S.A., Gulshan, R., Miah, M.S.Knowledge and Attitudes towards Thalassemia among Public University Students in Bangladesh.\nMicrobial Bioactives, 5(2). DOI: 10.25163/microbbioacts.526325\nHossain, M.J., Towhid, S.T., Akter, S., Shahjahan, M., Roy, T., Akter, B., & Nodee, T.A.Knowledge and Self-Management Practice Among Diabetic Patients from the Urban Areas in Bangladesh.\nJournal of Angiotherapy, 7(1), 1-10. DOI: 10.25163/angiotherapy.717340\nHossain, M.J., Das, M., Islam, M.W., Shahjahan, M., Ferdous, J.Community engagement and social participation in dengue prevention: A cross-sectional study in Dhaka City.\nHealth Sci Rep. 2024; 7:e2022. DOI: 10.1002/hsr2.2022\nHossain, M.J., Azad, A.K., Shahid, M.S.B., Shahjahan, M., Ferdous, J.Prevalence, antibiotic resistance pattern for bacteriuria from patients with urinary tract infections.\nHealth Sci Rep. 2024; 7:e2039. DOI: 10.1002/hsr2.2039",
     "crumbs": [
       "Home"
     ]
@@ -84,14 +84,20 @@
     "href": "material.html",
     "title": "Material",
     "section": "",
-    "text": "These videos cover essential concepts of R programming that will be beneficial during the workshop Please take the time to view them at your convenience."
+    "text": "These videos cover essential concepts of R programming that will be beneficial during the workshop Please take the time to view them at your convenience.",
+    "crumbs": [
+      "Material"
+    ]
   },
   {
     "objectID": "material.html#videos",
     "href": "material.html#videos",
     "title": "Material",
     "section": "Videos",
-    "text": "Videos\n\nWelcome to the “R for Research” series! In this video, we will dive into the fundamentals of R, a powerful programming language and environment widely used in research and data analysis.R provides comprehensive tools and packages for statistical analysis, data visualization, and data manipulation. Whether you’re a biologist, social scientist, or any researcher looking to harness the power of data, this series will equip you with the necessary skills to leverage R for your research projects.! Check it out: \nIn Part 2, we will continue our exploration of the fundamentals of R, building upon the knowledge gained in Part 1. This video will cover additional essential topics to further enhance your skills in using R for research and data analysis. Check it out:"
+    "text": "Videos\n\nWelcome to the “R for Research” series! In this video, we will dive into the fundamentals of R, a powerful programming language and environment widely used in research and data analysis.R provides comprehensive tools and packages for statistical analysis, data visualization, and data manipulation. Whether you’re a biologist, social scientist, or any researcher looking to harness the power of data, this series will equip you with the necessary skills to leverage R for your research projects.! Check it out: \nIn Part 2, we will continue our exploration of the fundamentals of R, building upon the knowledge gained in Part 1. This video will cover additional essential topics to further enhance your skills in using R for research and data analysis. Check it out:",
+    "crumbs": [
+      "Material"
+    ]
   },
   {
     "objectID": "material.html#slides",
@@ -105,7 +111,10 @@
     "href": "material.html#recording",
     "title": "Material",
     "section": "Recording",
-    "text": "Recording\nAfter workshop!"
+    "text": "Recording\nAfter workshop!",
+    "crumbs": [
+      "Material"
+    ]
   },
   {
     "objectID": "material.html#exercises",
@@ -119,6 +128,147 @@
     "href": "q-and-a.html",
     "title": "FAQs - Public Health Insights: Clinical Reporting Using {gtsummary}",
     "section": "",
-    "text": "Q: Who is this workshop designed for?\n\n\nThis workshop is tailored for public health professionals, researchers, analysts, and anyone interested in effectively utilizing the {gtsummary} package for clinical reporting to support evidence-based decision-making in public health.\n\n\n\nQ: Is this workshop suitable for beginners in public health?\n\n\nYes, the workshop caters to both beginners and those with some experience in public health analysis. We cover foundational concepts and offer advanced insights for those seeking to enhance their skills.\n\n\n\nQ: Will the workshop be held in-person or virtually?\n\n\nThis workshop will be conducted virtually. Participants will receive detailed instructions on how to join the session.\n\n\n\nQ: What software/tools are required for the workshop?\n\n\nParticipants will need a laptop with internet access and R and RStudio installed. We’ll provide guidance on setting up these tools if needed.\n\n\n\nQ: Are there any prerequisites for attending the workshop?\n\n\nNo specific prerequisites are required, but basic familiarity with public health concepts and an interest in data analysis will be beneficial.\n\n\n\nQ: Will I receive any materials for the workshop?\n\n\nYes, participants will receive workshop materials, including presentation slides and example datasets, prior to the workshop.\n\n\n\nQ: Is there a fee to attend the workshop?\n\n\nYes, there is a registration fee to attend the workshop. Details about the fee and payment methods can be found on the registration page.\n\n\n\nQ: Can I ask questions during the workshop?\n\n\nAbsolutely! We encourage active participation. There will be dedicated Q&A segments where you can ask questions and engage with the instructors.\n\n\n\nQ: Will the workshop be recorded for later viewing?\n\n\nYes, the workshop sessions will be recorded, and registered participants will have access to the recordings for a limited time after the workshop concludes.\n\n\n\nQ: Will I receive a certificate upon completion?\n\n\nYes, participants who complete the workshop will receive a certificate of participation, which can be a valuable addition to your professional portfolio."
+    "text": "Q: Who is this workshop designed for?\n\n\nThis workshop is tailored for public health professionals, researchers, analysts, and anyone interested in effectively utilizing the {gtsummary} package for clinical reporting to support evidence-based decision-making in public health.\n\n\n\nQ: Is this workshop suitable for beginners in public health?\n\n\nYes, the workshop caters to both beginners and those with some experience in public health analysis. We cover foundational concepts and offer advanced insights for those seeking to enhance their skills.\n\n\n\nQ: Will the workshop be held in-person or virtually?\n\n\nThis workshop will be conducted virtually. Participants will receive detailed instructions on how to join the session.\n\n\n\nQ: What software/tools are required for the workshop?\n\n\nParticipants will need a laptop with internet access and R and RStudio installed. We’ll provide guidance on setting up these tools if needed.\n\n\n\nQ: Are there any prerequisites for attending the workshop?\n\n\nNo specific prerequisites are required, but basic familiarity with public health concepts and an interest in data analysis will be beneficial.\n\n\n\nQ: Will I receive any materials for the workshop?\n\n\nYes, participants will receive workshop materials, including presentation slides and example datasets, prior to the workshop.\n\n\n\nQ: Is there a fee to attend the workshop?\n\n\nYes, there is a registration fee to attend the workshop. Details about the fee and payment methods can be found on the registration page.\n\n\n\nQ: Can I ask questions during the workshop?\n\n\nAbsolutely! We encourage active participation. There will be dedicated Q&A segments where you can ask questions and engage with the instructors.\n\n\n\nQ: Will the workshop be recorded for later viewing?\n\n\nYes, the workshop sessions will be recorded, and registered participants will have access to the recordings for a limited time after the workshop concludes.\n\n\n\nQ: Will I receive a certificate upon completion?\n\n\nYes, participants who complete the workshop will receive a certificate of participation, which can be a valuable addition to your professional portfolio.",
+    "crumbs": [
+      "Workshop Q & A"
+    ]
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Install R and RStudio",
+    "section": "",
+    "text": "R is a powerful analytical language and contains a number of useful packages for analyzing data.\nRStudio is a free and open-source integrated development environment (IDE) for R. RStudio provides comprehensive facilities to R programmers and is highly recommended in this class.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#installing-r",
+    "href": "setup.html#installing-r",
+    "title": "Install R and RStudio",
+    "section": "Installing R",
+    "text": "Installing R\nWe recommend installing the most recent version or R – 4.2.3 as of March 18, 2023 If you have had installed R already some time ago, we recommend updating/reinstalling it to the most recent version. Use a link below to launch download of R installers (if the download does not start, a fix may be to copy-paste the below link to your browser):\n\nFor Mac users: https://cran.r-project.org/bin/macosx/\nFor Windows users: https://cran.r-project.org/bin/windows/base/R-4.2.3-win.exe\nFor Ubuntu users: https://cran.r-project.org/bin/linux/ubuntu/\n\nFor other operating systems, or if you prefer to access the download link from the official website, visit http://cran.us.r-project.org and select Download R for Linux, Download R for macOS or Download R for Windows based on which device you have.\nOnce the proper installation package has been selected, run the package and follow the on-screen directions. This installation includes the R language and a graphical user interface (GUI). Rather using the GUI, we recommend installing RStudio - an integrated development environment (IDE) that lets you interact with R with some added benefits.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#installing-rstudio",
+    "href": "setup.html#installing-rstudio",
+    "title": "Install R and RStudio",
+    "section": "Installing RStudio",
+    "text": "Installing RStudio\nTo install RStudio, visit https://posit.co/download/rstudio-desktop/. Once on the website, select DOWNLOAD tab (upper left corner), scroll down and click Download under the RStudio Desktop – Free version (1st out of 4 columns), and select the proper installation file for your platform (Windows or Mac).\nWhen you open up RStudio, it should look like this:\n\nClick the top left button to create a new script:\n\nRStudio, should now look like this:\n\nThere are four main windows.\n\nThe console is the lower-left window where you can run lines of code and see the output.\nThe script window is the upper-left window where you can edit and write scripts or markdown documents. From the script window, you can run the current line of code in your script (or multiple lines if you highlight multiple rows) by pressing\n\nCMD + Return on Mac\nCTRL + Enter on Windows\n\nThe workspace is the upper-right window where you can manage your data and variables and see previous commands entered (under the history tab).\nThe plots window allows you to see the output of plots. On the other tabs, you can also look at directories, install packages, and look at help files for various R commands.\n\nYou can customize the look of your RStudio IDE in Tools &gt; Global Options....",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#r-packages",
+    "href": "setup.html#r-packages",
+    "title": "Install R and RStudio",
+    "section": "R Packages",
+    "text": "R Packages\nPackages are the fundamental units of reproducible R code. They are collections of R code that typically share some common purpose. Examples:\n\ndplyr - package of functions for fast data set manipulation (subsetting, summarizing, rearranging, and joining together data sets);\nggplot2 - “R’s famous package for making beautiful graphics”; allows to build multiple-layers, highly customizable plots.",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "setup.html#installing-and-loading-r-packages",
+    "href": "setup.html#installing-and-loading-r-packages",
+    "title": "Install R and RStudio",
+    "section": "Installing and Loading R Packages",
+    "text": "Installing and Loading R Packages\n\nTo install an R package, type in the RStudio console\ninstall.packages(\"replace_with_package_name\")\nand press enter to execute the command.\nOnce a package is installed, to use its contents in current R session, we run in the RStudio console the command\nlibrary(replace_with_package_name)\n\n(Note the difference in presence of the quotation mark in the two above commands.)",
+    "crumbs": [
+      "Setup"
+    ]
+  },
+  {
+    "objectID": "gtsummary-overview.html",
+    "href": "gtsummary-overview.html",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "",
+    "text": "When it comes to presenting the results of statistical analyses, data visualization often steals the spotlight. However, well-structured and informative summary tables are equally essential in conveying complex findings effectively. In this guide, we’ll dive into the world of summary tables using the powerful R package, gtsummary. We’ll explore its features, learn how to create elegant and informative summary tables, and provide practical examples along the way."
+  },
+  {
+    "objectID": "gtsummary-overview.html#introduction",
+    "href": "gtsummary-overview.html#introduction",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "",
+    "text": "When it comes to presenting the results of statistical analyses, data visualization often steals the spotlight. However, well-structured and informative summary tables are equally essential in conveying complex findings effectively. In this guide, we’ll dive into the world of summary tables using the powerful R package, gtsummary. We’ll explore its features, learn how to create elegant and informative summary tables, and provide practical examples along the way."
+  },
+  {
+    "objectID": "gtsummary-overview.html#what-is-gtsummary",
+    "href": "gtsummary-overview.html#what-is-gtsummary",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "What is {gtsummary}?",
+    "text": "What is {gtsummary}?\ngtsummary is an R package that simplifies the process of creating elegant and customizable summary tables from various types of statistical models, such as linear regression, logistic regression, survival models, and more. It’s built on top of the gt package, which offers a flexible and intuitive way to create publication-quality tables."
+  },
+  {
+    "objectID": "gtsummary-overview.html#installation",
+    "href": "gtsummary-overview.html#installation",
+    "title": "Public Health Insights: Clinical Reporting Using {gtsummary}",
+    "section": "Installation",
+    "text": "Installation\nBefore we get started, make sure you have the gtsummary package installed. You can install it from CRAN using the following command:\n\ninstall.packages(\"gtsummary\")"
+  },
+  {
+    "objectID": "license.html",
+    "href": "license.html",
+    "title": "License",
+    "section": "",
+    "text": "This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "crumbs": [
+      "License"
+    ]
+  },
+  {
+    "objectID": "index.html#workshop-overview",
+    "href": "index.html#workshop-overview",
+    "title": "Publication-ready Tables with R",
+    "section": "Workshop Overview",
+    "text": "Workshop Overview\nIn this workshop, you’ll learn how to effortlessly create publication-ready tables for your research papers using the powerful gtsummary package in R. Designed for researchers. This workshop will guide you through the process of transforming raw data into clean, well-organized, and visually appealing tables—without spending excessive time on formatting.\nThrough interactive demonstrations and hands-on exercises, you will gain a solid understanding of how to summarize research data efficiently, generate insightful reports, and ensure your results are presentation-ready for scientific journals. By the end of the workshop, you’ll be equipped with the skills and tools needed to streamline your data reporting process and focus on what matters most—your research.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#lets-make-great-tables",
+    "href": "index.html#lets-make-great-tables",
+    "title": "Publication-ready Tables with R",
+    "section": "Let’s make great tables!",
+    "text": "Let’s make great tables!\nThis online workshop will only take a few hours of your time but will drastically improve your skills in creating publication-ready tables with gtsummary in R.\nBy the end, you’ll become the go-to expert in your team when it comes to summarizing and presenting data in a way that’s both clear and visually appealing. You’ll generate tables that are not only easy to interpret but also publication-ready, eliminating the hassle of endless formatting.\nSure, you could spend hours piecing together tips and tricks from blogs, forums, and documentation, but we’ve condensed all the essential techniques into one streamlined workshop to save you time and effort.\nThis ultimate workshop on publication-ready tables with gtsummary is designed to make your research reporting process easier and more efficient than ever.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#master-gtsummary-step-by-step",
+    "href": "index.html#master-gtsummary-step-by-step",
+    "title": "Publication-ready Tables with R",
+    "section": "Master gtsummary, step by step",
+    "text": "Master gtsummary, step by step\n\n\n\n\n\nModule 1\n\n\nIntroduction & Setup\n\n\n\nLearn why R is the best tool for automating table creation and ensuring publication-quality formatting using gtsummary and gt. Set up R, install required packages, and prepare datasets for table generation.\n\n\nRead more\n\n\n\n\n\n\n\n\nModule 2\n\n\nDescriptive Tables\n\n\n\nCreate well-structured summary tables for categorical and continuous variables. The module will also cover how to create cross-tabulation (contingency) tables to examine relationships between categorical variables.\n\n\nRead more\n\n\n\n\n\n\n\n\nModule 3\n\n\nDifference Tables\n\n\n\nDifference Tables Description here…\n\n\nRead more\n\n\n\n\n\n\n\n\nModule 4\n\n\nAssociation Tables\n\n\n\nAssociation Tables Description here…\n\n\nRead more\n\n\n\n\n\n\n\n\nModule 5\n\n\nRegression Analysis Tables\n\n\n\nAssociation Tables Description here…\n\n\nRead more\n\n\n\n\n\n\n\n\nModule 6\n\n\nSurvival Analysis Tables\n\n\n\nSurvival Analysis Tables Description here…\n\n\nRead more\n\n\n\n\n\nDescriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).\n\n\n\n\nCharacteristic\nN = 680\n\n\n\nAge\n21.80 (2.99)\n\n\nGender\n\n\n\nFemale\n301 (44%)\n\n\nMale\n379 (56%)\n\n\nMarital Status\n\n\n\nMarried\n52 (7.6%)\n\n\nUnmarried\n628 (92%)\n\n\nField of Study\n\n\n\nArts and Humanities\n88 (13%)\n\n\nBusiness\n85 (13%)\n\n\nScience\n445 (65%)\n\n\nSocial science\n62 (9.1%)\n\n\nYear of Study\n\n\n\n1st year\n266 (39%)\n\n\n2nd year\n131 (19%)\n\n\n3rd year\n115 (17%)\n\n\n4th year\n114 (17%)\n\n\nMasters\n54 (7.9%)\n\n\nDo you know about thalassemia?\n\n\n\nNo\n70 (10%)\n\n\nYes\n610 (90%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\nComparative Tables\nComparative tables are a type of analytical table used to present and compare data across different variables, categories, or entities. These tables are commonly employed to highlight similarities, differences, and relationships between data points.They allow for a concise and structured way to showcase information side by side, making it easier for the audience to draw insights and conclusions.\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 610\nGood\nN = 156\nPoor\nN = 454\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n\n\nGender\n\n\n\n\n\nFemale\n274 (45%)\n64 (41%)\n210 (46%)\n\n\nMale\n336 (55%)\n92 (59%)\n244 (54%)\n\n\nMarital Status\n\n\n\n\n\nMarried\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\nUnmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\nField of Study\n\n\n\n\n\nArts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\nBusiness\n72 (12%)\n16 (10%)\n56 (12%)\n\n\nScience\n414 (68%)\n115 (74%)\n299 (66%)\n\n\nSocial science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\nYear of Study\n\n\n\n\n\n1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\nMasters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\n\n\nAnalytical Tables\nAnalytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.\n\n\n\n\n\nTable 3. Level of knowledge of thalassemia among university students (N = 610)\n\n\n\n\n\n\n\n\nCharacteristic\n\nOverall N = 6101\n\n\nGood N = 1561\n\n\nPoor N = 4541\n\n\np-value2\n\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n0.14\n\n\nGender\n\n\n\n0.3\n\n\n    Female\n274 (45%)\n64 (41%)\n210 (46%)\n\n\n\n    Male\n336 (55%)\n92 (59%)\n244 (54%)\n\n\n\nMarital Status\n\n\n\n0.6\n\n\n    Married\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\n\n    Unmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\n\nField of Study\n\n\n\n0.2\n\n\n    Arts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\n\n    Business\n72 (12%)\n16 (10%)\n56 (12%)\n\n\n\n    Science\n414 (68%)\n115 (74%)\n299 (66%)\n\n\n\n    Social science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\n\nYear of Study\n\n\n\n0.3\n\n\n    1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n\n    2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n\n    3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n\n    4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\n\n    Masters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n2 Wilcoxon rank sum test; Pearson’s Chi-squared test",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#master-publication-ready-tables-with-gtsummary-step-by-step",
+    "href": "index.html#master-publication-ready-tables-with-gtsummary-step-by-step",
+    "title": "Publication-ready Tables with R",
+    "section": "Master Publication-Ready Tables with gtsummary, step by step",
+    "text": "Master Publication-Ready Tables with gtsummary, step by step\nYou will begin with basic table generation and progress to creating the most customized and visually appealing clinical reports with gtsummary in R.\nEach module also includes detailed explanations of key gtsummary functions and essential data summarization concepts, ensuring that by the end, you’ll be equipped to create professional-quality tables for any research paper.\nHere is the plan:\n\n\n\n\n\nModule 1\n\n\nIntroduction & Setup\n\n\n\nLearn why R is the best tool for automating table creation and ensuring publication-quality formatting using gtsummary and gt. Set up R, install required packages, and prepare datasets for table generation.\n\n\n\n\n\n\n\n\nModule 2\n\n\nDescriptive Tables\n\n\n\nCreate well-structured summary tables for categorical and continuous variables. The module will also cover how to create cross-tabulation (contingency) tables to examine relationships between categorical variables.\n\n\n\n\n\n\n\n\nModule 3\n\n\nDifference Tables\n\n\n\nIn this module, you’ll learn how to create Difference Tables that summarize statistical comparisons, such as t-tests and ANOVA results, between different groups. These tables are essential for presenting the differences in means or other summary statistics across categorical variables.\n\n\n\n\n\n\n\n\nModule 4\n\n\nAssociation Tables\n\n\n\nIn this module, you will learn how to create Association Tables that summarize the relationship between categorical variables, such as those tested using chi-square tests. These tables are essential for presenting statistical associations between different groups or factors.\n\n\n\n\n\n\n\n\nModule 5\n\n\nRegression Analysis Tables\n\n\n\nIn this module, you’ll learn how to create Regression Analysis Tables for various types of regression models, including Linear Regression, Logistic Regression, Ordinal Regression, and Poisson Regression. These tables are key for summarizing model results, providing a clear overview of the relationships between predictors and outcomes.\n\n\n\n\n\n\n\n\nModule 6\n\n\nSurvival Analysis Tables\n\n\n\nIn this module, you will learn how to create Survival Analysis Tables that summarize the results of time-to-event analyses, such as Cox Proportional Hazards and Kaplan-Meier survival curves. These tables are crucial for presenting survival rates, hazard ratios, and associated statistics in clinical and epidemiological research.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#descriptive-tables",
+    "href": "index.html#descriptive-tables",
+    "title": "Publication-ready Tables with R",
+    "section": "Descriptive Tables",
+    "text": "Descriptive Tables\nDescriptive statistics for continuous, categorical, and dichotomous variables in R, and presents the results in a beautiful, customizable summary table ready for publication (for example, Table 1 or demographic tables).\n\n\n\n\nCharacteristic\nN = 680\n\n\n\nAge\n21.80 (2.99)\n\n\nGender\n\n\n\nFemale\n301 (44%)\n\n\nMale\n379 (56%)\n\n\nMarital Status\n\n\n\nMarried\n52 (7.6%)\n\n\nUnmarried\n628 (92%)\n\n\nField of Study\n\n\n\nArts and Humanities\n88 (13%)\n\n\nBusiness\n85 (13%)\n\n\nScience\n445 (65%)\n\n\nSocial science\n62 (9.1%)\n\n\nYear of Study\n\n\n\n1st year\n266 (39%)\n\n\n2nd year\n131 (19%)\n\n\n3rd year\n115 (17%)\n\n\n4th year\n114 (17%)\n\n\nMasters\n54 (7.9%)\n\n\nDo you know about thalassemia?\n\n\n\nNo\n70 (10%)\n\n\nYes\n610 (90%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\nComparative Tables\nComparative tables are a type of analytical table used to present and compare data across different variables, categories, or entities. These tables are commonly employed to highlight similarities, differences, and relationships between data points.They allow for a concise and structured way to showcase information side by side, making it easier for the audience to draw insights and conclusions.\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 610\nGood\nN = 156\nPoor\nN = 454\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n\n\nGender\n\n\n\n\n\nFemale\n274 (45%)\n64 (41%)\n210 (46%)\n\n\nMale\n336 (55%)\n92 (59%)\n244 (54%)\n\n\nMarital Status\n\n\n\n\n\nMarried\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\nUnmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\nField of Study\n\n\n\n\n\nArts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\nBusiness\n72 (12%)\n16 (10%)\n56 (12%)\n\n\nScience\n414 (68%)\n115 (74%)\n299 (66%)\n\n\nSocial science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\nYear of Study\n\n\n\n\n\n1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\nMasters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\n\n\nAssociation Tables\nAnalytical tables typically refer to organized and structured data representations used for analysis, comparison, and interpretation of information. They are commonly used in various fields such as statistics, research, business, and academia. Analytical tables help present data in a clear and concise manner, making it easier to identify patterns, trends, and relationships among variables.\n\n\n\n\n\n\n\n\n\n\n\nCharacteristic\nOverall\nN = 610\nGood\nN = 156\nPoor\nN = 454\np-value\n\n\n\nAge\n21.79 (3.06)\n21.85 (1.85)\n21.77 (3.38)\n0.14\n\n\nGender\n\n\n\n0.3\n\n\nFemale\n274 (45%)\n64 (41%)\n210 (46%)\n\n\n\nMale\n336 (55%)\n92 (59%)\n244 (54%)\n\n\n\nMarital Status\n\n\n\n0.6\n\n\nMarried\n48 (7.9%)\n14 (9.0%)\n34 (7.5%)\n\n\n\nUnmarried\n562 (92%)\n142 (91%)\n420 (93%)\n\n\n\nField of Study\n\n\n\n0.2\n\n\nArts and Humanities\n69 (11%)\n17 (11%)\n52 (11%)\n\n\n\nBusiness\n72 (12%)\n16 (10%)\n56 (12%)\n\n\n\nScience\n414 (68%)\n115 (74%)\n299 (66%)\n\n\n\nSocial science\n55 (9.0%)\n8 (5.1%)\n47 (10%)\n\n\n\nYear of Study\n\n\n\n0.3\n\n\n1st year\n240 (39%)\n55 (35%)\n185 (41%)\n\n\n\n2nd year\n114 (19%)\n25 (16%)\n89 (20%)\n\n\n\n3rd year\n101 (17%)\n26 (17%)\n75 (17%)\n\n\n\n4th year\n107 (18%)\n35 (22%)\n72 (16%)\n\n\n\nMasters\n48 (7.9%)\n15 (9.6%)\n33 (7.3%)\n\n\n\n\n\n\n1 Mean (SD); n (%)\n\n\n\n\n\n\n\n2 Wilcoxon rank sum test; Pearson's Chi-squared test",
+    "crumbs": [
+      "Home"
+    ]
   }
 ]
