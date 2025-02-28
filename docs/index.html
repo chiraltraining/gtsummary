@@ -769,148 +769,122 @@ N = 454</th>
 <p>Univariate regression is a type of linear regression where you have one independent variable (predictor) and one dependent variable (response). Regression tables are used to present the results of regression analysis, including coefficients, standard errors, significance levels, and other relevant statistics. Below is an example of what a simple univariate regression table might look like:</p>
 <div class="cell">
 <div class="cell-output-display">
-<table style="NAborder-bottom: 0;border-bottom: 0;">
-<thead><tr>
-<th style="text-align:left;"> Characteristic </th>
-   <th style="text-align:center;"> N </th>
-   <th style="text-align:center;"> Event N </th>
-   <th style="text-align:center;"> OR </th>
-   <th style="text-align:center;"> 95% CI </th>
-   <th style="text-align:center;"> p-value </th>
-   <th style="text-align:center;"> q-value </th>
-  </tr></thead>
+<table class="caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Characteristic</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">N</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">OR</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">95% CI</th>
+<th style="text-align: center;" data-quarto-table-cell-role="th">p-value</th>
+</tr></thead>
 <tbody>
-<tr>
-<td style="text-align:left;"> <span style=" font-weight: bold;    ">Age</span> </td>
-   <td style="text-align:center;"> 183 </td>
-   <td style="text-align:center;"> 58 </td>
-   <td style="text-align:center;"> 1.02 </td>
-   <td style="text-align:center;"> 1.00, 1.04 </td>
-   <td style="text-align:center;"> 0.091 </td>
-   <td style="text-align:center;"> 0.25 </td>
-  </tr>
-<tr>
-<td style="text-align:left;"> <span style=" font-weight: bold;    ">Chemotherapy Treatment</span> </td>
-   <td style="text-align:center;"> 193 </td>
-   <td style="text-align:center;"> 61 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 0.53 </td>
-   <td style="text-align:center;"> 0.73 </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> Drug A </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> — </td>
-   <td style="text-align:center;"> — </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> Drug B </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 1.21 </td>
-   <td style="text-align:center;"> 0.66, 2.24 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;"> <span style=" font-weight: bold;    ">Marker Level (ng/mL)</span> </td>
-   <td style="text-align:center;"> 183 </td>
-   <td style="text-align:center;"> 57 </td>
-   <td style="text-align:center;"> 1.35 </td>
-   <td style="text-align:center;"> 0.94, 1.93 </td>
-   <td style="text-align:center;"> 0.10 </td>
-   <td style="text-align:center;"> 0.25 </td>
-  </tr>
-<tr>
-<td style="text-align:left;"> <span style=" font-weight: bold;    ">T Stage</span> </td>
-   <td style="text-align:center;"> 193 </td>
-   <td style="text-align:center;"> 61 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 0.58 </td>
-   <td style="text-align:center;"> 0.73 </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> T1 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> — </td>
-   <td style="text-align:center;"> — </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> T2 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 0.63 </td>
-   <td style="text-align:center;"> 0.27, 1.46 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> T3 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 1.13 </td>
-   <td style="text-align:center;"> 0.48, 2.68 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> T4 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 0.83 </td>
-   <td style="text-align:center;"> 0.36, 1.92 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;"> <span style=" font-weight: bold;    ">Grade</span> </td>
-   <td style="text-align:center;"> 193 </td>
-   <td style="text-align:center;"> 61 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 0.93 </td>
-   <td style="text-align:center;"> 0.93 </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> I </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> — </td>
-   <td style="text-align:center;"> — </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> II </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 0.95 </td>
-   <td style="text-align:center;"> 0.45, 2.00 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
-<tr>
-<td style="text-align:left;padding-left: 2em;" indentlevel="1"> III </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;"> 1.10 </td>
-   <td style="text-align:center;"> 0.52, 2.29 </td>
-   <td style="text-align:center;">  </td>
-   <td style="text-align:center;">  </td>
-  </tr>
+<tr class="odd">
+<td style="text-align: left;"><span style=" font-weight: bold;    ">Age</span></td>
+<td style="text-align: center;">183</td>
+<td style="text-align: center;">1.02</td>
+<td style="text-align: center;">1.00, 1.04</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span style=" font-weight: bold;    ">Chemotherapy Treatment</span></td>
+<td style="text-align: center;">193</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">Drug A</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">Drug B</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.21</td>
+<td style="text-align: center;">0.66, 2.24</td>
+<td style="text-align: center;">0.53</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span style=" font-weight: bold;    ">Marker Level (ng/mL)</span></td>
+<td style="text-align: center;">183</td>
+<td style="text-align: center;">1.35</td>
+<td style="text-align: center;">0.94, 1.93</td>
+<td style="text-align: center;">0.10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span style=" font-weight: bold;    ">T Stage</span></td>
+<td style="text-align: center;">193</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">T1</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">T2</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.63</td>
+<td style="text-align: center;">0.27, 1.46</td>
+<td style="text-align: center;">0.29</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">T3</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.13</td>
+<td style="text-align: center;">0.48, 2.68</td>
+<td style="text-align: center;">0.77</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">T4</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.83</td>
+<td style="text-align: center;">0.36, 1.92</td>
+<td style="text-align: center;">0.67</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span style=" font-weight: bold;    ">Grade</span></td>
+<td style="text-align: center;">193</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">I</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">II</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.95</td>
+<td style="text-align: center;">0.45, 2.00</td>
+<td style="text-align: center;">0.88</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; padding-left: 2em;" data-indentlevel="1">III</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">1.10</td>
+<td style="text-align: center;">0.52, 2.29</td>
+<td style="text-align: center;">0.81</td>
+</tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
-<sup></sup> Abbreviations: CI = Confidence Interval, OR = Odds Ratio</td></tr></tfoot>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
-<sup>1</sup> False discovery rate correction for multiple testing</td></tr></tfoot>
+<tfoot><tr class="odd">
+<td style="text-align: left; padding: 0;">
+<sup></sup> Abbreviations: CI = Confidence Interval, OR = Odds Ratio</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr></tfoot>
 </table>
 </div>
 </div>

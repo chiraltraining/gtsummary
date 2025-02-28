@@ -197,11 +197,8 @@ trial |>
     exponentiate = TRUE,
     pvalue_fun = ~ style_pvalue(.x, digits = 2)
   ) |> 
-  add_global_p() |> 
-  add_nevent() |> 
-  add_q() |> 
   bold_p() |> 
-  bold_p(t = 0.10, q = TRUE) |> 
+  bold_p(t = 0.05) |> 
   bold_labels() |> 
   as_kable_extra()
 ```
